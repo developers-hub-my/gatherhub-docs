@@ -1,56 +1,116 @@
 export const navigation = [
   {
-    title: 'Introduction',
+    title: 'Getting Started',
     links: [
-      { title: 'Getting started', href: '/' },
-      { title: 'Installation', href: '/docs/installation' },
+      { title: 'Welcome to GatherHub', href: '/docs/welcome' },
+      { title: 'Quick Start Guide', href: '/docs/quick-start' },
+      { title: 'Account Setup', href: '/docs/account-setup' },
     ],
   },
   {
-    title: 'Core concepts',
+    title: 'Event Management',
     links: [
-      { title: 'Understanding caching', href: '/docs/understanding-caching' },
-      {
-        title: 'Predicting user behavior',
-        href: '/docs/predicting-user-behavior',
-      },
-      { title: 'Basics of time-travel', href: '/docs/basics-of-time-travel' },
-      {
-        title: 'Introduction to string theory',
-        href: '/docs/introduction-to-string-theory',
-      },
-      { title: 'The butterfly effect', href: '/docs/the-butterfly-effect' },
+      { title: 'Creating an Event', href: '/docs/creating-events' },
+      { title: 'Event Settings', href: '/docs/event-settings' },
+      { title: 'Managing Your Events', href: '/docs/managing-events' },
+      { title: 'Sessions and Activities', href: '/docs/sessions-activities' },
+      { title: 'Custom Event Fields', href: '/docs/custom-fields' },
     ],
   },
   {
-    title: 'Advanced guides',
+    title: 'Ticketing',
     links: [
-      { title: 'Writing plugins', href: '/docs/writing-plugins' },
-      { title: 'Neuralink integration', href: '/docs/neuralink-integration' },
-      { title: 'Temporal paradoxes', href: '/docs/temporal-paradoxes' },
-      { title: 'Testing', href: '/docs/testing' },
-      { title: 'Compile-time caching', href: '/docs/compile-time-caching' },
-      {
-        title: 'Predictive data generation',
-        href: '/docs/predictive-data-generation',
-      },
+      { title: 'Setting Up Ticket Types', href: '/docs/ticket-types' },
+      { title: 'Pricing Strategies', href: '/docs/pricing-strategies' },
+      { title: 'Discount Codes', href: '/docs/discount-codes' },
+      { title: 'Waitlist Management', href: '/docs/waitlist-management' },
     ],
   },
   {
-    title: 'API reference',
+    title: 'Registration',
     links: [
-      { title: 'CacheAdvance.predict()', href: '/docs/cacheadvance-predict' },
-      { title: 'CacheAdvance.flush()', href: '/docs/cacheadvance-flush' },
-      { title: 'CacheAdvance.revert()', href: '/docs/cacheadvance-revert' },
-      { title: 'CacheAdvance.regret()', href: '/docs/cacheadvance-regret' },
+      { title: 'Registration Forms', href: '/docs/registration-forms' },
+      { title: 'Managing Participants', href: '/docs/managing-participants' },
+      { title: 'Bulk Import Participants', href: '/docs/bulk-import' },
+      { title: 'Registration Status', href: '/docs/registration-status' },
     ],
   },
   {
-    title: 'Contributing',
+    title: 'Payments',
     links: [
-      { title: 'How to contribute', href: '/docs/how-to-contribute' },
-      { title: 'Architecture guide', href: '/docs/architecture-guide' },
-      { title: 'Design principles', href: '/docs/design-principles' },
+      { title: 'Payment Setup', href: '/docs/payment-setup' },
+      { title: 'Payment Methods', href: '/docs/payment-methods' },
+      { title: 'Orders and Transactions', href: '/docs/orders-transactions' },
+      { title: 'Processing Refunds', href: '/docs/refunds' },
+    ],
+  },
+  {
+    title: 'Check-In',
+    links: [
+      { title: 'Check-In Overview', href: '/docs/checkin-overview' },
+      { title: 'QR Code Scanning', href: '/docs/qr-scanning' },
+      { title: 'Attendance Tracking', href: '/docs/attendance-tracking' },
+      { title: 'Real-Time Dashboard', href: '/docs/checkin-dashboard' },
+    ],
+  },
+  {
+    title: 'Certificates',
+    links: [
+      { title: 'Certificate Templates', href: '/docs/certificate-templates' },
+      { title: 'Eligibility Rules', href: '/docs/eligibility-rules' },
+      { title: 'Generating Certificates', href: '/docs/generating-certificates' },
+      { title: 'Certificate Verification', href: '/docs/certificate-verification' },
+    ],
+  },
+  {
+    title: 'Crew Management',
+    links: [
+      { title: 'Crew Overview', href: '/docs/crew-overview' },
+      { title: 'Crew Roles', href: '/docs/crew-roles' },
+      { title: 'Inviting Crew Members', href: '/docs/inviting-crew' },
+      { title: 'Managing Permissions', href: '/docs/crew-permissions' },
+    ],
+  },
+  {
+    title: 'Communication',
+    links: [
+      { title: 'Email Campaigns', href: '/docs/email-campaigns' },
+      { title: 'Email Templates', href: '/docs/email-templates' },
+      { title: 'Campaign Tracking', href: '/docs/campaign-tracking' },
+    ],
+  },
+  {
+    title: 'Resources',
+    links: [
+      { title: 'Venue Library', href: '/docs/venue-library' },
+      { title: 'Managing Speakers', href: '/docs/speakers' },
+      { title: 'Managing Sponsors', href: '/docs/sponsors' },
+    ],
+  },
+  {
+    title: 'Reports',
+    links: [
+      { title: 'Reports Overview', href: '/docs/reports-overview' },
+      { title: 'Attendance Reports', href: '/docs/attendance-reports' },
+      { title: 'Revenue Reports', href: '/docs/revenue-reports' },
+      { title: 'Exporting Data', href: '/docs/exporting-data' },
+    ],
+  },
+  {
+    title: 'Participant Portal',
+    links: [
+      { title: 'Participant Dashboard', href: '/docs/participant-dashboard' },
+      { title: 'My Registrations', href: '/docs/my-registrations' },
+      { title: 'My Certificates', href: '/docs/my-certificates' },
+      { title: 'Updating Your Profile', href: '/docs/updating-profile' },
+    ],
+  },
+  {
+    title: 'Help',
+    links: [
+      { title: 'Common Issues', href: '/docs/common-issues' },
+      { title: 'FAQ', href: '/docs/faq' },
+      { title: 'Getting Help', href: '/docs/getting-help' },
     ],
   },
 ]

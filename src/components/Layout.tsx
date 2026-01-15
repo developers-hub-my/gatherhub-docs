@@ -48,8 +48,8 @@ function Header() {
       </div>
       <div className="relative flex grow basis-0 items-center">
         <Link href="/" aria-label="Home page">
-          <Logomark className="h-9 w-9 lg:hidden" />
-          <Logo className="hidden h-9 w-auto fill-slate-700 lg:block dark:fill-sky-100" />
+          <Logomark className="h-10 w-10 text-sky-500 lg:hidden" />
+          <Logo className="hidden h-10 w-auto text-slate-700 lg:block dark:text-sky-100" />
         </Link>
       </div>
       <div className="-my-5 mr-6 sm:mr-8 md:mr-0">
@@ -57,8 +57,10 @@ function Header() {
       </div>
       <div className="relative flex basis-0 justify-end gap-6 sm:gap-8 md:grow">
         <ThemeSelector className="relative z-10" />
-        <Link href="https://github.com" className="group" aria-label="GitHub">
-          <GitHubIcon className="h-6 w-6 fill-slate-400 group-hover:fill-slate-500 dark:group-hover:fill-slate-300" />
+        <Link href="https://gatherhub.app" className="group" aria-label="GatherHub App">
+          <span className="text-sm font-medium text-slate-500 group-hover:text-slate-700 dark:text-slate-400 dark:group-hover:text-slate-200">
+            Go to App →
+          </span>
         </Link>
       </div>
     </header>
