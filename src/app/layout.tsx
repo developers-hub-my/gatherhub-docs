@@ -24,10 +24,10 @@ const lexend = localFont({
 export const metadata: Metadata = {
   title: {
     template: '%s - Docs',
-    default: 'CacheAdvance - Never miss the cache again.',
+    default: 'GateHub - The event platform that proves participation.',
   },
   description:
-    'Cache every single thing your app could ever do ahead of time, so your code never even has to run at all.',
+    'From registration to QR check-in to verifiable certificates — every step is recorded, every participant is tracked, every certificate is authentic.',
 }
 
 export default function RootLayout({
