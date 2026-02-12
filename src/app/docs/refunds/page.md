@@ -3,7 +3,7 @@ title: Processing Refunds
 nextjs:
   metadata:
     title: Processing Refunds
-    description: How to process full and partial refunds for GatherHub event registrations.
+    description: How to process refund requests in GatherHub, including the multi-stage approval workflow, bank details, and proof of refund.
 ---
 
 Process refunds when participants cancel or when event circumstances require reimbursement. {% .lead %}
@@ -12,9 +12,27 @@ Process refunds when participants cancel or when event circumstances require rei
 
 ## Refund Overview
 
-Refunds return payment to participants for cancelled registrations or other situations requiring reimbursement.
+GatherHub provides a multi-stage refund workflow with reference number tracking, proof uploads, and separate views for event managers and finance administrators.
 
-### When to Issue Refunds
+### Refund Status Flow
+
+Refund requests progress through these stages:
+
+| Status | Color | Description |
+|--------|-------|-------------|
+| Pending | Yellow | Submitted by participant, awaiting review |
+| Approved | Blue | Finance approved, awaiting completion |
+| Rejected | Red | Finance rejected the request |
+| Completed | Green | Refund processed and funds returned |
+
+```
+Pending → Approved → Completed
+       → Rejected
+```
+
+---
+
+## When to Issue Refunds
 
 - Participant requests cancellation
 - Event is cancelled
@@ -24,91 +42,17 @@ Refunds return payment to participants for cancelled registrations or other situ
 
 ---
 
-## Refund Types
+## Refund Policy
 
-### Full Refund
+### Setting Up Your Policy
 
-Returns the entire payment amount.
-
-| Scenario | Action |
-|----------|--------|
-| Event cancellation | Refund all participants |
-| Participant cancellation | Per your refund policy |
-| Payment error | Correct the error |
-
-### Partial Refund
-
-Returns part of the payment.
-
-| Scenario | Example |
-|----------|---------|
-| Partial attendance | Refund unused days |
-| Service reduction | Refund feature not available |
-| Goodwill gesture | Partial refund for issues |
-
----
-
-## Processing a Refund
-
-### Step-by-Step
-
-1. Go to **Orders**
-2. Find and open the order
-3. Click **Issue Refund**
-4. Select refund type:
-   - Full refund
-   - Partial refund (enter amount)
-5. Enter refund reason
-6. Confirm refund
-
-### Refund Form
-
-| Field | Description |
-|-------|-------------|
-| Original Amount | Total paid |
-| Refund Amount | Amount to return |
-| Reason | Why refund is being issued |
-| Notes | Internal notes (optional) |
-
----
-
-## Refund Methods
-
-### Online Payments (FPX/DuitNow)
-
-For payments made via BayarCash:
-
-1. Refund is processed through gateway
-2. Funds return to original payment source
-3. Processing time: 3-14 business days
-4. Participant receives notification
-
-### Manual Payments
-
-For bank transfers:
-
-1. Process refund manually
-2. Transfer to participant's account
-3. Mark as refunded in system
-4. Upload proof of refund
-
-{% callout type="warning" title="Manual refunds" %}
-Manual refunds require you to transfer funds outside GatherHub. Ensure you have participant's bank details.
-{% /callout %}
-
----
-
-## Refund Policies
-
-### Creating a Policy
-
-Define your refund policy covering:
+Each event has a **Refund Policy** text field that is displayed on the public event page. Configure this in your event settings.
 
 | Element | Options |
 |---------|---------|
 | Timeframe | Days before event |
 | Percentage | Full, partial, none |
-| Method | Original payment, credit |
+| Method | Original payment, bank transfer |
 | Processing fee | Deduct or absorb |
 
 ### Example Policy
@@ -122,56 +66,160 @@ Refund Policy:
 - Processing fee: RM 5 deducted from all refunds
 ```
 
-### Displaying Policy
+---
 
-Include your policy in:
+## Participant Submits a Refund Request
 
-- Event description
-- Registration confirmation
-- Terms and conditions
-- FAQ page
+Participants initiate refund requests from their registration or ticket:
+
+1. Navigate to their order or ticket details
+2. Click **Request Refund**
+3. Fill in the refund form:
+
+| Field | Description | Required |
+|-------|-------------|----------|
+| Reason | Why requesting a refund | Yes |
+| Bank Name | Destination bank for refund | Yes |
+| Account Number | Bank account number | Yes |
+| Account Holder | Name on the bank account | Yes |
+| Proof of Payment | Receipt image or PDF | Yes |
+
+4. Submit the request
+
+A **reference number** is automatically generated (e.g., `RFD202602000001`) for tracking.
+
+### Tracking Refund Requests
+
+Participants can track their requests at **My Refund Requests** (`/my-refund-requests`):
+
+- View all submitted requests
+- Search by reference number
+- Filter by status
+- Monitor progress
 
 ---
 
-## Refund Status
+## Event Manager View
 
-### Status Types
+Event managers can view refund requests for their events.
 
-| Status | Description |
-|--------|-------------|
-| Pending | Refund initiated, processing |
-| Processing | Being processed by gateway |
-| Completed | Refund successful |
-| Failed | Refund could not be processed |
+### Accessing Refund Requests
 
-### Tracking Refunds
+1. Go to **Manage > Events > [Your Event]**
+2. Click **Refund Requests** in the sidebar
+3. View all requests for this event
 
-1. Go to **Orders**
-2. Filter by "Refunded"
-3. View refund status and details
+### Dashboard Stats
 
----
+The refund dashboard shows:
 
-## Bulk Refunds
+| Stat | Description |
+|------|-------------|
+| Pending | Requests awaiting review |
+| Approved | Approved but not yet completed |
+| Rejected | Rejected requests |
+| Completed | Successfully processed refunds |
 
-### When Needed
+### Search and Filter
 
-- Event cancellation
-- Mass service issue
-- Policy change affecting many
+- Search by reference number, participant name, or email
+- Filter by status (default: pending)
 
-### Processing Bulk Refunds
-
-1. Go to **Orders**
-2. Filter relevant orders
-3. Select multiple orders
-4. Click **Bulk Refund**
-5. Choose amount (full/partial)
-6. Confirm
-
-{% callout type="warning" title="Bulk refund caution" %}
-Bulk refunds cannot be easily reversed. Double-check your selection before confirming.
+{% callout title="Event manager access" %}
+Event managers can view refund requests and details for their events, but approval and processing is handled by the finance team.
 {% /callout %}
+
+---
+
+## Finance Admin Processing
+
+Finance administrators process refund requests across all organization events.
+
+### Accessing Finance Refunds
+
+1. Go to **Finance > Refund Requests** (requires finance permission)
+2. View all organization-wide refund requests
+3. Global stats show totals across all events
+
+### Approving a Refund
+
+1. Find the pending request
+2. Review the reason and proof of payment
+3. Click **Approve**
+4. Status changes to **Approved**
+
+### Rejecting a Refund
+
+1. Find the pending request
+2. Click **Reject**
+3. Enter admin notes (minimum 10 characters explaining the reason)
+4. Status changes to **Rejected**
+
+{% callout type="warning" title="Rejection notes required" %}
+You must provide a reason when rejecting a refund. This helps maintain transparency and provides documentation for disputes.
+{% /callout %}
+
+### Completing a Refund
+
+1. Find an approved request
+2. Transfer funds to the participant's bank account
+3. Click **Complete**
+4. Optionally upload **proof of refund** (bank transfer screenshot)
+5. Status changes to **Completed**
+
+When a refund is completed:
+
+- A refund payment transaction is recorded
+- If all tickets on the order are refunded, the order is automatically marked as refunded
+- Participant is notified
+
+---
+
+## Refund Methods
+
+### Online Payments (FPX/DuitNow)
+
+For payments made via BayarCash:
+
+1. Refund is processed manually (transfer to bank)
+2. Record the refund in the system
+3. Upload proof of refund
+4. Processing time: 3-14 business days
+
+### Manual Payments
+
+For bank transfers:
+
+1. Transfer to participant's bank account
+2. Mark as completed in system
+3. Upload proof of refund
+
+{% callout type="warning" title="Manual refunds" %}
+All refunds require you to transfer funds outside GatherHub. Ensure you have the participant's bank details from their refund request.
+{% /callout %}
+
+---
+
+## Proof Uploads
+
+The refund system supports two types of proof documents:
+
+| Type | Uploaded By | When |
+|------|-------------|------|
+| Proof of Payment | Participant | When submitting refund request |
+| Proof of Refund | Finance admin | When completing the refund |
+
+Accepted formats: JPEG, PNG, PDF.
+
+---
+
+## Reference Numbers
+
+Every refund request is assigned an auto-generated reference number:
+
+- **Format**: `RFD{YYMM}{6-digit-number}`
+- **Example**: `RFD202602000001`
+- Use reference numbers for tracking and communication
 
 ---
 
@@ -183,102 +231,14 @@ Bulk refunds cannot be easily reversed. Double-check your selection before confi
 |----------------|-------------|
 | FPX | 3-7 business days |
 | DuitNow | 1-3 business days |
-| Manual | Immediate (your action) |
+| Manual Transfer | Immediate (your action) |
 
 ### Factors Affecting Time
 
 - Bank processing schedules
 - Weekend/holiday delays
+- Finance team review time
 - Verification requirements
-- Account status
-
----
-
-## Communication
-
-### Automatic Notifications
-
-When refund is issued:
-
-- Participant receives email confirmation
-- Details include amount and timeline
-- Original order is updated
-
-### Manual Communication
-
-For complex situations:
-
-1. Open order
-2. Click **Send Message**
-3. Explain refund details
-4. Provide expected timeline
-
----
-
-## Refund Fees
-
-### Who Pays Fees?
-
-| Approach | Description |
-|----------|-------------|
-| Absorb fees | You cover transaction fees |
-| Deduct fees | Subtract from refund amount |
-| No fees | Some gateways allow fee recovery |
-
-### Calculating Net Refund
-
-```
-Original payment: RM 100
-Transaction fee: RM 4 (3% + RM 1)
-Refund option 1: RM 100 (absorb fees)
-Refund option 2: RM 96 (deduct fees)
-```
-
----
-
-## Record Keeping
-
-### What's Recorded
-
-Every refund records:
-
-| Field | Description |
-|-------|-------------|
-| Refund date | When issued |
-| Original amount | Payment received |
-| Refund amount | Amount returned |
-| Reason | Why refunded |
-| Processed by | Who initiated |
-| Status | Current state |
-
-### Refund Reports
-
-Export refund data:
-
-1. Go to **Reports**
-2. Select **Refunds**
-3. Choose date range
-4. Export to CSV/Excel
-
----
-
-## Handling Disputes
-
-### Participant Claims No Refund
-
-1. Check refund status in system
-2. Verify transaction with gateway
-3. Check participant's bank
-4. Provide transaction proof
-
-### Chargeback Requests
-
-If participant files chargeback:
-
-1. Gather evidence of refund
-2. Provide transaction records
-3. Respond through gateway
-4. Document all communications
 
 ---
 
@@ -286,49 +246,45 @@ If participant files chargeback:
 
 ### Before Processing
 
-- Verify cancellation request
-- Check refund policy eligibility
-- Calculate correct amount
-- Document reason
+- Verify the refund request against your event's refund policy
+- Check the proof of payment matches the order amount
+- Calculate the correct refund amount (after any deductions)
+- Review bank details for accuracy
 
 ### After Processing
 
-- Confirm refund initiated
-- Update participant record
-- Monitor for completion
-- Follow up if delayed
+- Upload proof of refund for your records
+- Monitor that all related orders are updated
+- Follow up with participant if there are delays
 
 ### Policy Enforcement
 
-- Apply policy consistently
-- Document exceptions
-- Communicate clearly
-- Be reasonable
+- Apply your refund policy consistently
+- Document any exceptions with admin notes
+- Communicate clearly with participants about timelines
 
 ---
 
 ## Troubleshooting
 
-### Refund failed
+### Refund request not appearing
 
-1. Check error message
-2. Verify account status
-3. Try again
-4. Process manually if needed
+- Ensure the participant has submitted the request (check their order status)
+- Check you're viewing the correct event's refund requests
+- Verify the status filter isn't hiding the request
 
-### Wrong amount refunded
+### Wrong amount on refund
 
-1. Check original calculation
-2. Issue additional refund or
-3. Request partial return
-4. Document correction
+- Check the original order and ticket amounts
+- Verify any policy deductions were calculated correctly
+- Contact the participant to clarify
 
-### Participant disputes amount
+### Participant disputes rejection
 
-1. Review policy and transaction
-2. Explain calculation
-3. Provide documentation
-4. Escalate if needed
+- Review the admin notes on the rejection
+- Check the refund policy terms
+- Provide documentation of the policy
+- Consider making an exception if warranted
 
 ---
 

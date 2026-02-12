@@ -14,16 +14,26 @@ The events dashboard is your central hub for creating, managing, and monitoring 
 
 Access your events from the main navigation by clicking **Events**.
 
-### Dashboard Views
+### What Events You See
 
-| View | Description |
-|------|-------------|
-| All Events | View all events in your organization |
-| My Events | Events you created |
-| Crew Events | Events where you're a crew member |
-| Upcoming | Future events |
-| Past | Completed events |
-| Drafts | Unpublished events |
+The events dashboard shows all events you're involved with, regardless of organization:
+
+| Relationship | Visibility |
+|-------------|------------|
+| Events you created | Always visible |
+| Events in your organization | Always visible |
+| Events you're crew on | Always visible (any organization) |
+
+Each event shows its **organization name** so you can tell which organization it belongs to.
+
+### Filtering Events
+
+| Filter | Description |
+|--------|-------------|
+| All Events | Events you created, your org's events, and crew events |
+| My Events | Only events you created |
+| Crew Events | Only events where you're a crew member (not creator) |
+| Status | Filter by Draft, Published, etc. |
 
 ### Search and Filter
 
@@ -108,11 +118,15 @@ Clone an existing event to reuse its configuration for recurring programs.
 The cloned event is created in Draft mode. Review all settings and update the title and dates before publishing.
 {% /callout %}
 
+### Clone vs. Templates
+
+- **Clone** — duplicates an event with its data for a one-off copy
+- **[Event Config Templates](/docs/event-templates)** — saves event structure as a reusable template for creating multiple events
+
 ### Clone Use Cases
 
-- **Recurring workshops** - Clone monthly training sessions
-- **Annual conferences** - Reuse last year's event structure
-- **Template events** - Create a base event to clone for similar programs
+- **Recurring workshops** — Clone monthly training sessions
+- **Annual conferences** — Reuse last year's event structure
 
 ---
 
@@ -145,10 +159,11 @@ From the events list, hover over an event to access quick actions:
 | Action | Description |
 |--------|-------------|
 | View | Open event dashboard |
-| Edit | Go to event settings |
+| Check-In | Go to check-in page |
 | Clone | Create a copy of the event |
-| Share | Copy event URL |
-| Archive | Hide from active listings |
+| Save as Template | Save event config as a reusable template |
+| Publish/Unpublish | Toggle event visibility |
+| Delete | Remove the event |
 
 ### Event Dashboard Actions
 
@@ -242,5 +257,6 @@ See [Crew Permissions](/docs/crew-permissions) for crew-level access control.
 
 - [Configure event settings](/docs/event-settings) in detail
 - [Set up sessions and activities](/docs/sessions-activities)
+- [Save event as a template](/docs/event-templates) for reuse
 - [Learn about check-in](/docs/checkin-overview) for event day
 - [Generate certificates](/docs/generating-certificates) post-event

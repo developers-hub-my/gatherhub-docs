@@ -13,6 +13,7 @@ export const navigation = [
       { title: 'Creating an Event', href: '/docs/creating-events' },
       { title: 'Event Settings', href: '/docs/event-settings' },
       { title: 'Managing Your Events', href: '/docs/managing-events' },
+      { title: 'Event Config Templates', href: '/docs/event-templates' },
       { title: 'Sessions and Activities', href: '/docs/sessions-activities' },
       { title: 'Custom Event Fields', href: '/docs/custom-fields' },
     ],
@@ -103,6 +104,12 @@ export const navigation = [
       { title: 'My Registrations', href: '/docs/my-registrations' },
       { title: 'My Certificates', href: '/docs/my-certificates' },
       { title: 'Updating Your Profile', href: '/docs/updating-profile' },
+    ],
+  },
+  {
+    title: 'Administration',
+    links: [
+      { title: 'User Impersonation', href: '/docs/impersonation' },
     ],
   },
   {
