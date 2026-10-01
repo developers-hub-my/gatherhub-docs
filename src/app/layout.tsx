@@ -24,10 +24,10 @@ const lexend = localFont({
 export const metadata: Metadata = {
   title: {
     template: '%s - Docs',
-    default: 'GateHub - The event platform that proves participation.',
+    default: 'GatherHub Docs - Event Management, From Sign-up to Wrap-up',
   },
   description:
-    'From registration to QR check-in to verifiable certificates — every step is recorded, every participant is tracked, every certificate is authentic.',
+    'Guides for planning, selling, running and wrapping up your events on GatherHub — registration, FPX and DuitNow payments, QR check-in and certificates.',
 }
 
 export default function RootLayout({
