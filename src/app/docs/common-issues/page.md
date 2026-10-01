@@ -217,7 +217,7 @@ Find solutions to common issues you might encounter while using GatherHub. {% .l
 2. Clear browser cache
 3. Try different browser
 4. Disable extensions
-5. Try mobile app if available
+5. Try the [GatherHub app](/docs/pwa-overview) on your phone
 
 ### Dashboard Not Updating
 
@@ -236,14 +236,25 @@ Find solutions to common issues you might encounter while using GatherHub. {% .l
 
 ### App Not Working
 
-**Symptoms:** Mobile issues
+**Symptoms:** The GatherHub app won't open a page, or looks out of date
 
 **Solutions:**
-1. Update app/browser
-2. Restart device
-3. Clear app cache
-4. Reinstall app
-5. Use mobile browser
+1. Check your internet, then close and reopen the app (updates load by themselves)
+2. Restart your phone
+3. Remove the app from your home screen and [add it again](/docs/pwa-overview#install-the-app). On iPhone, use Safari
+4. Use GatherHub in your phone's browser in the meantime
+
+### Crew Scans Not Showing Up
+
+**Symptoms:** Guests were scanned but don't show as checked in
+
+**Solutions:**
+1. The scans may have been made without internet. In the app, open **More → Sync centre**
+2. Tap **Sync now** once you're online
+3. Fix or discard anything under **Needs attention**
+4. Keep the app open until **Waiting to sync** shows 0
+
+See [Using the app without internet](/docs/pwa-offline).
 
 ### QR Code Not Displaying
 
@@ -252,7 +263,7 @@ Find solutions to common issues you might encounter while using GatherHub. {% .l
 **Solutions:**
 1. Increase screen brightness
 2. Rotate screen
-3. Try different app
+3. Open the ticket in the GatherHub app (**Ticket** tab). It also opens without internet once saved
 4. Download ticket PDF
 5. Print ticket as backup
 

@@ -18,7 +18,8 @@ Participants can access their portal:
 
 1. **From confirmation email** - Click portal link
 2. **Direct URL** - gatherhub.app/me
-3. **From event page** - Click "My Registrations"
+3. **The GatherHub app** - [install it on your phone](/docs/pwa-overview); it opens here
+4. **From event page** - Click "My Registrations"
 
 ### Login Options
 
@@ -32,12 +33,17 @@ Participants can access their portal:
 
 ### What Participants See
 
+The start page, **My events**, groups every event the participant is registered for:
+
 | Section | Content |
 |---------|---------|
-| My Events | All registered events |
+| Happening now | Events live today |
 | Upcoming | Future events |
 | Past | Completed events |
-| Certificates | Available certificates |
+
+Tapping an event opens its **Home** ("Today"), with check-in status, what's up next and what's live now. Certificates are found per event, under **Ticket → Certificates**.
+
+{% figure src="/images/pwa/attendee-01-my-events.png" alt="My events screen listing happening now, upcoming and past events" caption="My events in the attendee app." width=300 /%}
 
 ### Event Cards
 
@@ -61,7 +67,7 @@ Events in the future:
 - View ticket option
 - Add to calendar
 
-### Ongoing Events
+### Happening Now
 
 Currently active events:
 
@@ -105,12 +111,17 @@ Participants receive:
 
 ### Portal Sections
 
-| Section | Description |
-|---------|-------------|
-| Dashboard | Overview of all events |
-| My Registrations | Detailed registration list |
-| My Certificates | All earned certificates |
-| Profile | Personal information |
+The portal is the attendee view of the [GatherHub app](/docs/pwa-overview). Inside an event it has five tabs:
+
+| Tab | Description |
+|-----|-------------|
+| Home | "Today" for the event |
+| Agenda | Sessions, schedule, activities, speakers |
+| Ticket | Ticket QR, self check-in, kit, certificates |
+| Connect | Networking, digital business card, social wall |
+| More | Polls, Q&A, surveys, content, rewards, event info, account |
+
+See [Using the app as an attendee](/docs/pwa-attendee) for every tab in detail.
 
 ---
 
@@ -128,6 +139,7 @@ Ensure participants can:
 ### Communication
 
 - Include portal links in emails
+- Ask attendees to [install the app](/docs/pwa-overview#install-the-app) and open the event once before the day, so their ticket opens without internet
 - Remind about certificate access
 - Provide help documentation
 
@@ -135,6 +147,7 @@ Ensure participants can:
 
 ## Next Steps
 
+- [Using the app as an attendee](/docs/pwa-attendee)
 - [View registrations](/docs/my-registrations)
 - [Access certificates](/docs/my-certificates)
 - [Update profile](/docs/updating-profile)

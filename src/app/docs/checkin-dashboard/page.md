@@ -262,7 +262,7 @@ All dashboards show:
 ### Incorrect counts
 
 1. Allow time to sync
-2. Check offline check-ins
+2. Check the app's **Sync centre** for scans not yet sent
 3. Verify duplicate entries
 4. Review recent activity
 
@@ -300,20 +300,18 @@ All dashboards show:
 
 ---
 
-## Mobile Dashboard
+## On Your Phone
 
-### Mobile Features
+On a phone, use the crew view of the [GatherHub app](/docs/pwa-crew). Its **Live** tab has a **Now** screen made for small screens:
 
-- Responsive design
-- Simplified interface
-- Touch-optimized
-- Quick scanner access
+- How many people are in the venue, against capacity
+- Check-in percentage
+- Arrivals in the last 15 minutes
+- Questions waiting for approval, running polls and open surveys
 
-### Mobile Limitations
+**Stats** in the same tab shows check-in progress and recent check-ins. For charts and exports, use the dashboard on a computer or tablet.
 
-- Smaller charts
-- Less detail visible
-- Consider tablet for more data
+{% figure src="/images/pwa/crew-02-live-now.png" alt="Live Now screen in the crew view of the app" caption="Live → Now in the GatherHub app." width=300 /%}
 
 ---
 

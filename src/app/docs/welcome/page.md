@@ -57,7 +57,7 @@ Organize complex events with:
 - QR code scanning for fast, contactless check-in
 - Multi-level tracking (event, session, activity)
 - Real-time attendance dashboard
-- Mobile-friendly interface for check-in stations
+- A [phone app](/docs/pwa-overview) for crew and attendees, with scanning that keeps working without internet
 
 ### Certificate Generation
 
@@ -92,7 +92,7 @@ Organize complex events with:
 2. **Register** and complete payment
 3. **Receive** confirmation email with ticket and QR code
 4. **Attend** the event and check in with QR code
-5. **Access** the participant portal to view tickets and certificates
+5. **Use** the [GatherHub app](/docs/pwa-attendee) for tickets, the agenda, check-in and certificates
 
 ---
 

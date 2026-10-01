@@ -271,6 +271,8 @@ Participants who registered but didn't attend:
 4. Choose sessions/activities
 5. Save
 
+On event day, crew can also do this from a phone: in the [GatherHub app](/docs/pwa-crew#guests), open **Guests**, tap the person and use **Check in now** or **Undo check-in**.
+
 {% callout type="warning" title="Manual records" %}
 Manual attendance records are flagged as "manually entered" in reports for audit purposes.
 {% /callout %}
@@ -307,7 +309,7 @@ Manual attendance records are flagged as "manually entered" in reports for audit
 ### Check-in not recording
 
 1. Verify internet connection
-2. Check offline queue
+2. In the app, check **More → Sync centre** for scans waiting to be sent
 3. Try manual entry
 4. Review error logs
 
@@ -321,7 +323,7 @@ Manual attendance records are flagged as "manually entered" in reports for audit
 ### Missing attendance data
 
 1. Check if check-in happened
-2. Review offline sync status
+2. Check the app's **Sync centre** for scans that need attention
 3. Look for data in exports
 4. Contact support
 

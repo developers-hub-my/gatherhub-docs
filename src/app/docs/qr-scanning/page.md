@@ -17,8 +17,8 @@ QR code scanning provides the fastest and most reliable way to check in particip
 Each registered participant receives a unique QR code:
 
 - Sent in confirmation email
-- Available in participant portal
-- Can be displayed on mobile device
+- Available in the [GatherHub app](/docs/pwa-attendee) under **Ticket**
+- Can be displayed on mobile device, even without internet once saved
 - Can be printed from ticket
 
 ### What's Encoded
@@ -43,11 +43,17 @@ The QR code contains:
 
 Access check-in directly at `gatherhub.app/manage/events/123/check-in` (replacing 123 with your event ID).
 
-### Mobile Access
+### On a Phone: the Crew View of the App
 
-- Bookmark the check-in page
-- Add to home screen for quick access
-- Works on iOS and Android
+For scanning at the door, crew should use the GatherHub app on their phone:
+
+1. [Install the app](/docs/pwa-overview#install-the-app) on Android or iPhone
+2. Tap **Crew** in the top bar and pick your event
+3. Tap **Scan**, the centre tab
+
+The app scans at the gate, at sessions, at activities and for kit, and keeps scanning when the internet drops. See [Using the app as crew](/docs/pwa-crew).
+
+{% figure src="/images/pwa/crew-03-scan-gate.png" alt="Gate scanner in the crew view of the app" caption="The gate scanner in the GatherHub app." width=300 /%}
 
 ---
 
@@ -209,25 +215,30 @@ For events with many arrivals:
 
 ### When Offline
 
-If internet connection is lost:
+Only the scanner in the **GatherHub app** (crew view) keeps working without internet. The check-in page in the dashboard on a computer needs a connection.
 
-- Scanner continues working
-- Check-ins stored locally
-- Syncs when connection restored
-- Visual indicator shows offline status
+In the app, if the internet drops:
+
+- Camera scans keep working and are saved on the phone
+- A badge in the top bar shows how many scans are waiting
+- Saved scans are sent automatically when the internet comes back
+- Each scan keeps the time it was actually made
 
 ### Offline Limitations
 
-- Cannot verify against server
-- May allow duplicate check-ins
-- No real-time dashboard updates
-- Requires sync before reports
+- Tickets can't be checked at the moment of scanning, so "Wrong gate" or "Ticket cancelled" only shows up later, in the app's **Sync centre**
+- Searching by name and typing a code need internet
+- Dashboard numbers update only after scans are sent
+
+A guest scanned on two phones is counted once. It doesn't create a duplicate check-in.
 
 ### Returning Online
 
-1. Connection restored automatically
-2. Queued check-ins sync
-3. Dashboard updates
+1. The app notices the connection is back
+2. Saved scans are sent automatically
+3. Anything GatherHub didn't accept appears in the **Sync centre**, where you can retry or discard it
+
+See [Using the app without internet](/docs/pwa-offline) for details.
 4. Any conflicts flagged
 
 ---
@@ -293,12 +304,13 @@ If internet connection is lost:
 1. Check internet connection
 2. Verify logged in
 3. Refresh page
-4. Check offline queue
+4. In the app, open **More → Sync centre** to see scans waiting to be sent
 
 ---
 
 ## Next Steps
 
+- [Use the app as crew](/docs/pwa-crew) for scanning on a phone
 - [Track attendance](/docs/attendance-tracking) at multiple levels
 - [Monitor check-in dashboard](/docs/checkin-dashboard)
 - [Generate certificates](/docs/generating-certificates) based on attendance

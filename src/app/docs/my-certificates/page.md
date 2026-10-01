@@ -14,15 +14,15 @@ View and download all certificates you've earned from events in the participant 
 
 ### Where to Find
 
-1. Log in to participant portal
-2. Click **My Certificates**
-3. View all available certificates
+Certificates are listed per event:
 
-### Or From Event
+1. Open the [GatherHub app](/docs/pwa-overview), or sign in at gatherhub.app
+2. Open the event from **My events** (past events are under **Past**)
+3. Tap **Ticket**, then **Certificates**
 
-1. Go to specific event
-2. Click **Certificates** section
-3. View certificates for that event
+Each certificate has **Download** and **Verify** buttons.
+
+{% figure src="/images/pwa/attendee-14-certificates.png" alt="Certificates screen showing a valid certificate with Download and Verify buttons" caption="Certificates for an event in the attendee app." width=300 /%}
 
 ---
 

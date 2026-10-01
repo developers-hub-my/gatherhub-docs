@@ -125,12 +125,14 @@ Crew Member Actions:
 
 ### What Crew Members See
 
-Each crew member has a dashboard showing:
+On event day, crew use the crew view of the [GatherHub app](/docs/pwa-crew) on their phone. It shows:
 
-- Events they're assigned to
-- Their role and permissions
-- Tasks available to them
-- Quick actions
+- The events they help run, with live headcounts
+- **Scan** for the gate, sessions, activities and kit
+- **Guests**, **Sessions** and **Live** tabs
+- A help desk for orders, discount codes and announcements, if their role allows
+
+Crew switch to it with the **Attendee | Crew** button at the top of the app.
 
 ### Event-Specific View
 
@@ -200,6 +202,7 @@ When viewing an event:
 
 ## Next Steps
 
+- [Using the app as crew](/docs/pwa-crew)
 - [Learn about crew roles](/docs/crew-roles)
 - [Invite crew members](/docs/inviting-crew)
 - [Configure permissions](/docs/crew-permissions)

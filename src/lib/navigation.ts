@@ -8,6 +8,15 @@ export const navigation = [
     ],
   },
   {
+    title: 'Mobile App',
+    links: [
+      { title: 'Getting the App', href: '/docs/pwa-overview' },
+      { title: 'Using the App as an Attendee', href: '/docs/pwa-attendee' },
+      { title: 'Using the App as Crew', href: '/docs/pwa-crew' },
+      { title: 'Using the App Without Internet', href: '/docs/pwa-offline' },
+    ],
+  },
+  {
     title: 'Event Management',
     links: [
       { title: 'Creating an Event', href: '/docs/creating-events' },

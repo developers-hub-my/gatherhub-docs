@@ -121,6 +121,7 @@ Your basic event is ready. Here are some features to explore:
 ### Prepare for Event Day
 
 - Learn about the [check-in system](/docs/checkin-overview)
+- Have your crew [install the GatherHub app](/docs/pwa-overview) and try [scanning](/docs/pwa-crew) before the day
 - Set up [certificate templates](/docs/certificate-templates) for post-event delivery
 
 ### Invite Your Team
@@ -136,7 +137,7 @@ Your basic event is ready. Here are some features to explore:
 |------|------------------|
 | Edit event details | Event Dashboard > Settings |
 | View registrations | Event Dashboard > Participants |
-| Check in attendees | Event Dashboard > Check-In |
+| Check in attendees | Event Dashboard > Check-In, or the GatherHub app > Crew > Scan |
 | Send emails | Event Dashboard > Communication |
 | Generate certificates | Event Dashboard > Certificates |
 | View reports | Event Dashboard > Reports |

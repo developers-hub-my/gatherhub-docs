@@ -164,6 +164,8 @@ Track attendance at different levels:
    - Session Check-In
    - Activity Check-In
 
+On event day, crew scan people into sessions and activities from the [GatherHub app](/docs/pwa-crew#session): **Sessions**, pick the session, and scan. A room counter shows how full the room is.
+
 ---
 
 ## Managing Sessions
@@ -213,7 +215,7 @@ Limit participation in popular activities:
 Participants see their schedule in:
 
 - Registration confirmation email
-- Participant portal
+- The **Agenda** tab of the [GatherHub app](/docs/pwa-attendee#agenda)
 - Event day check-in
 
 ### Organizer View

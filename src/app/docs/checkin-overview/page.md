@@ -15,8 +15,8 @@ GatherHub's check-in system helps you track attendance efficiently using QR code
 - **QR Code Scanning** - Fast, contactless check-in
 - **Multi-Level Tracking** - Event, session, and activity attendance
 - **Real-Time Dashboard** - Live attendance monitoring
-- **Mobile-Friendly** - Works on any device with a camera
-- **Offline Support** - Continue checking in during connectivity issues
+- **Phone App for Crew** - Scan with the [GatherHub app](/docs/pwa-crew) on any phone with a camera
+- **Works Without Internet** - Camera scans in the app are saved and sent when the connection returns ([details](/docs/pwa-offline))
 
 ---
 
@@ -42,12 +42,14 @@ For participants without QR code:
 
 ### Self Check-In
 
-If enabled, participants can:
+If enabled, participants check themselves in from the GatherHub app:
 
-1. Scan event QR code displayed at venue
-2. Enter their ticket number
-3. Confirm their identity
-4. Check themselves in
+1. Open the event, tap **Ticket**, then **Check in**
+2. Scan the event QR code shown at the venue, or enter the code you share
+3. Fill in any details the event still needs
+4. Take a photo, if the event requires one
+
+Crew create the event QR code in the app under **More → Online QR**. Self check-in needs internet. See [Using the app as an attendee](/docs/pwa-attendee#check-in-yourself).
 
 ---
 
@@ -149,7 +151,7 @@ When scanning, system verifies:
 ### Device Requirements
 
 - Camera for QR scanning
-- Internet connection (or offline mode)
+- Internet connection (the crew view of the app keeps camera scans when the connection drops)
 - Modern web browser
 - Screen visible in lighting conditions
 
@@ -228,5 +230,6 @@ Options:
 ## Next Steps
 
 - [Learn QR code scanning](/docs/qr-scanning) in detail
+- [Use the app as crew](/docs/pwa-crew) on event day
 - [Track attendance](/docs/attendance-tracking) at multiple levels
 - [Monitor check-in](/docs/checkin-dashboard) in real-time

@@ -112,7 +112,7 @@ If the event has session-level check-in, yes. You'll check in separately for eac
 If you meet the attendance requirements:
 1. The organizer generates certificates after the event
 2. You receive an email notification
-3. Download from your participant portal
+3. Download it in the GatherHub app: open the event, tap **Ticket**, then **Certificates**
 
 ### Why don't I have a certificate?
 
@@ -190,7 +190,11 @@ Use the latest version for best experience.
 
 ### Is there a mobile app?
 
-GatherHub is a web application optimized for mobile browsers. No separate app is needed.
+Yes. You install the GatherHub app straight from your phone's browser. There's no app store. On Android, tap **Install** when asked. On iPhone, open GatherHub in Safari and choose **Share → Add to Home Screen**. Attendees and crew use the same app. See [Getting the app](/docs/pwa-overview).
+
+### Does the app work without internet?
+
+Partly. Your ticket opens without internet once you've opened the event in the app while online. Crew camera scans are saved on the phone and sent when the internet comes back. Voting, questions and searching need internet. See [Using the app without internet](/docs/pwa-offline).
 
 ### Why is the page loading slowly?
 

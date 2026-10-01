@@ -16,9 +16,9 @@ View and manage all your event registrations from the participant portal, includ
 
 Access all registrations:
 
-1. Log in to participant portal
-2. Click **My Registrations**
-3. View all registered events
+1. Open the [GatherHub app](/docs/pwa-overview), or sign in at gatherhub.app
+2. **My events** lists your registrations under **Happening now**, **Upcoming** and **Past**
+3. Tap an event to open it
 
 ### Registration Details
 
@@ -38,8 +38,8 @@ Each registration shows:
 
 ### Viewing Your Ticket
 
-1. Click on a registration
-2. Select **View Ticket**
+1. Open the event
+2. Tap **Ticket**, the centre tab
 3. See ticket details and QR code
 
 ### Ticket Contents
@@ -56,6 +56,10 @@ Each registration shows:
 - Show QR code on mobile device
 - Print ticket if preferred
 - Have ticket number as backup
+
+{% callout title="Ticket without internet" %}
+Open the event's Home once while you have internet, and the app saves your ticket on your phone. It then opens even with no signal at the venue. See [Using the app without internet](/docs/pwa-offline#your-ticket-without-internet).
+{% /callout %}
 
 ---
 
