@@ -55,6 +55,7 @@ If the organiser turned on check-in photos, you can take one here. Ask the parti
 
 | Situation | What to do |
 |---|---|
+| QR won't scan (cracked screen, glare, printout) | Tap **Type code** and enter the ticket number printed under the QR (for example `TKT-20261010-ABCDE`) |
 | No phone or a dead battery | Tap **Find guest** (or open **Guests**), search their name or email and mark them attended |
 | No signal | Keep scanning. Scans are saved on the phone and sync when you're back online. Anything that couldn't be applied waits in **More → Sync centre** |
 | Not registered at all | Send them to the Event QR poster. See the [walk-in guide](/docs/guide-walk-in) |

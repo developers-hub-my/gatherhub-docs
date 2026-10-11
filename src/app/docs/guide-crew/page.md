@@ -54,7 +54,7 @@ The crew app lives at **gatherhub.app/ops** and lists every event you crew.
 
 ## Step 5: On the day, Scan
 
-Open the event and tap **Scan** (the centre button). Point the camera at the attendee's ticket QR. If the camera can't read it, use **Find guest** to look the person up by name.
+Open the event and tap **Scan** (the centre button). Point the camera at the attendee's ticket QR. If the camera can't read it, tap **Type code** and enter the ticket number printed under the QR, or use **Find guest** to look the person up by name.
 
 {% figure src="/images/guides/19b-crew-ops-scan.jpg" alt="Check-in scan screen with the camera area, the checked-in counter, and Type code and Find guest buttons" caption="Scan: the counter at the top shows how many are in." width=300 /%}
 
