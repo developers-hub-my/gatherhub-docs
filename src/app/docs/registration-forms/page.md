@@ -100,6 +100,8 @@ Collected for each attendee:
 6. Receive confirmation
 ```
 
+{% figure src="/images/guides/24-attendee-registration-drawer.jpg" alt="Register for Event panel with the ticket, quantity, discount code and contact details" caption="The registration panel on the event page." /%}
+
 ### Multiple Attendees
 
 ```

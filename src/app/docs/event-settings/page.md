@@ -78,6 +78,10 @@ When capacity is reached:
 | Allow Modifications | Participants can edit their registration details |
 | Allow Cancellations | Participants can cancel their own registrations |
 
+**Quick registration** (Details → Registration) lets guests register for free tickets with only name, email and phone, without an account. Turn it on for events with walk-ins. A **data & privacy notice** here adds a required consent checkbox to the form.
+
+{% figure src="/images/guides/07-organiser-quick-registration.jpg" alt="Event Details, Registration tab, with the Quick registration switch and the data and privacy notice field" caption="Details → Registration." /%}
+
 ---
 
 ## Check-In Settings

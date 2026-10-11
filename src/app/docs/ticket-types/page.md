@@ -26,8 +26,12 @@ Each event needs at least one ticket type. Ticket types can represent:
 ### Add a Ticket Type
 
 1. Go to your event dashboard
-2. Click **Tickets** in the sidebar
+2. Click **Ticket Types** in the sidebar
 3. Click **Add Ticket Type**
+
+{% figure src="/images/guides/08-organiser-add-free-ticket.jpg" alt="Add ticket type form with name, price, early bird price, description and capacity" caption="Adding a free Walk-in / Guest ticket (price 0)." /%}
+
+{% figure src="/images/guides/09-organiser-ticket-types.jpg" alt="Ticket Types list with Early Bird, Standard, VIP and a free Walk-in / Guest ticket" caption="Ticket types. Free tickets show a FREE badge." /%}
 
 ### Basic Settings
 

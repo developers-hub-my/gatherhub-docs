@@ -20,7 +20,9 @@ Set up your GatherHub account and organization to start creating and managing ev
    - Full name
    - Email address
    - Password (minimum 8 characters)
-4. Click **Create Account**
+4. Click **Create account**
+
+{% figure src="/images/guides/01-organiser-register.jpg" alt="Create an account form with name, email, password and confirm password" caption="Create an account." /%}
 
 ### Step 2: Verify Your Email
 
@@ -28,8 +30,12 @@ Set up your GatherHub account and organization to start creating and managing ev
 2. Click the verification link in the email
 3. You'll be redirected to the login page
 
+Until you verify, GatherHub shows this screen. Use **Resend verification email** if the email hasn't arrived.
+
+{% figure src="/images/guides/02-organiser-verify-email.jpg" alt="Please verify your email address screen with Resend verification email and Log out" caption="Verify your email to continue." /%}
+
 {% callout type="warning" title="Didn't receive the email?" %}
-Check your spam folder. If you still can't find it, click "Resend verification email" on the login page.
+Check your spam folder. If you still can't find it, click **Resend verification email** on the verification screen.
 {% /callout %}
 
 ### Step 3: Complete Your Profile

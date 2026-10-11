@@ -32,11 +32,13 @@ The event creation wizard starts with basic details:
 | Description | Overview of what the event covers |
 | Start Date | When the event begins |
 | End Date | When the event ends |
-| Visibility | Draft (private) or Published (public) |
+| Visibility | Public (listed), Private (optional access code) or Unlisted (link only) |
 
 {% callout type="note" title="Tip" %}
-You can save as draft and publish later. Draft events are only visible to you and your crew members.
+Every new event is saved as a draft. Drafts are only visible to you and your crew members until you publish.
 {% /callout %}
+
+{% figure src="/images/guides/03-organiser-wizard-basic.jpg" alt="Event wizard step 1, Basic Information, with title, description, dates and visibility" caption="Step 1 of the wizard: basic information." /%}
 
 ---
 
@@ -89,9 +91,11 @@ Example ticket setup for a free workshop:
 
 To make your event visible to participants:
 
-1. Go to your event dashboard
+1. On Event Home, open the **Publish** step. It shows a preview of your public event page
 2. Click **Publish Event**
 3. Copy the event URL to share with potential attendees
+
+{% figure src="/images/guides/10-organiser-preview-publish.jpg" alt="Preview mode banner with Edit Event and Publish Event above the event page preview" caption="Preview mode: Publish Event goes live." /%}
 
 {% callout type="warning" title="Important" %}
 Published events can receive registrations immediately. Make sure your ticket settings and registration form are configured before publishing.

@@ -20,6 +20,12 @@ GatherHub offers multiple payment methods to suit different participant preferen
 
 ---
 
+Paid orders open **Complete your order**, where the participant picks a payment channel and pays.
+
+{% figure src="/images/guides/25-attendee-order-payment.jpg" alt="Complete your order page with the payment channel, Pay button and order summary" caption="Complete your order. Channels shown depend on your setup." /%}
+
+---
+
 ## FPX (Online Banking)
 
 ### How FPX Works

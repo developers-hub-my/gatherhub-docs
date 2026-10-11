@@ -42,6 +42,12 @@ Each registration shows:
 2. Tap **Ticket**, the centre tab
 3. See ticket details and QR code
 
+{% figure src="/images/guides/30-attendee-me-ticket.jpg" alt="My Ticket screen with the QR code, ticket number and ticket type" caption="Your ticket in the app." width=300 /%}
+
+Right after registering, the order page shows the same ticket with **Download ticket (PDF)**.
+
+{% figure src="/images/guides/26-attendee-order-ticket.jpg" alt="You're registered page with the ticket QR, ticket number and Download ticket PDF" caption="The ticket on the order page." /%}
+
 ### Ticket Contents
 
 | Element | Description |

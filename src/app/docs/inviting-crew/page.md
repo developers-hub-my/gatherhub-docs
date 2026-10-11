@@ -29,13 +29,16 @@ Invite team members to help manage your event by sending email invitations with 
 ### Send an Invitation
 
 1. Go to event dashboard
-2. Click **Crew** in sidebar
-3. Click **Invite Crew Member**
+2. Click **Crew Members** in the sidebar
+3. Click **Add Crew Member**, then choose **Invite by Email** (or **Select User** for someone already in your organization)
 4. Fill in details:
    - Email address
-   - Role (Organizer, Coordinator, Staff, Volunteer, Speaker)
-   - Personal message (optional)
-5. Click **Send Invitation**
+   - Name (optional)
+   - Role (Organizer, Coordinator, Staff, Volunteer, Floor Manager, Speaker)
+   - Display title (optional)
+5. Click **Add Member**
+
+{% figure src="/images/guides/12-organiser-add-crew.jpg" alt="Add Crew Member dialog with Invite by Email, email, name, role and display title" caption="Add Crew Member → Invite by Email." /%}
 
 ### Invitation Form
 
@@ -123,6 +126,8 @@ Click here to accept this invitation:
 
 ## Managing Pending Invitations
 
+{% figure src="/images/guides/13-organiser-crew-pending.jpg" alt="Event Crew page with one pending invitation and Resend and Cancel buttons" caption="Pending invitations, with Resend and Cancel." /%}
+
 ### Resend Invitation
 
 If they haven't accepted:
@@ -154,8 +159,10 @@ When crew member accepts:
 
 1. Account linked to event
 2. Role permissions applied
-3. Event appears in their dashboard
-4. They can start working
+3. They see **Welcome to the Crew!** and an **Open crew app** button
+4. The event appears in their crew app at gatherhub.app/ops
+
+{% figure src="/images/guides/18-crew-welcome.jpg" alt="Welcome to the Crew page with the role and the Open crew app button" caption="Welcome to the Crew." /%}
 
 ### Crew Member Experience
 
@@ -182,9 +189,15 @@ If they already have an account:
 
 If they don't have an account:
 
-- Prompted to create account
-- Account linked to invitation
-- Event access after account creation
+1. **Accept Invitation** on the invitation page
+2. **Login Required** → **Create Account**. The invited email is already filled in
+3. After sign-up they come back to the invitation and it is accepted automatically
+
+{% figure src="/images/guides/15-crew-invitation.jpg" alt="You're Invited page with the event, role, expiry date and Accept Invitation" caption="The invitation page." /%}
+
+{% figure src="/images/guides/16-crew-login-required.jpg" alt="Login Required card with Log In and Create Account" caption="Login Required." /%}
+
+{% figure src="/images/guides/17-crew-register-prefilled.jpg" alt="Create an account form with the invited email already filled in" caption="The invited email is filled in." /%}
 
 ---
 

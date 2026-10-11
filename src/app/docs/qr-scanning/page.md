@@ -168,7 +168,9 @@ Normal flow:
 1. Scan successful
 2. Participant confirmed
 3. Welcome them
-4. Click "Next" for more scans
+4. Tap **Scan Next** for more scans
+
+{% figure src="/images/guides/27-gate-success.jpg" alt="Green Checked in result with the participant, ticket number and Scan Next" caption="Checked in." width=300 /%}
 
 ### Already Checked In
 

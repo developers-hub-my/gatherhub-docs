@@ -49,6 +49,8 @@ If enabled, participants check themselves in from the GatherHub app:
 3. Fill in any details the event still needs
 4. Take a photo, if the event requires one
 
+{% figure src="/images/guides/14-online-qr-present.jpg" alt="Online QR on a phone with an Active badge, the QR and the 6-letter code" caption="The Online QR, shown by crew." width=300 /%}
+
 Crew create the event QR code in the app under **More → Online QR**. Self check-in needs internet. See [Using the app as an attendee](/docs/pwa-attendee#check-in-yourself).
 
 ---

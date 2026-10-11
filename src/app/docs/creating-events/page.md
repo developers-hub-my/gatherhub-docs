@@ -62,12 +62,15 @@ Use the rich text editor to format your description with headings, bullet points
 
 | Option | Description |
 |--------|-------------|
-| Draft | Event is hidden from public view. Only you and crew members can see it. |
-| Published | Event is visible on your event page and open for registration. |
+| Public | Listed in the event directory and on your organization page |
+| Private | Not listed. You can set an access code in event details that people need to register |
+| Unlisted | Not listed. Anyone with the link can open it |
 
 {% callout type="note" title="Recommendation" %}
-Start with Draft mode to configure all settings before publishing. You can publish when ready.
+Every new event is saved as a draft, whatever the visibility. Nobody can register until you publish.
 {% /callout %}
+
+{% figure src="/images/guides/03-organiser-wizard-basic.jpg" alt="Event wizard step 1, Basic Information, with title, description, dates and visibility" caption="Step 1: basic information." /%}
 
 ---
 
@@ -111,6 +114,8 @@ For hybrid events, configure both:
 - Physical venue details for in-person attendees
 - Virtual meeting link for remote participants
 
+{% figure src="/images/guides/04-organiser-wizard-location.jpg" alt="Event wizard step 2, Location and Category, with location type, venue, city, country, category and tags" caption="Step 2: location and category." /%}
+
 ---
 
 ## Step 3: Review and Create
@@ -124,9 +129,15 @@ Before creating your event, review:
 
 Click **Create Event** to proceed.
 
+{% figure src="/images/guides/05-organiser-wizard-review.jpg" alt="Event wizard step 3, Review and Create, with the event summary and a note that it will be saved as draft" caption="Step 3: review, then Create Event." /%}
+
 ---
 
 ## After Creating Your Event
+
+You land on **Event Home**. Its setup checklist shows what is left before you can publish.
+
+{% figure src="/images/guides/06-organiser-event-home.jpg" alt="Event Home with stats, the before-the-event checklist and the setup progress card" caption="Event Home and its setup checklist." /%}
 
 Once created, your event dashboard gives you access to:
 
@@ -154,9 +165,13 @@ To make your event visible to participants:
    - Registration form settings
    - Payment methods (for paid events)
 
-2. Click **Publish Event** on the event dashboard
+2. On Event Home, open the **Publish** step. It shows a preview of your event page. Click **Publish Event**
 
-3. Share your event URL with potential attendees
+3. Share your event URL with potential attendees. **Details** also has the **Event QR** (PNG or SVG) for posters and slides
+
+{% figure src="/images/guides/10-organiser-preview-publish.jpg" alt="Preview mode banner with Edit Event and Publish Event above the event page preview" caption="Preview, then Publish Event." /%}
+
+{% figure src="/images/guides/11-organiser-event-qr.jpg" alt="Event Details with the public event link and the Event QR with PNG and SVG downloads" caption="The public link and Event QR, once published." /%}
 
 {% callout type="warning" title="Before publishing" %}
 Published events can immediately receive registrations. Make sure all settings are configured correctly.
