@@ -16,7 +16,7 @@ View and manage all your event registrations from the participant portal, includ
 
 Access all registrations:
 
-1. Open the [GatherHub app](/docs/pwa-overview), or sign in at gatherhub.app
+1. Open the [GatherHub app](/docs/pwa-overview), or sign in at my.gatherhub.app
 2. **My events** lists your registrations under **Happening now**, **Upcoming** and **Past**
 3. Tap an event to open it
 
@@ -120,7 +120,7 @@ The ticket shows **Transfer Pending** until the other person responds.
 
 You can't cancel a registration yourself. For a paid ticket, request a refund instead:
 
-1. Go to **My Tickets** (gatherhub.app/my-tickets)
+1. Go to **My Tickets** (my.gatherhub.app/my-tickets)
 2. Click **Request Refund** on the ticket (shown only when the ticket is eligible)
 3. Give your reason and bank details
 4. Click **Submit Refund Request**

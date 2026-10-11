@@ -59,7 +59,7 @@ export function Hero() {
               </p>
               <div className="mt-8 flex gap-4 md:justify-center lg:justify-start">
                 <Button href="/docs/quick-start">Get started</Button>
-                <Button href="https://gatherhub.app" variant="secondary">
+                <Button href="https://my.gatherhub.app" variant="secondary">
                   Go to GatherHub
                 </Button>
               </div>

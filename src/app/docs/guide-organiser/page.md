@@ -12,7 +12,7 @@ Set up your event, open registration and get your crew in place. This guide foll
 
 ## Step 1: Create your account
 
-Go to **gatherhub.app/register** and fill in your name, email and password. A personal organisation is created for you, so you can start right away.
+Go to **my.gatherhub.app/register** and fill in your name, email and password. A personal organisation is created for you, so you can start right away.
 
 {% figure src="/images/guides/01-organiser-register.jpg" alt="Create an account form with name, email, password and confirm password" caption="Create an account." /%}
 

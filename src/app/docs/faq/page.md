@@ -124,7 +124,7 @@ Possible reasons:
 
 ### Can I verify my certificate?
 
-Yes. Every certificate has a QR code and number that can be verified at gatherhub.app/verify.
+Yes. Every certificate has a QR code and number that can be verified at my.gatherhub.app/verify.
 
 ### Can I get a replacement certificate?
 
@@ -138,7 +138,7 @@ Contact the event organizer. They can regenerate your certificate if needed.
 
 You can:
 1. Register for an event (account created automatically)
-2. Sign up at gatherhub.app
+2. Sign up at my.gatherhub.app
 
 ### How do I reset my password?
 

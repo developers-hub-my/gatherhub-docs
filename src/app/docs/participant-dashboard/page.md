@@ -17,7 +17,7 @@ The participant portal gives registered attendees a personal dashboard to manage
 Participants can access their portal:
 
 1. **From confirmation email** - Click portal link
-2. **Direct URL** - gatherhub.app/me
+2. **Direct URL** - my.gatherhub.app/me
 3. **The GatherHub app** - [install it on your phone](/docs/pwa-overview); it opens here
 4. **From event page** - Click "My Registrations"
 

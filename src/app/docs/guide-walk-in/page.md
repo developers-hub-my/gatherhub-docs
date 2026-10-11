@@ -57,6 +57,6 @@ Registering doesn't check you in by itself. The crew scan your QR at the entranc
 | Situation | What to do |
 |---|---|
 | Already registered with that email | Tap **Email my ticket again** on the event page |
-| Already have an account and signed in | Register as usual; your ticket is also in the app at **gatherhub.app/me** |
+| Already have an account and signed in | Register as usual; your ticket is also in the app at **my.gatherhub.app/me** |
 | Only paid tickets on sale | Sign in and pay on your phone, or ask the crew to help |
 | No crew at the door, or an online event | The organiser shows an **Online QR** on a screen. Scan it to check yourself in |

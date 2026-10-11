@@ -42,7 +42,7 @@ After you sign up or log in, you come straight back to the invitation and it is 
 
 ## Step 4: Get the crew app ready
 
-The crew app lives at **gatherhub.app/ops** and lists every event you crew.
+The crew app lives at **my.gatherhub.app/ops** and lists every event you crew.
 
 1. Open it on your phone and add it to your home screen from the browser menu.
 2. Allow camera access when asked.

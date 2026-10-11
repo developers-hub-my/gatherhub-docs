@@ -57,7 +57,7 @@ Once paid (or registered), the page shows **You're registered!** with your ticke
 
 {% figure src="/images/guides/26-attendee-order-ticket.jpg" alt="You're registered page with the ticket QR, ticket number, Download ticket PDF and order summary" caption="Your ticket, also sent by email." /%}
 
-Signed in? Your ticket is also under the **Ticket** tab of the app at **gatherhub.app/me**. Open it once before the day: it then opens offline too.
+Signed in? Your ticket is also under the **Ticket** tab of the app at **my.gatherhub.app/me**. Open it once before the day: it then opens offline too.
 
 {% figure src="/images/guides/30-attendee-me-ticket.jpg" alt="My Ticket screen in the attendee app with the QR code, ticket number and ticket type" caption="My Ticket in the app." width=300 /%}
 

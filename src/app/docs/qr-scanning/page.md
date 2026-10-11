@@ -37,7 +37,7 @@ The QR code contains a check-in link with the ticket's unique, random QR ID. The
 
 ### Direct URL
 
-The check-in page is at `gatherhub.app/manage/events/<event-id>/check-in`, where `<event-id>` is the long ID in your event's dashboard address. Bookmark it from the event menu instead of typing it.
+The check-in page is at `my.gatherhub.app/manage/events/<event-id>/check-in`, where `<event-id>` is the long ID in your event's dashboard address. Bookmark it from the event menu instead of typing it.
 
 ### Handheld Scanner
 

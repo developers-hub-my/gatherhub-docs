@@ -57,7 +57,7 @@ function Header() {
       </div>
       <div className="relative flex basis-0 justify-end gap-6 sm:gap-8 md:grow">
         <ThemeSelector className="relative z-10" />
-        <Link href="https://gatherhub.app" className="group" aria-label="GatherHub App">
+        <Link href="https://my.gatherhub.app" className="group" aria-label="GatherHub App">
           <span className="text-sm font-medium text-slate-500 group-hover:text-slate-700 dark:text-slate-400 dark:group-hover:text-slate-200">
             Go to App →
           </span>

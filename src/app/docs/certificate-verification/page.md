@@ -40,7 +40,7 @@ Each certificate includes a QR code and unique number that links to a verificati
 
 ### Verification URL
 
-The verification URL follows this format: `gatherhub.app/verify/CERT123456` where the last part is the unique certificate number.
+The verification URL follows this format: `my.gatherhub.app/verify/CERT123456` where the last part is the unique certificate number.
 
 ---
 
@@ -321,7 +321,7 @@ Add messages like:
 Add verification to your website:
 
 ```html
-<iframe src="gatherhub.app/verify/embed" />
+<iframe src="my.gatherhub.app/verify/embed" />
 ```
 
 ### API Integration

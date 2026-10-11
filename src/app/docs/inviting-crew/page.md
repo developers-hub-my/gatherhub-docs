@@ -146,7 +146,7 @@ When crew member accepts:
 1. Account linked to event
 2. Role permissions applied
 3. They see **Welcome to the Crew!** and an **Open crew app** button
-4. The event appears in their crew app at gatherhub.app/ops
+4. The event appears in their crew app at my.gatherhub.app/ops
 
 {% figure src="/images/guides/18-crew-welcome.jpg" alt="Welcome to the Crew page with the role and the Open crew app button" caption="Welcome to the Crew." /%}
 
@@ -156,7 +156,7 @@ They will:
 
 1. Click accept link
 2. Sign in or create account
-3. See the event in their crew app at gatherhub.app/ops
+3. See the event in their crew app at my.gatherhub.app/ops
 4. Access permitted features
 
 ---

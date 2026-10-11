@@ -16,7 +16,7 @@ You need a GatherHub account to create events. If you haven't signed up yet, see
 
 ## Step 1: Access the Event Dashboard
 
-1. Log in to GatherHub at [gatherhub.app](https://gatherhub.app)
+1. Log in to GatherHub at [my.gatherhub.app](https://my.gatherhub.app)
 2. From the main dashboard, click **Events** in the sidebar
 3. Click the **New Event** button
 
