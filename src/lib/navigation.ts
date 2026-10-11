@@ -8,6 +8,17 @@ export const navigation = [
     ],
   },
   {
+    title: 'Event-Day Guides',
+    links: [
+      { title: 'Overview', href: '/docs/event-day-guides' },
+      { title: 'Organiser', href: '/docs/guide-organiser' },
+      { title: 'Crew', href: '/docs/guide-crew' },
+      { title: 'Pre-registered Attendee', href: '/docs/guide-pre-registered' },
+      { title: 'Walk-in', href: '/docs/guide-walk-in' },
+      { title: 'At the Gate', href: '/docs/guide-at-the-gate' },
+    ],
+  },
+  {
     title: 'Mobile App',
     links: [
       { title: 'Getting the App', href: '/docs/pwa-overview' },
