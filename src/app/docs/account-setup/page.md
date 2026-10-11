@@ -15,7 +15,7 @@ Set up your GatherHub account and organization to start creating and managing ev
 ### Step 1: Sign Up
 
 1. Go to [gatherhub.app](https://gatherhub.app)
-2. Click **Get Started** or **Sign Up**
+2. Click **Sign Up**
 3. Enter your details:
    - Full name
    - Email address

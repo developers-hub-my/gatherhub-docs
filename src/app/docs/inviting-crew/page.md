@@ -156,7 +156,7 @@ They will:
 
 1. Click accept link
 2. Sign in or create account
-3. See event in their dashboard
+3. See the event in their crew app at gatherhub.app/ops
 4. Access permitted features
 
 ---
