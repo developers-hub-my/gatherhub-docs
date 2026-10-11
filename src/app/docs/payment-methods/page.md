@@ -14,9 +14,11 @@ GatherHub offers multiple payment methods to suit different participant preferen
 
 | Method | Type | Speed | Best For |
 |--------|------|-------|----------|
-| FPX | Online Banking | Instant | Most transactions |
+| FPX Online Banking | Online Banking | Instant | Most transactions |
 | DuitNow QR | QR Payment | Instant | Mobile users |
-| Manual Transfer | Bank Transfer | 1-3 days | Corporate, offline |
+| Bank Transfer | Manual transfer | When you approve | Corporate, offline |
+
+FPX and DuitNow QR are processed through BayarCash. Free tickets skip payment: signed-in participants click **Confirm Free Registration**.
 
 ---
 
@@ -30,7 +32,7 @@ Paid orders open **Complete your order**, where the participant picks a payment 
 
 ### How FPX Works
 
-1. Participant selects FPX at checkout
+1. Participant selects **FPX Online Banking** and clicks **Pay RM ...**
 2. Chooses their bank from the list
 3. Redirected to bank's login page
 4. Authenticates and approves payment
@@ -90,7 +92,7 @@ Bank Login Page
 
 ### How DuitNow QR Works
 
-1. Participant selects DuitNow QR
+1. Participant selects **DuitNow QR** and clicks **Pay RM ...**
 2. QR code is displayed on screen
 3. Opens banking app on phone
 4. Scans the QR code
@@ -139,42 +141,47 @@ Any Malaysian bank app supporting DuitNow:
 
 ### How Manual Transfer Works
 
-1. Participant selects Manual Transfer
-2. Bank details are displayed
-3. Participant makes transfer via:
+1. Participant selects **Bank Transfer**
+2. **Bank transfer details** are displayed
+3. Participant clicks **Submit Order (Pending Approval)**
+4. Participant makes transfer via:
    - Online banking
    - ATM
    - Over the counter
-4. Uploads proof of payment
-5. Organizer approves
+5. Uploads proof of payment on the order page
+6. Organizer approves
 
 ### What Participants See
 
 ```
-Bank: Maybank
-Account Number: 1234567890
-Account Name: ABC Organization Sdn Bhd
-Reference: ORD-2024-001234
+Bank transfer details
+Bank: [Bank name]
+Account no: [Account number]
+Account name: [Account holder]
+Amount to pay: RM [Total]
+Payment reference: [Order ID]
 
-Please transfer the exact amount and use
-the reference number for identification.
+Please include your Order ID as payment reference.
 ```
+
+The bank account shown is GatherHub's collection account, set by the platform administrator. It is not your organization's own account.
 
 ### Proof of Payment
 
-Participants can upload:
+Under **Upload payment receipt**, participants can upload one file (PNG, JPG, GIF or PDF, up to 5MB), such as:
 
 - Screenshot of transfer confirmation
 - Photo of ATM receipt
 - Bank statement excerpt
-- Transaction reference
+
+They can add **Notes (optional)**, for example the transaction reference.
 
 ### Approval Process
 
-1. Payment notification received
-2. Review proof of payment
+1. Go to **Payment Approvals** in the event menu
+2. Review the **Payment Receipt** and **Buyer's Notes**
 3. Verify amount and reference
-4. Approve or reject
+4. Click **Approve Payment** or **Reject Payment**
 
 | Status | Action |
 |--------|--------|
@@ -189,7 +196,7 @@ Participants can upload:
 
 | Feature | FPX | DuitNow QR | Manual |
 |---------|-----|------------|--------|
-| Speed | Instant | Instant | 1-3 days |
+| Speed | Instant | Instant | When you approve |
 | User effort | Medium | Low | High |
 | Organizer effort | None | None | Approval needed |
 | Mobile-friendly | Limited | Excellent | Good |
@@ -200,19 +207,20 @@ Participants can upload:
 
 ## Enabling/Disabling Methods
 
-### Organization Level
+### Platform Level
 
-1. Go to **Organization Settings**
-2. Click **Payment Settings**
-3. Toggle methods on/off
-4. Save
+Payment channels are set once for the whole platform by the GatherHub administrator. Organizations and events can't turn individual channels on or off. Participants see the channels that are enabled.
 
 ### Event Level
 
-1. Go to event **Settings**
-2. Click **Payment**
-3. Enable/disable for this event
-4. Save
+**Payment Settings** in the event menu sets the **Platform Fee Mode**:
+
+| Option | What happens |
+|--------|--------------|
+| Organizer Absorbs Fee | Fee is deducted from your earnings. Buyers pay only the ticket price |
+| Buyer Pays Fee | Fee is added to the ticket price. You receive the full ticket amount |
+
+Ticket income reaches you through **Payouts** to your organization's **Bank Accounts**.
 
 ---
 
@@ -220,18 +228,14 @@ Participants can upload:
 
 ### Timeout Settings
 
-| Method | Default | Adjustable |
-|--------|---------|------------|
-| FPX | 30 min | 15-60 min |
-| DuitNow | 30 min | 15-60 min |
-| Manual | 72 hours | 24h-7 days |
+A payment session expires after **30 minutes** by default. The platform administrator sets this (**Payment Intent Expiry**). Organizers can't change it per event.
 
 ### What Happens on Timeout
 
 1. Payment session expires
-2. Registration is cancelled (if enabled)
-3. Spot is released
-4. Participant can re-register
+2. The order stays unpaid and no ticket is issued
+3. The participant can open the order and pay again
+4. GatherHub emails a reminder to buyers who left checkout without paying. You can see them under **Left Checkout**
 
 ---
 
@@ -272,14 +276,14 @@ Participants can upload:
 
 Use Manual Transfer for corporate bookings:
 
-1. Send invoice with bank details
+1. The company registers and picks **Bank Transfer**
 2. Company processes payment
-3. Finance uploads receipt
-4. You approve and confirm
+3. Finance uploads the receipt on the order page
+4. You approve under **Payment Approvals**
 
 ### Invoice Details
 
-Include in invoice:
+GatherHub doesn't generate invoices. If the company needs one, include:
 
 - Event name and date
 - Ticket details
@@ -293,21 +297,19 @@ Include in invoice:
 
 ### Automatic Receipts
 
-After successful payment:
+GatherHub doesn't send a separate receipt document. After successful payment:
 
-- Receipt is generated automatically
-- Sent via email to participant
-- Available in participant portal
+- The ticket confirmation email is sent to the buyer, with the tickets attached as PDF
+- The order page shows the payment details
+- Tickets are available in the participant portal
 
-### Receipt Contents
+### Order Page Contents
 
-- Organization name
 - Event name
-- Order number
-- Payment method
-- Amount paid
-- Transaction ID
-- Date and time
+- Registration details
+- Payment method and payment channel
+- Platform fee, if the buyer pays it
+- Total
 
 ---
 
@@ -315,11 +317,11 @@ After successful payment:
 
 ### For Organizers
 
-- Enable multiple payment methods
-- Set appropriate timeouts
+- Pick the right **Platform Fee Mode** before you publish
+- Watch **Left Checkout** for buyers who didn't finish
 - Monitor pending payments
 - Process approvals quickly
-- Keep bank details updated
+- Keep your payout bank account updated
 
 ### For Participants
 

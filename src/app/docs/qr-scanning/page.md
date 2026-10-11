@@ -16,18 +16,14 @@ QR code scanning provides the fastest and most reliable way to check in particip
 
 Each registered participant receives a unique QR code:
 
-- Sent in confirmation email
+- Sent in confirmation email, with a PDF ticket attached
 - Available in the [GatherHub app](/docs/pwa-attendee) under **Ticket**
 - Can be displayed on mobile device, even without internet once saved
-- Can be printed from ticket
+- Can be printed from the PDF ticket
 
 ### What's Encoded
 
-The QR code contains:
-
-- Ticket identifier
-- Verification hash
-- Event reference
+The QR code contains a check-in link with the ticket's unique, random QR ID. The ticket itself also has a **Ticket Number** that crew can type in if the QR won't scan.
 
 ---
 
@@ -36,12 +32,16 @@ The QR code contains:
 ### From Event Dashboard
 
 1. Go to your event dashboard
-2. Click **Check-In** in the sidebar
-3. Scanner opens automatically
+2. Click **On-site Check-In** in the event menu
+3. Click **Scan QR Code with Camera**
 
 ### Direct URL
 
-Access check-in directly at `gatherhub.app/manage/events/123/check-in` (replacing 123 with your event ID).
+The check-in page is at `gatherhub.app/manage/events/<event-id>/check-in`, where `<event-id>` is the long ID in your event's dashboard address. Bookmark it from the event menu instead of typing it.
+
+### Handheld Scanner
+
+On the **On-site Check-In** page, turn on **Handheld scanner mode**, plug in a USB or Bluetooth barcode scanner, and scan. The page captures the scan and checks the ticket in automatically.
 
 ### On a Phone: the Crew View of the App
 
@@ -61,7 +61,7 @@ The app scans at the gate, at sessions, at activities and for kit, and keeps sca
 
 ### Scanning Process
 
-1. Click **Scan QR Code** (if not auto-started)
+1. Click **Scan QR Code with Camera**
 2. Allow camera access when prompted
 3. Point camera at QR code
 4. Hold steady until scanned
@@ -82,7 +82,7 @@ If scan fails:
 
 - Red error message appears
 - Reason displayed
-- Options to retry or search manually
+- Scan again, or type the code under **Or enter manually** (**QR UUID** or **Ticket Number**)
 
 ---
 
@@ -96,13 +96,9 @@ First time using scanner:
 2. Click "Allow"
 3. Camera activates
 
-### Switching Cameras
+### Which Camera
 
-On devices with multiple cameras:
-
-1. Click camera toggle icon
-2. Switch between front/back cameras
-3. Select best camera for scanning
+The scanner always uses the back camera. There is no front/back toggle.
 
 ### Troubleshooting Camera
 
@@ -111,7 +107,7 @@ On devices with multiple cameras:
 | No camera prompt | Check browser permissions |
 | Black screen | Allow camera in device settings |
 | Blurry image | Clean camera lens |
-| Wrong camera | Switch to other camera |
+| Wrong camera | Use a device with a back camera |
 
 ---
 
@@ -131,7 +127,7 @@ On devices with multiple cameras:
 |-----------|----------|
 | Low light | Increase screen brightness |
 | Glare on screen | Angle device differently |
-| Damaged QR | Try manual search |
+| Damaged QR | Type the ticket number |
 | Small QR code | Move closer or zoom |
 
 ---
@@ -142,20 +138,20 @@ On devices with multiple cameras:
 
 | Element | Description |
 |---------|-------------|
-| Camera viewfinder | Shows camera feed |
-| Scan indicator | Frame showing scan area |
-| Flash toggle | Turn on device flash |
-| Camera switch | Toggle front/back camera |
-| Manual search | Search without scanning |
+| Total Tickets, Checked In, Pending | Live counts for the event |
+| Check-in photo | Off, Optional or Required photo at check-in |
+| Scan QR Code with Camera | Opens the camera scanner |
+| Or enter manually | Check in by **QR UUID** or **Ticket Number** |
+| Recent Check-Ins | The latest people checked in |
 
 ### After Successful Scan
 
 | Element | Description |
 |---------|-------------|
-| Participant name | Who was checked in |
-| Ticket type | Their ticket |
-| Check-in time | When checked in |
-| Next scan | Button to continue |
+| Ticket Number | The ticket scanned |
+| Ticket Type | Their ticket |
+| Participant | Name and email |
+| Check-in Time | When checked in |
 
 ---
 
@@ -176,9 +172,9 @@ Normal flow:
 
 If participant scans again:
 
-- Warning shows they're already checked in
+- **Ticket already checked in.** shows
 - Original check-in time displayed
-- Choose to allow re-entry or note
+- They are not checked in twice. There is no re-entry option
 
 ### Invalid Ticket
 
@@ -186,9 +182,11 @@ If ticket is not valid:
 
 - Error message explains why
 - Common reasons:
-  - Wrong event
-  - Cancelled registration
-  - Not yet paid
+  - Wrong event (**Ticket not found for this event.**)
+  - Cancelled registration (**Ticket has been cancelled.**)
+  - Not yet paid (**Ticket not paid. Please complete payment first.**)
+  - Too early (**Check-in is not open yet.** Crew can scan from 60 minutes before the start)
+  - Wrong gate, if you use **Gates**
 - Direct to registration desk
 
 ---
@@ -241,7 +239,6 @@ A guest scanned on two phones is counted once. It doesn't create a duplicate che
 3. Anything GatherHub didn't accept appears in the **Sync centre**, where you can retry or discard it
 
 See [Using the app without internet](/docs/pwa-offline) for details.
-4. Any conflicts flagged
 
 ---
 
@@ -250,7 +247,7 @@ See [Using the app without internet](/docs/pwa-offline) for details.
 ### QR Code Security
 
 - Each QR code is unique
-- Contains verification hash
+- Uses a random ID, not a running number
 - Cannot be easily guessed
 - Logged when scanned
 
@@ -271,7 +268,7 @@ See [Using the app without internet](/docs/pwa-offline) for details.
 |--------|-------|
 | Modern smartphone | Best camera quality |
 | Tablet | Larger screen for visibility |
-| Dedicated scanner | For high-volume events |
+| USB / Bluetooth barcode scanner | For high-volume events, with **Handheld scanner mode** |
 
 ### Browser Support
 
@@ -292,7 +289,7 @@ See [Using the app without internet](/docs/pwa-offline) for details.
 2. Clean camera lens
 3. Try different angle
 4. Move closer/further
-5. Use manual search
+5. Type the ticket number under **Or enter manually**
 
 ### Camera not working
 

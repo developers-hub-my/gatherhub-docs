@@ -33,12 +33,14 @@ Primary check-in method:
 
 ### Manual Search
 
-For participants without QR code:
+For participants without QR code, in the crew view of the [GatherHub app](/docs/pwa-crew):
 
-1. Search by name or email
-2. Select participant from results
-3. Click to check in
-4. Confirmation displayed
+1. Open **Guests** (or tap **Find guest** on the scanner)
+2. Search by name, email, phone or ticket code
+3. Select participant from results
+4. Tap **Check in now**
+
+On the dashboard's **On-site Check-In** page, type the **Ticket Number** or **QR UUID** under **Or enter manually** instead.
 
 ### Self Check-In
 
@@ -106,9 +108,10 @@ Confirmation Shown
 When scanning, system verifies:
 
 - Valid ticket for this event
-- Registration is confirmed
-- Not already checked in (unless re-entry allowed)
-- Within check-in window
+- Ticket is paid and not cancelled
+- Not already checked in (there is no re-entry option)
+- Within check-in window (from 60 minutes before the start until 1 day after the end)
+- Right gate, if you use **Gates**
 
 ---
 
@@ -116,24 +119,22 @@ When scanning, system verifies:
 
 ### Check-In Settings
 
-1. Go to event **Settings**
-2. Click **Check-In Settings**
-3. Configure options:
+Event check-in is on for every published event. There is no single check-in settings page. The options live here:
 
-| Setting | Description |
-|---------|-------------|
-| Check-In Opens | When check-in starts |
-| Check-In Closes | When check-in ends |
-| Session Check-In | Enable per-session tracking |
-| Activity Check-In | Enable per-activity tracking |
-| Self Check-In | Allow participants to self-check |
-| Re-entry | Allow multiple check-ins |
+| Setting | Where | Description |
+|---------|-------|-------------|
+| Check-in window | Automatic | From 60 minutes before the start until 1 day after the end |
+| Session Check-In | **Features** > **Event Sessions** | Enable per-session tracking |
+| Activity Check-In | **Features** > **Event Activities** | Enable per-activity tracking |
+| Self Check-In | **Online QR Check-In**, or **More → Online QR** in the app | Show a QR participants scan to check themselves in |
+| Check-in photo | **On-site Check-In** | Off, Optional or Required |
+| Gates | **Gates** | Limit which ticket types can enter at each gate |
 
 ### Recommended Settings
 
 | Event Type | Recommendation |
 |------------|----------------|
-| Single-day workshop | Open 30 min before, close at end |
+| Single-day workshop | Event check-in only. Crew start scanning when the window opens |
 | Multi-day conference | Enable session-level check-in |
 | Training with certification | Enable activity-level check-in |
 
@@ -185,19 +186,19 @@ When scanning, system verifies:
 1. Verify correct event
 2. Search by alternative details
 3. Check registration status
-4. Add manually if needed
+4. Add them under **Participants** if needed
 
 ### Already Checked In
 
 Options:
 
 - Remind participant they're already checked in
-- Enable re-entry for multiple check-ins
-- Note for event with sessions
+- Let them through. A second scan doesn't create another check-in
+- For events with sessions, scan them at the session too. Session check-in is separate from the gate
 
 ### Invalid QR Code
 
-1. Try manual search
+1. Search for them in **Guests**
 2. Verify participant identity
 3. Check for registration issues
 4. Contact registration desk

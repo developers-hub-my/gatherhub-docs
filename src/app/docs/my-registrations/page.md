@@ -29,7 +29,7 @@ Each registration shows:
 | Event Name | Event you're registered for |
 | Date | When the event takes place |
 | Ticket Type | Your ticket |
-| Status | Confirmed, Pending, etc. |
+| Status | Active, Pending approval, etc. |
 | Check-In | Whether you've checked in |
 
 ---
@@ -75,9 +75,11 @@ Open the event's Home once while you have internet, and the app saves your ticke
 
 For events with sessions:
 
-1. View registration details
-2. See **My Sessions** section
-3. View registered sessions
+1. Open the event
+2. Go to **Agenda** > **Sessions**
+3. Sessions are grouped into **Happening now**, **Upcoming** and **Past sessions**
+
+You don't sign up for sessions in advance. Your attendance is recorded when crew check you in to a session.
 
 ### Session Information
 
@@ -85,8 +87,8 @@ For events with sessions:
 |------|-------------|
 | Session Name | Title of session |
 | Time | Start and end time |
-| Location | Room or area |
-| Status | Registered, Attended |
+| Location | Room or area, when set |
+| Status | **Attended** (with **Checked in at** time), **Missed** or **Pending** |
 
 ---
 
@@ -94,39 +96,44 @@ For events with sessions:
 
 ### What You Can Change
 
-Depending on organizer settings:
-
 | Action | Availability |
 |--------|--------------|
-| Update personal info | Usually allowed |
-| Change sessions | If enabled |
-| Cancel registration | If allowed |
-| Transfer ticket | If enabled |
+| Update registration details | Not in the app. Ask the organizer, who can edit it |
+| Change sessions | Not needed. Sessions are recorded when you check in |
+| Cancel registration | Not in the app. Request a refund or contact the organizer |
+| Transfer ticket | If the ticket type allows transfers |
 
-### How to Modify
+### How to Transfer a Ticket
 
-1. Open registration
-2. Click **Edit** (if available)
-3. Make changes
-4. Save
+1. Open the event and tap **Ticket**
+2. Tap **Transfer Ticket**
+3. Enter the new holder's details
+4. Tap **Send Transfer**
+
+The ticket shows **Transfer Pending** until the other person responds.
 
 ---
 
 ## Cancelling Registration
 
-### If Cancellation Allowed
+### Requesting a Refund
 
-1. Open registration
-2. Click **Cancel Registration**
-3. Confirm cancellation
-4. Review refund policy
+You can't cancel a registration yourself. For a paid ticket, request a refund instead:
+
+1. Go to **My Tickets** (gatherhub.app/my-tickets)
+2. Click **Request Refund** on the ticket (shown only when the ticket is eligible)
+3. Give your reason and bank details
+4. Click **Submit Refund Request**
+
+Track it under **My Refund Requests**. The status moves from **Pending** to **Approved**, **Rejected** or **Completed**. Review the event's refund policy on the event page first.
 
 ### Cancellation Effects
 
+When the organizer cancels your registration or approves your refund:
+
 - Registration cancelled
-- Spot may be released
+- Ticket no longer valid for check-in
 - Refund per event policy
-- Confirmation email sent
 
 ---
 
@@ -136,19 +143,22 @@ Depending on organizer settings:
 
 | Status | Meaning |
 |--------|---------|
-| Confirmed | Registration complete |
-| Pending Payment | Awaiting payment |
-| Pending Approval | Awaiting organizer |
+| Active | Registration complete |
+| Pending approval | Awaiting organizer |
+| Approved | Organizer approved your registration |
+| Rejected | Organizer turned down your registration |
 | Cancelled | Registration cancelled |
+
+An order you haven't paid for yet has no ticket. Open the order and pay to finish registering.
 
 ### Status Actions
 
 | Status | You Can |
 |--------|---------|
-| Confirmed | View ticket, check in |
-| Pending Payment | Complete payment |
-| Pending Approval | Wait for decision |
-| Cancelled | Re-register if open |
+| Active or Approved | View ticket, check in |
+| Unpaid order | Complete payment |
+| Pending approval | Wait for decision |
+| Rejected or Cancelled | Re-register if open |
 
 ---
 
@@ -179,7 +189,7 @@ Depending on organizer settings:
 
 ### Wrong information
 
-- Edit if allowed
+- You can't edit it yourself
 - Contact organizer for changes
 - Provide correct details
 

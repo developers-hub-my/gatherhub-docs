@@ -14,7 +14,9 @@ Configure your event settings to control how your event operates, from registrat
 
 1. Go to your **Events** dashboard
 2. Select the event you want to configure
-3. Click **Settings** in the event sidebar
+3. Click **Details** in the event menu
+
+**Details** has these tabs: **Basic Information**, **Category**, **Organizer**, **Capacity**, **Early Bird**, **Registration** and **Refund Policy**. Each tab has its own save button.
 
 ---
 
@@ -22,20 +24,21 @@ Configure your event settings to control how your event operates, from registrat
 
 ### Event Information
 
-| Setting | Description |
-|---------|-------------|
-| Title | Event name displayed to participants |
-| Slug | URL-friendly identifier (auto-generated, can be customized) |
-| Description | Rich text event details |
-| Category | Event type for organization |
+| Setting | Tab | Description |
+|---------|-----|-------------|
+| Event Title | Basic Information | Event name displayed to participants |
+| Slug | Basic Information | URL-friendly identifier (auto-generated, can be customized) |
+| Description | Basic Information | Rich text event details |
+| Event Category and Tags | Category | Help people discover your event |
+| Organizer Name, Organization, Organizer Bio, Contact Email, Contact Phone, Website | Organizer | Who is running the event, shown on the event page |
 
 ### Event Dates
 
 | Setting | Description |
 |---------|-------------|
-| Start Date/Time | When the event begins |
-| End Date/Time | When the event ends |
-| Timezone | Event timezone for scheduling |
+| Start Date & Time | When the event begins |
+| End Date & Time | When the event ends |
+| Timezone | Event timezone for scheduling. Set it under **Location** |
 
 {% callout title="Multi-day events" %}
 For events spanning multiple days, set the start date to the first day and end date to the last day. Use sessions to organize each day's schedule.
@@ -47,36 +50,27 @@ For events spanning multiple days, set the start date to the first day and end d
 
 ### Registration Window
 
-Control when participants can register:
-
-| Setting | Description |
-|---------|-------------|
-| Registration Opens | Date and time registration becomes available |
-| Registration Closes | Date and time registration ends |
+There are no separate open and close dates. Registration is open once the event is published, and closes when the event ends.
 
 {% callout type="note" title="Default behavior" %}
-If not specified, registration opens immediately when the event is published and closes at the event start time.
+Use ticket capacity to stop sales early. A ticket type that reaches its capacity shows as **Sold Out**.
 {% /callout %}
 
 ### Capacity Settings
 
-| Setting | Description |
-|---------|-------------|
-| Maximum Participants | Overall event capacity limit |
-| Enable Waitlist | Allow registrations after capacity is reached |
-
-When capacity is reached:
-- New registrations are added to the waitlist
-- Waitlisted participants are automatically notified when spots open
-- You can manually promote waitlisted participants
+| Setting | Where | Description |
+|---------|-------|-------------|
+| Max Participants | Basic Information | Overall event capacity, shown in your capacity stats |
+| Per-Date Capacity | Capacity | Cap registrations for each day of a multi-day event. Leave blank for unlimited |
+| Waitlist | Capacity | Turn on a waitlist for a date |
 
 ### Registration Options
 
-| Option | Description |
-|--------|-------------|
-| Require Approval | Registrations require manual approval before confirmation |
-| Allow Modifications | Participants can edit their registration details |
-| Allow Cancellations | Participants can cancel their own registrations |
+| Option | Where | Description |
+|--------|-------|-------------|
+| Require organiser approval | **Ticket Types** | Registrations for that ticket land as pending until you approve them |
+| Enable Early Bird Pricing | Early Bird | Use each ticket's early bird price until the **Early Bird Deadline** |
+| Refund Policy | Refund Policy | Shown on the public event page |
 
 **Quick registration** (Details → Registration) lets guests register for free tickets with only name, email and phone, without an account. Turn it on for events with walk-ins. A **data & privacy notice** here adds a required consent checkbox to the form.
 
@@ -86,47 +80,49 @@ When capacity is reached:
 
 ## Check-In Settings
 
-Configure when and how check-in operates:
-
 ### Check-In Window
 
-| Setting | Description |
-|---------|-------------|
-| Check-In Opens | When check-in becomes available |
-| Check-In Closes | When check-in ends |
+Crew can scan tickets from 60 minutes before the event starts until 1 day after it ends. The event must be published. There are no check-in open or close fields in **Details**.
 
 {% callout title="Recommended settings" %}
-Open check-in 30-60 minutes before the event starts. Close check-in at the event end time or shortly after.
+Have your crew open the scanner and test a ticket before the doors open, inside the 60-minute window.
 {% /callout %}
 
 ### Check-In Options
 
-| Option | Description |
-|--------|-------------|
-| Allow Self Check-In | Participants can check themselves in |
-| Require QR Code | Only allow check-in via QR scanning |
-| Session Check-In | Enable check-in at the session level |
-| Activity Check-In | Enable check-in at the activity level |
+| Option | Where | Description |
+|--------|-------|-------------|
+| Check-in photo | **On-site Check-In** | Off, Optional (default) or Required photo at check-in |
+| Self check-in | **Online QR Check-In** | Show a rolling QR that online participants scan to check themselves in |
+| Session check-in | **Features** > **Event Sessions** | Check-in at the session level |
+| Activity check-in | **Features** > **Event Activities** | Check-in at the activity level |
 
 ---
 
 ## Visibility Settings
 
-### Event Visibility
+### Event Status
+
+Set under **Details** > **Basic Information** > **Status**:
 
 | Status | Description |
 |--------|-------------|
-| Draft | Event is hidden from public. Only visible to you and crew members. |
-| Published | Event is visible and open for registration. |
-| Archived | Event is hidden from listings but data is preserved. |
+| Draft | Event is hidden from public. Only visible to you and crew members |
+| Published | Event is visible and open for registration |
+| Postponed | Event is on hold until new dates are set |
+| Cancelled | Event is not going ahead |
+| Completed | Event is over |
+| Archived | Event is hidden from listings but data is preserved |
 
-### Listing Options
+To publish for the first time, use the **Publish** step on Event Home.
+
+### Event Visibility
 
 | Option | Description |
 |--------|-------------|
-| Show on Organization Page | Display event on your public organization page |
-| Allow Search Indexing | Allow search engines to index the event page |
-| Featured Event | Highlight this event in your listings |
+| Public | Listed in the event directory and on your organization page |
+| Private | Not listed. You can set an **Access code** visitors must enter to view the event page |
+| Unlisted | Not listed. Anyone with the link can open it |
 
 ---
 
@@ -134,22 +130,17 @@ Open check-in 30-60 minutes before the event starts. Close check-in at the event
 
 ### Email Notifications
 
-Configure automatic emails sent to participants:
+GatherHub sends these emails automatically. They can't be turned off per event:
 
 | Email | When sent |
 |-------|-----------|
-| Registration Confirmation | Immediately after successful registration |
-| Payment Confirmation | After payment is completed |
-| Event Reminder | Before the event (configurable timing) |
-| Check-In Confirmation | After participant checks in |
-| Certificate Available | When certificate is ready for download |
+| Ticket confirmation | After a successful registration or payment |
+| Registration status | When you approve or reject a pending registration |
+| Check-in notification | After the participant checks in |
+| Certificate issued | When a certificate is issued |
+| Checkout reminder | When a buyer leaves checkout without paying |
 
-### Reminder Settings
-
-| Setting | Description |
-|---------|-------------|
-| Send Event Reminder | Enable/disable reminder emails |
-| Reminder Timing | How long before the event to send (e.g., 1 day, 1 hour) |
+To send other messages, such as a reminder before the event, use **Blast Emails**.
 
 ---
 
@@ -157,29 +148,27 @@ Configure automatic emails sent to participants:
 
 ### Custom Fields
 
-Add custom data collection for the event:
+Add custom data collection for the event under **Custom Fields**:
 
-- Event-level fields (same for all tickets)
-- Ticket-level fields (different per ticket type)
+- **Order-level** fields (collected once per order)
+- **Ticket-level** fields (collected for each ticket)
 
 See [Custom Event Fields](/docs/custom-fields) for details.
 
 ### SEO Settings
 
-Optimize your event page for search engines:
+Optimize your event page for search engines under **SEO**:
 
 | Setting | Description |
 |---------|-------------|
-| Meta Title | Custom title for search results |
-| Meta Description | Description shown in search results |
-| Social Image | Image displayed when shared on social media |
+| Meta Title | Custom title for search results. Leave blank to use the event title |
+| Meta Description | Description shown in search results (up to 500 characters) |
+
+The page shows a **Search Engine Preview** as you type.
 
 ### Integration Settings
 
-| Setting | Description |
-|---------|-------------|
-| Google Analytics ID | Track event page visits |
-| Facebook Pixel ID | Track conversions for Facebook ads |
+Google Analytics and the Meta Pixel are set up once for the whole platform by the administrator, not per event.
 
 ---
 
@@ -191,17 +180,16 @@ These actions can significantly affect your event and may not be reversible.
 
 ### Cancel Event
 
-Canceling an event:
-- Notifies all registered participants
-- Prevents new registrations
+Set **Status** to **Cancelled** in **Details** > **Basic Information**. Canceling an event:
+- Does not notify participants (send a blast email yourself)
 - Does not automatically process refunds (handle manually)
 
 ### Delete Event
 
-Deleting an event:
-- Permanently removes all event data
-- Cannot be undone
-- Consider archiving instead to preserve data
+On the **Events** list, open the event's menu and click **Delete**. Deleting an event:
+- Removes it from your events list
+- Can't be undone in the app
+- Consider setting **Status** to **Archived** instead to keep it
 
 ---
 
@@ -209,12 +197,12 @@ Deleting an event:
 
 | Category | Key Settings |
 |----------|-------------|
-| General | Title, dates, description, location |
-| Registration | Open/close dates, capacity, waitlist |
-| Check-In | Open/close times, check-in options |
-| Visibility | Draft/Published, listing options |
-| Communication | Email notifications, reminders |
-| Advanced | Custom fields, SEO, integrations |
+| General | Title, slug, dates, description, category, organizer |
+| Registration | Capacity, per-date waitlist, early bird, quick registration, refund policy |
+| Check-In | Check-in photo, online QR check-in, session and activity check-in |
+| Visibility | Status, Public/Private/Unlisted, access code |
+| Communication | Automatic emails, blast emails |
+| Advanced | Custom fields, SEO |
 
 ---
 

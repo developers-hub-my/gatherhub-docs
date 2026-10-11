@@ -12,13 +12,14 @@ Customize your registration forms to collect exactly the information you need fr
 
 ## Form Structure
 
-Registration forms consist of:
+The registration panel (**Register for Event**) on the event page has:
 
-1. **Buyer Information** - Details of the person making the purchase
-2. **Ticket Selection** - Which tickets and how many
-3. **Attendee Information** - Details for each ticket holder (if enabled)
-4. **Custom Fields** - Additional questions you've configured
-5. **Payment** - Payment method and processing
+1. **Ticket Selection** - The ticket and **Number of Tickets**
+2. **Discount Code** - Optional
+3. **Contact details** - Name, email and phone of the person registering
+4. **Participant details** - Details for each ticket holder (if they tick **Enter different details for each ticket**)
+5. **Custom Fields** - Additional questions you've configured
+6. **Payment** - For paid tickets, on the checkout page after the panel
 
 ---
 
@@ -30,19 +31,19 @@ These fields are always collected from the person registering:
 
 | Field | Required | Description |
 |-------|----------|-------------|
-| Name | Yes | Buyer's full name |
+| Full Name | Yes | Buyer's full name |
 | Email | Yes | Contact email for confirmations |
-| Phone | No | Contact phone number |
+| Phone Number | Yes | Contact phone number |
 
 ### Attendee Fields
 
-When "Collect Attendee Information" is enabled:
+When the buyer gets more than one ticket and ticks **Enter different details for each ticket**:
 
 | Field | Required | Description |
 |-------|----------|-------------|
 | Full Name | Yes | Attendee's name |
 | Email | Yes | Attendee's email |
-| Phone | Optional | Attendee's phone |
+| Phone Number | Yes | Attendee's phone |
 
 ---
 
@@ -50,18 +51,19 @@ When "Collect Attendee Information" is enabled:
 
 ### Access Form Settings
 
-1. Go to your event dashboard
-2. Click **Registration** in the sidebar
-3. Select **Form Settings**
+There is no separate form builder. The form is shaped by:
+
+1. **Custom Fields** in the event menu - your extra questions
+2. **Details** > **Registration** - quick registration and the data & privacy notice
 
 ### Form Options
 
-| Option | Description |
-|--------|-------------|
-| Require phone number | Make phone mandatory |
-| Collect attendee info | Gather details per ticket |
-| Allow different attendees | Buyer can register others |
-| Terms and conditions | Require acceptance |
+| Option | Where | Description |
+|--------|-------|-------------|
+| Custom fields | **Custom Fields** | Add questions, mark them required, set the scope |
+| Quick registration | **Details** > **Registration** | Guests register for free tickets without an account |
+| Data & privacy notice | **Details** > **Registration** | Shows your notice and adds a required consent checkbox |
+| Require organiser approval | **Ticket Types** | Registrations land as pending until you approve them |
 
 ---
 
@@ -79,7 +81,7 @@ Collected once per registration:
 
 ### Ticket-Level Fields
 
-Collected for each attendee:
+Collected for each ticket:
 
 - Dietary requirements
 - T-shirt sizes
@@ -105,13 +107,13 @@ Collected for each attendee:
 ### Multiple Attendees
 
 ```
-1. Select ticket type and quantity
+1. Select ticket type and quantity (up to 20)
 2. Enter buyer info
-3. Enter each attendee's info
+3. Tick "Enter different details for each ticket" and enter each attendee's info
 4. Complete custom fields
 5. Review order
 6. Process payment
-7. Each attendee receives confirmation
+7. The confirmation email, with every ticket attached, goes to the buyer
 ```
 
 ---
@@ -123,34 +125,37 @@ Collected for each attendee:
 | Field Type | Validation |
 |------------|------------|
 | Email | Valid email format |
-| Phone | Valid phone format |
+| Phone | Required, up to 20 characters |
 | Required fields | Must not be empty |
-| Number fields | Valid number, min/max |
+| Number fields | Must be a number |
+| Date fields | Must be a valid date |
+| Dropdown and radio | Must be one of your options |
 
 ### Custom Validation
 
-Set validation rules for custom fields:
+For each custom field you can set:
 
-- Minimum/maximum length
-- Specific formats
-- Required conditions
+- **Field Type** (Text Input, Text Area, Number, Email, Phone, Date, Dropdown Select, Radio Buttons, Checkbox, Checkbox Group)
+- **This field is required**
+- **Placeholder Text**
+
+There are no length or pattern rules beyond the field type.
 
 ---
 
-## Terms and Conditions
+## Data & Privacy Consent
 
-### Adding Terms
+### Adding a Notice
 
-1. Go to **Form Settings**
-2. Enable "Require Terms Acceptance"
-3. Enter your terms text or link
-4. Save
+1. Go to **Details** > **Registration**
+2. Write your **Data & privacy notice**: who collects the data, why, and who it's shared with
+3. Click **Save Registration Settings**
 
 ### What Participants See
 
-- Checkbox with terms text
-- Link to full terms document
-- Must check to proceed
+- Your notice on the event page and registration forms
+- A consent checkbox
+- Must tick it to register
 
 ---
 
@@ -160,12 +165,12 @@ Set validation rules for custom fields:
 
 - Only ask for what you need
 - More fields = lower completion rates
-- Use conditional fields to hide irrelevant questions
+- Use order-level fields for questions that don't change per ticket
 
 ### Clear Labels
 
 - Use descriptive field labels
-- Add help text for complex questions
+- Use the placeholder text to show an example answer
 - Provide examples where helpful
 
 ### Logical Order
@@ -180,10 +185,10 @@ Set validation rules for custom fields:
 
 Preview your form before publishing:
 
-1. Go to **Registration** > **Form Settings**
-2. Click **Preview Form**
-3. Test the complete registration flow
-4. Make adjustments as needed
+1. On Event Home, open the **Publish** step to preview your event page
+2. Open the registration panel from a ticket
+3. Check the fields and wording
+4. Make adjustments in **Custom Fields** as needed
 
 ---
 
@@ -191,21 +196,15 @@ Preview your form before publishing:
 
 ### Confirmation Page
 
-After successful registration, participants see:
-
-- Order confirmation number
-- Summary of registration details
-- Ticket information
-- Next steps
+After a quick (free, no account) registration, the panel shows **You're registered!** with the email used and the ticket number. Paid registrations land on the order page after payment.
 
 ### Confirmation Email
 
-Automatically sent containing:
+Automatically sent to the buyer, containing:
 
 - Registration details
-- Ticket(s) with QR code
+- Ticket(s) as PDF attachments with QR code
 - Event information
-- Calendar invite (optional)
 
 ---
 
@@ -213,18 +212,14 @@ Automatically sent containing:
 
 ### Participant Self-Service
 
-If enabled, participants can:
-
-1. Access their registration via email link
-2. Update allowed fields
-3. View their tickets
+Participants can view their tickets in [My Registrations](/docs/my-registrations) and the GatherHub app. They can't edit their registration details. Ask them to contact you.
 
 ### Organizer Edits
 
 Organizers can edit any registration:
 
 1. Go to **Participants**
-2. Click on the participant
+2. Open the row's menu and click **Edit**
 3. Edit their details
 4. Save changes
 
@@ -235,9 +230,8 @@ Organizers can edit any registration:
 ### For Higher Completion
 
 - Minimize required fields
-- Use smart defaults
-- Enable autofill-friendly field names
-- Show progress indicator
+- Turn on quick registration for free events
+- Keep custom fields few and short
 
 ### For Better Data
 
@@ -266,16 +260,16 @@ Organizers can edit any registration:
 
 ### Custom fields not appearing
 
-- Verify field is set to visible
-- Check conditional logic settings
-- Ensure field applies to selected ticket type
+- Check the field was saved under **Custom Fields**
+- Ticket-level fields show once per ticket, below the contact details
+- Reload the event page after changes
 
 ### Confirmation not received
 
 - Check spam folder
 - Verify email address is correct
-- Check email delivery logs
-- Resend confirmation manually
+- Ask them to check [My Registrations](/docs/my-registrations), where the ticket is always available
+- Contact support to resend the ticket email
 
 ---
 

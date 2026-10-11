@@ -18,7 +18,7 @@ You need a GatherHub account to create events. If you haven't signed up yet, see
 
 1. Log in to GatherHub at [gatherhub.app](https://gatherhub.app)
 2. From the main dashboard, click **Events** in the sidebar
-3. Click the **Create Event** button
+3. Click the **New Event** button
 
 ---
 
@@ -44,46 +44,47 @@ Every new event is saved as a draft. Drafts are only visible to you and your cre
 
 ## Step 3: Set the Location
 
-Choose your event type:
+Choose the **Location Type**:
 
 - **Physical** - In-person event at a venue
-- **Virtual** - Online event with a meeting link
+- **Virtual** - Online event with a platform and meeting link
 - **Hybrid** - Both physical and virtual attendance options
 
 For physical events, you can:
-- Enter a new venue address
-- Select from your organization's venue library
+- **Select from Library** - pick a venue from your organization's venue library
+- **Enter Custom Venue** - type a venue name, city and country
+
+You can also pick an **Event Category** and tags. Click **Skip** if you want to set the location later.
 
 ---
 
-## Step 4: Configure Tickets
+## Step 4: Review and Create
 
-Add at least one ticket type for registration:
+1. Review all your event details
+2. Click **Create Event**
+3. Your event is created as a draft and you land on Event Home, which has a checklist of what's left to set up
 
-1. Click **Add Ticket Type**
-2. Enter the ticket details:
-   - **Name** - e.g., "General Admission", "VIP", "Student"
-   - **Price** - Set to RM 0 for free events
-   - **Quantity** - Maximum tickets available
-   - **Sales Period** - When tickets can be purchased
+---
+
+## Step 5: Configure Tickets
+
+Tickets are not part of the wizard. Add at least one ticket type after the event is created:
+
+1. In the event menu, go to **Ticket Types**
+2. Click **Add Ticket Type**
+3. Enter the ticket details:
+   - **Ticket Name** - e.g., "General Admission", "VIP", "Student"
+   - **Price (RM)** - Set to 0 for free tickets
+   - **Capacity** - Maximum tickets available (leave blank for unlimited)
+4. Click **Create Ticket Type**
 
 Example ticket setup for a free workshop:
 
 | Field | Value |
 |-------|-------|
-| Name | General Admission |
-| Price | RM 0.00 |
-| Quantity | 50 |
-| Sales Start | Immediately |
-| Sales End | Event start date |
-
----
-
-## Step 5: Review and Create
-
-1. Review all your event details
-2. Click **Create Event**
-3. Your event is now created in draft mode
+| Ticket Name | General Admission |
+| Price (RM) | 0 |
+| Capacity | 50 |
 
 ---
 
@@ -139,9 +140,9 @@ Your basic event is ready. Here are some features to explore:
 
 | Task | Where to find it |
 |------|------------------|
-| Edit event details | Event Dashboard > Settings |
-| View registrations | Event Dashboard > Participants |
-| Check in attendees | Event Dashboard > Check-In, or the GatherHub app > Crew > Scan |
-| Send emails | Event Dashboard > Communication |
-| Generate certificates | Event Dashboard > Certificates |
-| View reports | Event Dashboard > Reports |
+| Edit event details | Event menu > Details |
+| View registrations | Event menu > Participants |
+| Check in attendees | Event menu > On-site Check-In, or the GatherHub app > Crew > Scan |
+| Send emails | Event menu > Blast Emails |
+| Generate certificates | Event menu > Issue Certificates |
+| View reports | Event menu > Reports Overview |

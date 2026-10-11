@@ -28,7 +28,7 @@ Set up your GatherHub account and organization to start creating and managing ev
 
 1. Check your inbox for a verification email from GatherHub
 2. Click the verification link in the email
-3. You'll be redirected to the login page
+3. You'll be taken to your dashboard
 
 Until you verify, GatherHub shows this screen. Use **Resend verification email** if the email hasn't arrived.
 
@@ -40,11 +40,15 @@ Check your spam folder. If you still can't find it, click **Resend verification 
 
 ### Step 3: Complete Your Profile
 
-After logging in for the first time:
+After logging in for the first time, open **Settings** from your user menu:
 
-1. Upload a profile photo (optional but recommended)
-2. Add your phone number for account recovery
-3. Review your notification preferences
+1. **Profile** - Check your name and email
+2. **Profile Details** - Add your job title, company, industry and location (optional)
+3. **Communication** - Choose whether you want marketing emails and event updates
+
+{% callout title="Profile photo" %}
+There is no photo upload. Your newest check-in photo becomes your profile photo when you opt in at check-in. Older photos stay in **Settings** > **Profile** under **Photos**, where you can delete them.
+{% /callout %}
 
 ---
 
@@ -52,30 +56,36 @@ After logging in for the first time:
 
 Organizations in GatherHub are workspaces where you manage events, team members, and resources.
 
-### Create an Organization
+### Your Personal Organization
 
-1. From the dashboard, click **Create Organization**
-2. Enter your organization details:
-   - **Name** - Your company or group name
-   - **Description** - Brief description of your organization
-   - **Logo** - Your organization's logo (optional)
-3. Click **Create**
+When you sign up, GatherHub creates an organization for you named after your first name (for example, "Aisyah's Organization"). You are its owner, and it is already selected. Rename it under **Organization** > **Settings**.
+
+### Create Another Organization
+
+1. Open your user menu, then click **New** in the organization switcher
+2. Click **New Organization**
+3. Enter your organization details:
+   - **Organization Name** - Your company or group name
+   - **Description** - Brief description of your organization (optional)
+4. Click **Create Organization**
 
 {% callout title="Personal vs Organization Events" %}
-All events in GatherHub belong to an organization. If you're an individual organizer, create an organization with your name or business name.
+All events in GatherHub belong to an organization. If you're an individual organizer, rename your personal organization to your name or business name.
 {% /callout %}
 
 ### Organization Settings
 
-After creating your organization, configure these settings:
+Go to **Organization** > **Settings**. The page has these sections:
 
-| Setting | Description |
+| Section | Description |
 |---------|-------------|
-| Profile | Organization name, description, and logo |
-| Members | Invite team members to your organization |
-| Venues | Add venues you frequently use |
-| Speakers | Maintain a library of speaker profiles |
-| Sponsors | Track sponsors across events |
+| General | Organization name, description, and your public subscribe page link |
+| Contact Info | Public email address, phone number, website and address |
+| Preferences | Timezone, currency and language |
+| Members | Your team members, with a shortcut to invite more |
+| Danger Zone | Transfer ownership or delete the organization |
+
+Venues live under **Event Setup** > **Venues**. Speakers and sponsors are added per event.
 
 ---
 
@@ -85,21 +95,17 @@ Add team members to your organization to collaborate on events.
 
 ### Send Invitations
 
-1. Go to **Organization Settings** > **Members**
-2. Click **Invite Member**
-3. Enter their email address
-4. Select their organization role:
-   - **Admin** - Full access to all organization settings and events
-   - **Member** - Can create and manage events they're assigned to
-5. Click **Send Invitation**
+1. Go to **Organization** > **Team & Invitations**
+2. Click **Send Invitation**
+3. Enter their **Email Address**
+4. Select their **Role**:
+   - **Administrator** - Full management access to the organization
+   - **Member** - Basic access to organization resources
+5. Click **Send**
 
 ### Invitation Status
 
-| Status | Meaning |
-|--------|---------|
-| Pending | Invitation sent, waiting for acceptance |
-| Accepted | Member has joined the organization |
-| Expired | Invitation link has expired (resend if needed) |
+Sent invitations appear under **Pending Invitations** with an **Expires** date. Use **Resend** if an invitation has expired or the email went missing. Once accepted, the person shows in the **Members** list as **Active**.
 
 ---
 
@@ -109,43 +115,39 @@ Add team members to your organization to collaborate on events.
 
 Enable two-factor authentication for additional security:
 
-1. Go to **Settings** > **Security**
-2. Click **Enable Two-Factor Authentication**
+1. Go to **Settings** > **Two-Factor Auth**
+2. Click **Enable 2FA**
 3. Scan the QR code with your authenticator app
 4. Enter the verification code
-5. Save your backup codes in a secure location
+5. Save your **2FA Recovery Codes** in a secure place, such as a password manager
 
 ### Password Management
 
 To change your password:
 
 1. Go to **Settings** > **Password**
-2. Enter your current password
-3. Enter and confirm your new password
-4. Click **Update Password**
+2. Enter your **Current password**
+3. Enter and confirm your **New password**
+4. Click **Save**
 
 ---
 
 ## Account Preferences
 
-### Notification Settings
+### Communication Preferences
 
-Control which notifications you receive:
+Under **Settings** > **Communication**, choose what you receive:
 
-| Notification Type | Description |
-|-------------------|-------------|
-| Event registrations | New participant registrations |
-| Payment confirmations | Successful payment notifications |
-| Check-in alerts | Real-time check-in notifications |
-| Certificate generation | Certificate issuance updates |
-| Email campaign reports | Campaign delivery and engagement |
+| Preference | Description |
+|------------|-------------|
+| Marketing Communications | Promotional emails, offers and announcements from event organizers |
+| Event Updates | New events, schedule changes and recommendations based on your interests |
+
+Changes are logged with the date you opted in.
 
 ### Appearance Settings
 
-Customize your GatherHub experience:
-
-- **Theme** - Choose between light and dark mode
-- **Language** - Select your preferred language
+Under **Settings** > **Appearance**, choose **Light**, **Dark** or **System** theme.
 
 ---
 

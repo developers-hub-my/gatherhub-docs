@@ -18,9 +18,11 @@ Invite team members to help manage your event by sending email invitations with 
 1. Organizer sends invitation
 2. Crew member receives email
 3. They click accept link
-4. Account created/linked
+4. They log in or create an account
 5. Access granted to event
 ```
+
+If the email already belongs to a GatherHub account, there is no invitation step. The person is added to the crew straight away. See [Existing Users vs New Users](#existing-users-vs-new-users).
 
 ---
 
@@ -44,32 +46,14 @@ Invite team members to help manage your event by sending email invitations with 
 
 | Field | Required | Description |
 |-------|----------|-------------|
-| Email | Yes | Crew member's email |
+| Email Address | Yes | Crew member's email |
+| Name (Optional) | No | Used to greet them in the email |
 | Role | Yes | Their assigned role |
-| Message | No | Personal note in invitation |
+| Display Title (Optional) | No | e.g., "Lead Coordinator, Stage Manager" |
+| Show on public event page | No | List them on the event page |
+| Use custom permissions (override role defaults) | No | Pick permissions for this person instead of the role's defaults |
 
----
-
-## Bulk Invitations
-
-### Invite Multiple People
-
-1. Go to **Crew** > **Invite**
-2. Click **Bulk Invite**
-3. Enter multiple emails (one per line)
-4. Select role for all
-5. Send invitations
-
-### CSV Import
-
-Import from spreadsheet:
-
-```csv
-email,role
-john@example.com,Staff
-jane@example.com,Coordinator
-bob@example.com,Volunteer
-```
+There is no personal message field. Invite people one at a time. There is no bulk invite or CSV import for crew.
 
 ---
 
@@ -79,28 +63,29 @@ bob@example.com,Volunteer
 
 The invitation email includes:
 
-- Event name and details
-- Their assigned role
-- Link to accept
-- Your personal message
-- Instructions to get started
+- Who invited them
+- Event name and date
+- Their assigned role and display title
+- An **Accept Invitation** button
+- The date the invitation expires
 
 ### Example Email
 
 ```
-You've been invited to join [Event Name]!
+You're Invited to Join the Crew!
 
-[Organizer Name] has invited you to be a [Role].
+Hello [Name],
 
-Event: [Event Name]
-Date: [Event Date]
+[Organizer Name] has invited you to join the crew for the event:
+
+[Event Name]
+Event Date: [Event Date]
 Your Role: [Role]
+Title: [Display Title]
 
-Message from organizer:
-[Your personal message]
+[Accept Invitation]
 
-Click here to accept this invitation:
-[Accept Button]
+This invitation will expire on [Date and time].
 ```
 
 ---
@@ -114,13 +99,14 @@ Click here to accept this invitation:
 | Pending | Invitation sent, not yet accepted |
 | Accepted | Crew member has joined |
 | Expired | Invitation link expired |
-| Declined | Crew member declined |
+| Declined | Crew member clicked **Decline** on the invitation page |
+| Cancelled | You cancelled the invitation |
 
 ### View Status
 
-1. Go to **Crew**
-2. See status for each member
-3. Filter by status if needed
+1. Go to **Crew Members**
+2. Open invitations show under **Pending Invitations**. Expired, declined and cancelled ones drop off this list
+3. Crew who have joined show in the members table as **Active** or **Inactive**. Filter by role with **All Roles**
 
 ---
 
@@ -179,11 +165,11 @@ They will:
 
 ### Existing GatherHub Users
 
-If they already have an account:
+If the email already has a GatherHub account:
 
-- Invitation links to their account
-- Event added to their dashboard
-- No new account needed
+- They are added to the crew right away, as **Active**
+- They get an email and an in-app notification
+- No invitation to accept, and no new account needed
 
 ### New Users
 
@@ -205,12 +191,12 @@ If they don't have an account:
 
 ### Default Expiration
 
-Invitations expire after **14 days**.
+Invitations expire after **7 days**.
 
 ### Handling Expired Invitations
 
-1. View expired invitations
-2. Delete or resend
+1. Expired invitations disappear from **Pending Invitations**
+2. Send a new one with **Add Crew Member**
 3. Contact crew member if needed
 
 ---
@@ -219,7 +205,7 @@ Invitations expire after **14 days**.
 
 ### Remove from Event
 
-1. Go to **Crew**
+1. Go to **Crew Members**
 2. Find crew member
 3. Click **Remove**
 4. Confirm removal
@@ -229,7 +215,7 @@ Invitations expire after **14 days**.
 - Access to event revoked
 - Cannot see event data
 - Actions logged
-- Can be re-invited if needed
+- Can be added again if needed (they come back with the role you pick)
 
 ---
 
@@ -239,7 +225,7 @@ Invitations expire after **14 days**.
 
 - Verify email addresses
 - Choose correct roles
-- Prepare personal message
+- Set a display title if they appear on the event page
 - Have event info ready
 
 ### Follow Up
@@ -276,9 +262,11 @@ Invitations expire after **14 days**.
 
 ### Wrong role assigned
 
-1. Remove crew member
-2. Send new invitation
-3. With correct role
+1. For a crew member who has joined, click **Edit** on their row
+2. Pick the correct **Role**
+3. Click **Update Member**
+
+For a pending invitation, cancel it and send a new one with the correct role.
 
 ---
 

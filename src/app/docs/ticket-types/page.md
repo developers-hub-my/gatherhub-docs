@@ -33,22 +33,27 @@ Each event needs at least one ticket type. Ticket types can represent:
 
 {% figure src="/images/guides/09-organiser-ticket-types.jpg" alt="Ticket Types list with Early Bird, Standard, VIP and a free Walk-in / Guest ticket" caption="Ticket types. Free tickets show a FREE badge." /%}
 
-### Basic Settings
+### Ticket Settings
 
 | Setting | Required | Description |
 |---------|----------|-------------|
-| Name | Yes | Ticket name (e.g., "General Admission") |
+| Ticket Name | Yes | Ticket name (e.g., "General Admission") |
+| Price (RM) | Yes | Cost per ticket. Set to 0 for a free ticket |
+| Early Bird Price (RM) | No | Discounted price used until the event's early bird deadline |
 | Description | No | What's included with this ticket |
-| Price | Yes | Cost per ticket (RM 0 for free) |
-| Quantity | Yes | Total tickets available |
+| Capacity | No | Total tickets available. Leave blank for unlimited |
 
-### Availability Settings
+Click **Create Ticket Type** to save.
 
-| Setting | Description |
-|---------|-------------|
-| Sales Start | When ticket sales begin |
-| Sales End | When ticket sales close |
-| Visibility | Show or hide on registration page |
+### Early Bird Pricing
+
+Early bird is set per event, not per ticket:
+
+1. Go to **Details** and turn on **Enable Early Bird Pricing**
+2. Set the **Early Bird Deadline**
+3. Give each ticket type an **Early Bird Price (RM)**
+
+Until the deadline, tickets with an early bird price sell at that price. After it, the regular price applies.
 
 ---
 
@@ -58,29 +63,29 @@ Each event needs at least one ticket type. Ticket types can represent:
 
 | Option | Description |
 |--------|-------------|
-| Free (RM 0) | No payment required |
-| Fixed Price | Set price per ticket |
-| Variable Price | Allow buyers to choose amount (donations) |
+| Free (RM 0) | No payment required. Shows a **FREE** badge |
+| Fixed Price | Set price per ticket. Paid tickets must be at least RM 10.00 |
 
 ### Quantity and Limits
 
 | Setting | Description |
 |---------|-------------|
-| Total Quantity | Maximum tickets available for this type |
-| Min per Order | Minimum tickets required per purchase |
-| Max per Order | Maximum tickets allowed per purchase |
+| Capacity | Maximum tickets available for this type |
+| Per order | A buyer can get 1 to 20 tickets in one order |
 
-{% callout title="Group registrations" %}
-Set min/max per order to control group sizes. For example, "Team Registration" might require minimum 3 and maximum 10 tickets.
-{% /callout %}
+When a ticket type's capacity is used up, it shows as **Sold Out** on the event page and can't be selected.
 
 ### Per-Ticket Settings
 
 | Setting | Description |
 |---------|-------------|
-| Collect Attendee Info | Gather details for each ticket holder |
-| Custom Fields | Add ticket-specific questions |
-| Session Selection | Allow attendees to choose sessions |
+| Require organiser approval | Registrations land as pending until you approve them under **Registration Approvals** |
+| Eligibility | Buyers must pass one or more verification sources before they can buy this tier. Set **Max per verified person**, whether any or every source must pass, and when to check (**At purchase**, **At check-in**, or **At purchase and check-in**) |
+| Allow transfers | Turn off to name-lock the tier so holders can't transfer their ticket |
+
+{% callout title="Verification sources" %}
+Eligibility needs at least one verification source. If you have none, the form links you to add one first.
+{% /callout %}
 
 ---
 
@@ -90,35 +95,28 @@ Set min/max per order to control group sizes. For example, "Team Registration" m
 
 | Setting | Value |
 |---------|-------|
-| Name | Free Registration |
-| Price | RM 0.00 |
-| Quantity | 50 |
-| Max per Order | 1 |
+| Ticket Name | Free Registration |
+| Price (RM) | 0 |
+| Capacity | 50 |
 
 ### Conference with Tiers
 
-**Early Bird**
+**Standard with early bird**
 | Setting | Value |
 |---------|-------|
-| Name | Early Bird |
-| Price | RM 150.00 |
-| Quantity | 100 |
-| Sales End | 2 weeks before event |
+| Ticket Name | Standard |
+| Price (RM) | 200.00 |
+| Early Bird Price (RM) | 150.00 |
+| Capacity | 200 |
 
-**Standard**
-| Setting | Value |
-|---------|-------|
-| Name | Standard |
-| Price | RM 200.00 |
-| Quantity | 200 |
-| Sales Start | After Early Bird ends |
+Turn on **Enable Early Bird Pricing** in **Details** and set the deadline to 2 weeks before the event.
 
 **VIP**
 | Setting | Value |
 |---------|-------|
-| Name | VIP Access |
-| Price | RM 500.00 |
-| Quantity | 20 |
+| Ticket Name | VIP Access |
+| Price (RM) | 500.00 |
+| Capacity | 20 |
 | Description | Includes front row seating and meet & greet |
 
 ### Training with Categories
@@ -126,8 +124,8 @@ Set min/max per order to control group sizes. For example, "Team Registration" m
 | Ticket Type | Price | Description |
 |-------------|-------|-------------|
 | Professional | RM 300 | For working professionals |
-| Student | RM 150 | Valid student ID required |
-| Group (5+) | RM 250/person | For company groups |
+| Student | RM 150 | Valid student ID required (use **Eligibility** or **Require organiser approval** to screen) |
+| Corporate | RM 250 | For company-sponsored staff |
 
 ---
 
@@ -135,78 +133,43 @@ Set min/max per order to control group sizes. For example, "Team Registration" m
 
 ### Edit Ticket Types
 
-1. Go to **Tickets**
-2. Click on the ticket type to edit
-3. Modify settings and save
+1. Go to **Ticket Types**
+2. Click **Edit** on the ticket type
+3. Modify settings and click **Update Ticket Type**
 
 {% callout type="warning" title="Editing after sales" %}
-Some settings cannot be changed after tickets have been sold. Price changes only affect future purchases.
+Price changes only affect future purchases. Tickets already sold keep the price the buyer paid.
 {% /callout %}
 
-### Reorder Tickets
+### Delete Ticket Types
 
-Drag and drop to change the display order on the registration page.
-
-### Hide/Show Tickets
-
-- **Hidden tickets** don't appear on the public registration page
-- Use for invitation-only ticket types
-- Can be shared via direct link
-
-### Pause Sales
-
-Temporarily stop sales for a ticket type:
-
-1. Edit the ticket type
-2. Set Sales End to the current date
-3. Or set Visibility to Hidden
+Click **Delete** and confirm. You can't delete a ticket type that has sold tickets.
 
 ---
 
-## Ticket Status
+## Ticket List
 
-Each ticket type shows its status:
+Each ticket type in the list shows:
 
-| Status | Meaning |
-|--------|---------|
-| On Sale | Currently available for purchase |
-| Scheduled | Sales haven't started yet |
-| Sold Out | All tickets purchased |
-| Sales Ended | Past the sales end date |
-| Hidden | Not visible on registration page |
+| Item | Meaning |
+|------|---------|
+| FREE badge or price | Free ticket, or the regular price in RM |
+| Early Bird | The early bird price, when set |
+| Capacity | Total and how many are still available, or **Unlimited** |
+| Sold | Tickets issued so far |
 
 ---
 
-## Attendee Information Collection
+## Collecting Attendee Information
 
-### Per-Ticket Attendee Details
+Extra questions are set up under **Custom Fields**, not on the ticket type. Each field has a **Scope**:
 
-When enabled, collect information for each ticket:
+| Scope | Collected |
+|-------|-----------|
+| Order-level | Once per order |
+| Ticket-level | For each ticket |
 
-1. Edit the ticket type
-2. Enable "Collect Attendee Information"
-3. Configure which fields to collect
-
-**Standard Fields:**
-- Name
-- Email
-- Phone
-
-**Custom Fields:**
-Add ticket-specific fields like:
-- Dietary requirements
-- T-shirt size
-- Professional credentials
-
-### Different Info per Ticket Type
-
-Each ticket type can have different custom fields:
-
-| Ticket Type | Extra Fields |
-|-------------|--------------|
-| VIP | Meal preference, photo consent |
-| Student | Student ID, institution |
-| Professional | Company, job title |
+Custom fields apply to every ticket type in the event. See [Custom Fields](/docs/custom-fields).
 
 ---
 
@@ -214,23 +177,21 @@ Each ticket type can have different custom fields:
 
 ### Overall vs Ticket Capacity
 
-| Level | Description |
-|-------|-------------|
-| Event Capacity | Maximum total participants |
-| Ticket Capacity | Maximum per ticket type |
+| Level | Where | Description |
+|-------|-------|-------------|
+| Event capacity | **Details** > **Max Participants** | Shown in your capacity stats and dashboards |
+| Ticket capacity | **Ticket Types** > **Capacity** | Stops sales for that ticket type when reached |
 
-The event capacity limits total registrations across all ticket types.
+Sales are stopped by ticket capacity. Keep the ticket capacities within your venue's limit.
 
 ### Example
 
-Event capacity: 100
+Venue limit: 100
 
 | Ticket Type | Capacity | Notes |
 |-------------|----------|-------|
 | VIP | 20 | Limited to 20 |
-| Standard | 150 | Limited by event capacity |
-
-Even though Standard has 150 capacity, total registrations stop at 100 (event capacity).
+| Standard | 80 | Together with VIP, adds up to 100 |
 
 ---
 
@@ -248,7 +209,7 @@ Even though Standard has 150 capacity, total registrations stop at 100 (event ca
 - Consider your costs and value provided
 - Use psychological pricing (RM 99 vs RM 100)
 
-### Quantity
+### Capacity
 
 - Don't oversell beyond venue capacity
 - Reserve some tickets for late registrations
@@ -266,21 +227,21 @@ Even though Standard has 150 capacity, total registrations stop at 100 (event ca
 
 ### Ticket not appearing
 
-- Check visibility settings
-- Verify sales dates are current
-- Ensure quantity is greater than zero
+- Make sure the event is published
+- Check that the ticket type isn't **Sold Out**
+- Check whether the event has already ended
 
-### Can't edit ticket
+### Can't delete ticket
 
-- Some fields lock after first sale
+- Ticket types with sold tickets can't be deleted
 - Create a new ticket type instead
 - Contact support for special cases
 
 ### Oversold tickets
 
-- Ticket quantities are enforced
-- Check if multiple ticket types share capacity
-- Review event capacity settings
+- Ticket capacity is enforced at checkout
+- Each ticket type has its own capacity
+- Review each ticket type's **Capacity**
 
 ---
 
@@ -288,4 +249,4 @@ Even though Standard has 150 capacity, total registrations stop at 100 (event ca
 
 - [Set up pricing strategies](/docs/pricing-strategies) for timed pricing
 - [Create discount codes](/docs/discount-codes) for promotions
-- [Configure registration forms](/docs/registration-forms) for each ticket type
+- [Configure registration forms](/docs/registration-forms) for your event

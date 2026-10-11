@@ -14,8 +14,8 @@ Create events using GatherHub's guided wizard that walks you through each step f
 
 The event creation wizard consists of three steps:
 
-1. **Basic Information** - Event title, description, dates, and visibility
-2. **Location** - Venue selection and location type
+1. **Basic** - Event title, description, dates, and visibility
+2. **Location** - Location type, venue, category and tags (optional, you can **Skip** it)
 3. **Review** - Confirm details and create the event
 
 ---
@@ -52,11 +52,9 @@ Use the rich text editor to format your description with headings, bullet points
 
 | Field | Description |
 |-------|-------------|
-| Start Date | When the event begins |
-| Start Time | Event start time |
-| End Date | When the event ends |
-| End Time | Event end time |
-| Timezone | Automatically set to your organization's timezone |
+| Start Date & Time | When the event begins (today or later) |
+| End Date & Time | When the event ends (on or after the start) |
+| Timezone | Automatically set to your organization's timezone. Change it later under **Location** |
 
 ### Event Visibility
 
@@ -86,26 +84,28 @@ Choose how participants will attend:
 | Virtual | Online event with a meeting link |
 | Hybrid | Both in-person and online options |
 
+If you skip this step, the event is saved as **Physical** with no venue.
+
 ### Physical Events
 
 For physical events, you need to specify a venue:
 
-**Option 1: Select from Venue Library**
+**Option 1: Select from Library**
 - Choose from venues saved in your organization
 - All venue details are automatically filled in
 
-**Option 2: Enter New Venue**
-- Enter the venue name
-- Add the full address
-- Optionally add venue notes (parking instructions, building access, etc.)
+**Option 2: Enter Custom Venue**
+- Enter the **Venue Name**
+- Add the **City** and **Country**
+- Add the street address, postcode and map coordinates later under **Location** in the event menu
 
 ### Virtual Events
 
 For virtual events:
 
-1. Select "Virtual" as the location type
-2. Add your meeting link (Zoom, Google Meet, Microsoft Teams, etc.)
-3. Optionally add joining instructions
+1. Select **Virtual** as the location type
+2. Pick the **Platform** (Zoom, Google Meet, Microsoft Teams, Webex, Discord, YouTube Live, Twitch, StreamYard or Other)
+3. Add the **Meeting Link**
 
 ### Hybrid Events
 
@@ -139,20 +139,17 @@ You land on **Event Home**. Its setup checklist shows what is left before you ca
 
 {% figure src="/images/guides/06-organiser-event-home.jpg" alt="Event Home with stats, the before-the-event checklist and the setup progress card" caption="Event Home and its setup checklist." /%}
 
-Once created, your event dashboard gives you access to:
+The event menu groups your tools by phase:
 
-| Section | What you can do |
-|---------|-----------------|
-| Overview | View event summary and key metrics |
-| Settings | Edit event details and configuration |
-| Tickets | Create and manage ticket types |
-| Registration | Customize registration forms |
-| Participants | View and manage registered participants |
-| Sessions | Add sessions for multi-track events |
-| Check-In | Access check-in tools |
-| Certificates | Configure certificate settings |
-| Communication | Send emails to participants |
-| Reports | View analytics and export data |
+| Group | What you'll find |
+|-------|------------------|
+| Build | Home, Details, Location, Media, SEO, Features, Ticket Types, Custom Fields, Sessions, Activities, Speakers |
+| Grow | Marketing, Referrals, Blast Emails, Discount Codes, Sponsors |
+| Sell | Orders, Left Checkout, Registration Approvals, Payment Approvals, Refund Requests, Earnings, Payment Settings |
+| Run | On-site Check-In, Online QR Check-In, Gates, Participants, Crew Members, Polls, Q&A |
+| Wrap | Certificates, Surveys, Reports |
+
+Some items only show once you turn the feature on under **Features**. In simple mode, less-used tools sit under **More tools**. Click **Show all tools (advanced)** at the bottom of the menu to list everything.
 
 ---
 
@@ -162,8 +159,8 @@ To make your event visible to participants:
 
 1. Ensure you've configured:
    - At least one ticket type
-   - Registration form settings
-   - Payment methods (for paid events)
+   - Custom fields, if you need extra participant information
+   - Payment settings (for paid events)
 
 2. On Event Home, open the **Publish** step. It shows a preview of your event page. Click **Publish Event**
 
@@ -187,11 +184,12 @@ Published events can immediately receive registrations. Make sure all settings a
 | Description | No | Rich text event details |
 | Start Date | Yes | Event start date and time |
 | End Date | Yes | Event end date and time |
-| Location Type | Yes | Physical, Virtual, or Hybrid |
-| Venue | Conditional | Required for Physical/Hybrid events |
-| Meeting Link | Conditional | Required for Virtual/Hybrid events |
-| Max Participants | No | Overall capacity limit |
-| Visibility | Yes | Draft or Published |
+| Location Type | No | Physical (default), Virtual, or Hybrid |
+| Venue | No | Library venue or custom venue for Physical/Hybrid events |
+| Meeting Link | No | Online link for Virtual/Hybrid events (must be a valid URL) |
+| Max Participants | No | Overall capacity limit, set under **Details** |
+| Visibility | Yes | Public, Private or Unlisted |
+| Status | Auto | Starts as Draft, becomes Published when you publish |
 
 ---
 
