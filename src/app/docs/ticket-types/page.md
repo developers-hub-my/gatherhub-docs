@@ -179,10 +179,14 @@ Custom fields apply to every ticket type in the event. See [Custom Fields](/docs
 
 | Level | Where | Description |
 |-------|-------|-------------|
-| Event capacity | **Details** > **Max Participants** | Shown in your capacity stats and dashboards |
+| Event capacity | **Details** > **Max Participants** | Stops all registration once that many people are confirmed, whatever the ticket type |
 | Ticket capacity | **Ticket Types** > **Capacity** | Stops sales for that ticket type when reached |
 
-Sales are stopped by ticket capacity. Keep the ticket capacities within your venue's limit.
+Both limits apply. When the event is full, the event page says **This event is full** and no ticket can be picked. Unpaid checkouts don't hold a seat; a seat is taken once the order is paid or the free registration is confirmed.
+
+{% callout title="Adding people yourself" %}
+You and your crew can still add people over the limit: manual add, import, walk-in at the door and waitlist promotion are not blocked.
+{% /callout %}
 
 ### Example
 

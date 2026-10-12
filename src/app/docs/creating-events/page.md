@@ -187,7 +187,7 @@ Published events can immediately receive registrations. Make sure all settings a
 | Location Type | No | Physical (default), Virtual, or Hybrid |
 | Venue | No | Library venue or custom venue for Physical/Hybrid events |
 | Meeting Link | No | Online link for Virtual/Hybrid events (must be a valid URL) |
-| Max Participants | No | Overall capacity limit, set under **Details** |
+| Max Participants | No | Overall capacity limit, set under **Details**. Registration stops when it's reached |
 | Visibility | Yes | Public, Private or Unlisted |
 | Status | Auto | Starts as Draft, becomes Published when you publish |
 

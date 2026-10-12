@@ -60,7 +60,7 @@ Use ticket capacity to stop sales early. A ticket type that reaches its capacity
 
 | Setting | Where | Description |
 |---------|-------|-------------|
-| Max Participants | Basic Information | Overall event capacity, shown in your capacity stats |
+| Max Participants | Basic Information | Overall event capacity. Self-registration stops when it's reached. Leave blank for unlimited |
 | Per-Date Capacity | Capacity | Cap registrations for each day of a multi-day event. Leave blank for unlimited |
 | Waitlist | Capacity | Turn on a waitlist for a date |
 

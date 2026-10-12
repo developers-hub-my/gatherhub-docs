@@ -114,28 +114,14 @@ Within "Day 1 - Morning" session:
 
 ## Participant Registration for Sessions
 
-### Registration Options
+Registered participants reserve seats themselves in the attendee app: **Agenda** > **Sessions** > **Reserve a seat**. Only active sessions that haven't ended are listed.
 
-Configure how participants register for sessions:
-
-| Option | Description |
+| Setting | Effect |
 |--------|-------------|
-| Auto-register for all | Participants are registered for all sessions |
-| Choose sessions | Participants select which sessions to attend |
-| Capacity-based | Sessions have limited spots |
+| Session **Capacity** | Reservations stop when it's reached; the session shows **Full**. Leave blank for unlimited |
+| Session inactive | Hidden from **Reserve a seat** |
 
-### Session Selection During Registration
-
-If session selection is enabled:
-
-1. Participant fills out registration form
-2. Available sessions are displayed
-3. Participant selects their sessions
-4. Confirmation shows selected sessions
-
-{% callout title="Parallel sessions" %}
-When sessions run at the same time, participants can only select one from each time slot.
-{% /callout %}
+A participant can cancel a reservation, which frees the seat. Reservations are optional: crew can still check anyone in to a session. You see each participant's sessions in **Participants**, and the crew see them in the guest's details in the crew app.
 
 ---
 

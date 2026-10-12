@@ -77,9 +77,10 @@ For events with sessions:
 
 1. Open the event
 2. Go to **Agenda** > **Sessions**
-3. Sessions are grouped into **Happening now**, **Upcoming** and **Past sessions**
+3. Under **Reserve a seat**, tap **Reserve** next to a session. It moves to your sessions with a **Mine** badge
+4. Changed your mind? Tap **Cancel** next to it to give the seat back
 
-You don't sign up for sessions in advance. Your attendance is recorded when crew check you in to a session.
+Your sessions are grouped into **Happening now**, **Upcoming** and **Past sessions**. Sessions with a limited number of seats show how many are left, and **Full** when none are. Your attendance is recorded when crew check you in to a session.
 
 ### Session Information
 
