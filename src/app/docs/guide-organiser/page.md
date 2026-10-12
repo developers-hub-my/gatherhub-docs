@@ -111,9 +111,9 @@ Open **Details**. Once the event is published, the **Event QR** appears next to 
 
 The **Online QR** is a different code. It is valid for 1 to 60 minutes and is meant for a screen, not for printing. Use it when there is no crew at the door, or for an online event. Open it from the crew app (**More → Online QR**). It shows a 6-letter code for people without a camera, a countdown, **Extend 5 min** and **Deactivate**.
 
-{% figure src="/images/guides/14-online-qr-present.jpg" alt="Online QR present view with an Active badge, the QR code, Scan to check in and the code YPLSLS" caption="Online QR on a screen." width=300 /%}
+{% figure src="/images/guides/14-online-qr-present.jpg" alt="Online QR present view with an Active badge, the QR code, Scan to check in and the code YPLSLS" caption="Online QR on a screen." width=380 /%}
 
-{% figure src="/images/guides/14b-online-qr-present-controls.jpg" alt="Online QR with the countdown, Extend 5 min and Deactivate buttons, and the Checked in online list" caption="Extend or deactivate it; check-ins appear below." width=300 /%}
+{% figure src="/images/guides/14b-online-qr-present-controls.jpg" alt="Online QR with the countdown, Extend 5 min and Deactivate buttons, and the Checked in online list" caption="Extend or deactivate it; check-ins appear below." width=380 /%}
 
 {% callout type="warning" title="Don't print the Online QR" %}
 It expires. Print the **Event QR** from Details instead.

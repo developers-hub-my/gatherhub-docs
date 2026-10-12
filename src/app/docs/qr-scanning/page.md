@@ -53,7 +53,7 @@ For scanning at the door, crew should use the GatherHub app on their phone:
 
 The app scans at the gate, at sessions, at activities and for kit, and keeps scanning when the internet drops. See [Using the app as crew](/docs/pwa-crew).
 
-{% figure src="/images/pwa/crew-03-scan-gate.png" alt="Gate scanner in the crew view of the app" caption="The gate scanner in the GatherHub app." width=300 /%}
+{% figure src="/images/pwa/crew-03-scan-gate.png" alt="Gate scanner in the crew view of the app" caption="The gate scanner in the GatherHub app." width=380 /%}
 
 ---
 
@@ -166,7 +166,7 @@ Normal flow:
 3. Welcome them
 4. Tap **Scan Next** for more scans
 
-{% figure src="/images/guides/27-gate-success.jpg" alt="Green Checked in result with the participant, ticket number and Scan Next" caption="Checked in." width=300 /%}
+{% figure src="/images/guides/27-gate-success.jpg" alt="Green Checked in result with the participant, ticket number and Scan Next" caption="Checked in." width=380 /%}
 
 ### Already Checked In
 

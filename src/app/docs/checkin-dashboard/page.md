@@ -311,7 +311,7 @@ On a phone, use the crew view of the [GatherHub app](/docs/pwa-crew). Its **Live
 
 **Stats** in the same tab shows check-in progress and recent check-ins. For charts and exports, use the dashboard on a computer or tablet.
 
-{% figure src="/images/pwa/crew-02-live-now.png" alt="Live Now screen in the crew view of the app" caption="Live → Now in the GatherHub app." width=300 /%}
+{% figure src="/images/pwa/crew-02-live-now.png" alt="Live Now screen in the crew view of the app" caption="Live → Now in the GatherHub app." width=380 /%}
 
 ---
 

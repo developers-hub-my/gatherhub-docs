@@ -43,7 +43,7 @@ The start page, **My events**, groups every event the participant is registered 
 
 Tapping an event opens its **Home** ("Today"), with check-in status, what's up next and what's live now. Certificates are found per event, under **Ticket → Certificates**.
 
-{% figure src="/images/pwa/attendee-01-my-events.png" alt="My events screen listing happening now, upcoming and past events" caption="My events in the attendee app." width=300 /%}
+{% figure src="/images/pwa/attendee-01-my-events.png" alt="My events screen listing happening now, upcoming and past events" caption="My events in the attendee app." width=380 /%}
 
 ### Event Cards
 

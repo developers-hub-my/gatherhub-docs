@@ -59,7 +59,7 @@ A small badge appears in the top bar when you have no internet, or when scans ar
 
 Open it from **More → Sync centre**, or tap the waiting-scans badge.
 
-{% figure src="/images/pwa/crew-23-sync-centre.png" alt="Sync centre showing online status, zero scans waiting to sync and zero needing attention" caption="The Sync centre when everything has been sent." width=300 /%}
+{% figure src="/images/pwa/crew-23-sync-centre.png" alt="Sync centre showing online status, zero scans waiting to sync and zero needing attention" caption="The Sync centre when everything has been sent." width=380 /%}
 
 | Part | What it shows |
 |------|---------------|
@@ -105,7 +105,7 @@ Your ticket is saved on your phone when you open the event's **Home** while you 
 
 If you open a page that isn't saved, the app shows a "you're offline" page instead. It lists your tickets, marks each one **Saved** or **Not saved**, and lets you open the saved ones.
 
-{% figure src="/images/pwa/attendee-35-offline-page.png" alt="Attendee offline page listing tickets marked Saved or Not saved, with a Reload button" caption="Saved tickets still open without internet." width=300 /%}
+{% figure src="/images/pwa/attendee-35-offline-page.png" alt="Attendee offline page listing tickets marked Saved or Not saved, with a Reload button" caption="Saved tickets still open without internet." width=380 /%}
 
 {% callout title="Tip for organizers" %}
 In your reminder email, ask attendees to install the app and open the event once before they travel. That saves their ticket on their phone.

@@ -59,7 +59,7 @@ If you close the install message, it stays hidden on that phone for 30 days. You
 
 Every screen has the same bar at the top: a back button, the page title (usually the event name), the **Attendee | Crew** switch and your profile picture (avatar).
 
-{% figure src="/images/pwa/attendee-91-account-menu-open.png" alt="Attendee home screen with the avatar menu open, showing Dashboard, My Stats, Leaderboard, Dark mode and Log Out" caption="The top bar, with the Attendee | Crew switch and the profile menu open." width=300 /%}
+{% figure src="/images/pwa/attendee-91-account-menu-open.png" alt="Attendee home screen with the avatar menu open, showing Dashboard, My Stats, Leaderboard, Dark mode and Log Out" caption="The top bar, with the Attendee | Crew switch and the profile menu open." width=380 /%}
 
 ### Attendee | Crew switch
 

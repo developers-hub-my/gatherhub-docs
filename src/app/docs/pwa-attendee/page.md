@@ -16,7 +16,7 @@ New to the app? Start with [Getting the app](/docs/pwa-overview#install-the-app)
 
 Open the app outside an event and you see **My events**, grouped into **Happening now**, **Upcoming** and **Past**. Tap an event to open its Home.
 
-{% figure src="/images/pwa/attendee-01-my-events.png" alt="My events screen listing happening now, upcoming and past events" caption="My events: live, upcoming and past events you're registered for." width=300 /%}
+{% figure src="/images/pwa/attendee-01-my-events.png" alt="My events screen listing happening now, upcoming and past events" caption="My events: live, upcoming and past events you're registered for." width=380 /%}
 
 When you aren't inside an event, the tabs still point at one event for you: the one happening now, or else your next upcoming event, or else your most recent one. If you have no events yet, you only see **Home**, **Connect** and **Profile**.
 
@@ -47,7 +47,7 @@ Home changes with the state of the event:
 
 Your stats (points, badges, rank, sessions, activities and kit) sit at the bottom.
 
-{% figure src="/images/pwa/attendee-02-home-today-checked-in.png" alt="Home Today screen showing checked in time, up next session, live poll, Q&A and survey cards, and stats" caption="Home during a live event: checked in, up next, live now and your stats." width=300 /%}
+{% figure src="/images/pwa/attendee-02-home-today-checked-in.png" alt="Home Today screen showing checked in time, up next session, live poll, Q&A and survey cards, and stats" caption="Home during a live event: checked in, up next, live now and your stats." width=380 /%}
 
 {% callout title="Open Home once before the event" %}
 Open the event's Home while you have internet. The app then keeps your ticket on your phone, so it still opens with no signal at the venue. See [Using the app without internet](/docs/pwa-offline#your-ticket-without-internet).
@@ -89,7 +89,7 @@ Some events let you check yourself in with an event QR code shown at the entranc
 3. If the organizer needs more details from you (for example a company name or a dietary choice), fill them in when asked. Your check-in counts once you save.
 4. If the event requires a check-in photo, take a selfie when asked. If photos are optional, you may be offered one after checking in.
 
-{% figure src="/images/pwa/attendee-11-online-check-in.png" alt="Check in screen with Scan QR and Enter code options and a camera prompt" caption="Self check-in: scan the event QR or enter the code." width=300 /%}
+{% figure src="/images/pwa/attendee-11-online-check-in.png" alt="Check in screen with Scan QR and Enter code options and a camera prompt" caption="Self check-in: scan the event QR or enter the code." width=380 /%}
 
 {% callout type="warning" title="Checking yourself in needs internet" %}
 Scanning the event QR and entering a code both need internet. If there's no signal at the venue, show your ticket to a crew member instead. Crew can scan you without internet.
@@ -103,7 +103,7 @@ If the event hands out a kit (for example a lanyard or a goodie bag), **Kit** sh
 
 **Certificates** lists the certificates you've earned for the event, with the issue date and status. Tap **Download** to save it, or **Verify** to open the page that proves it's genuine. See [My Certificates](/docs/my-certificates).
 
-{% figure src="/images/pwa/attendee-14-certificates.png" alt="Certificates screen showing a valid certificate of participation with Download and Verify buttons" caption="Certificates for a past event, with Download and Verify." width=300 /%}
+{% figure src="/images/pwa/attendee-14-certificates.png" alt="Certificates screen showing a valid certificate of participation with Download and Verify buttons" caption="Certificates for a past event, with Download and Verify." width=380 /%}
 
 ---
 
@@ -120,7 +120,7 @@ If the event hands out a kit (for example a lanyard or a goodie bag), **Kit** sh
 
 To swap details with someone, one of you opens **My card** and the other opens **Scan card**.
 
-{% figure src="/images/pwa/attendee-20-connect-my-card.png" alt="My digital business card with QR code" caption="My card: let others scan it to save your details." width=300 /%}
+{% figure src="/images/pwa/attendee-20-connect-my-card.png" alt="My digital business card with QR code" caption="My card: let others scan it to save your details." width=380 /%}
 
 ---
 
@@ -146,7 +146,7 @@ Each item appears only when the event uses it.
 
 Home's **Live now** list tells you when a poll, Q&A or survey is waiting, so you rarely need to look for them.
 
-{% figure src="/images/pwa/attendee-21-engage-polls.png" alt="Polls screen with an active poll" caption="Polls: vote, then see the results." width=300 /%}
+{% figure src="/images/pwa/attendee-21-engage-polls.png" alt="Polls screen with an active poll" caption="Polls: vote, then see the results." width=380 /%}
 
 ### Rewards and leaderboards
 

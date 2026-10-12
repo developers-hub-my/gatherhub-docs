@@ -48,7 +48,7 @@ The crew app lives at **my.gatherhub.app/ops** and lists every event you crew.
 2. Allow camera access when asked.
 3. Open it once on Wi-Fi before the day, so it works with a weak signal.
 
-{% figure src="/images/guides/19-crew-ops-events.jpg" alt="Crew Operations screen listing the events you crew" caption="The crew app lists your events." width=300 /%}
+{% figure src="/images/guides/19-crew-ops-events.jpg" alt="Crew Operations screen listing the events you crew" caption="The crew app lists your events." width=380 /%}
 
 ---
 
@@ -56,7 +56,7 @@ The crew app lives at **my.gatherhub.app/ops** and lists every event you crew.
 
 Open the event and tap **Scan** (the centre button). Point the camera at the attendee's ticket QR. If the camera can't read it, tap **Type code** and enter the ticket number printed under the QR, or use **Find guest** to look the person up by name.
 
-{% figure src="/images/guides/19b-crew-ops-scan.jpg" alt="Check-in scan screen with the camera area, the checked-in counter, and Type code and Find guest buttons" caption="Scan: the counter at the top shows how many are in." width=300 /%}
+{% figure src="/images/guides/19b-crew-ops-scan.jpg" alt="Check-in scan screen with the camera area, the checked-in counter, and Type code and Find guest buttons" caption="Scan: the counter at the top shows how many are in." width=380 /%}
 
 Scanning opens **1 hour before the event starts**. Before that, the app opens on the **Live** view.
 

@@ -20,7 +20,7 @@ You get the crew view if you created the event, you're on the event's crew, or y
 
 The crew start page lists the events you help run. Events happening now show how many people are in.
 
-{% figure src="/images/pwa/crew-01-event-picker.png" alt="Crew event picker with a live event and its headcount" caption="Pick the event you're working on." width=300 /%}
+{% figure src="/images/pwa/crew-01-event-picker.png" alt="Crew event picker with a live event and its headcount" caption="Pick the event you're working on." width=380 /%}
 
 Opening an event takes you straight to **Scan** if you're allowed to check people in. Otherwise you land on **Live**.
 
@@ -57,7 +57,7 @@ Buttons at the top of the scanner switch between four modes. Session, Activity a
 
 The counter at the top shows how many guests are in and the check-in percentage. If the camera can't read a code, use **Type code** to enter the ticket code, or **Find guest** to search by name.
 
-{% figure src="/images/pwa/crew-03-scan-gate.png" alt="Gate scanner with a gate picker, check-in counter, camera view and Type code and Find guest buttons" caption="Gate mode: pick your gate, then scan." width=300 /%}
+{% figure src="/images/pwa/crew-03-scan-gate.png" alt="Gate scanner with a gate picker, check-in counter, camera view and Type code and Find guest buttons" caption="Gate mode: pick your gate, then scan." width=380 /%}
 
 ### Gate results
 
@@ -78,7 +78,7 @@ When the guest has a check-in or profile photo, it appears with their name, tick
 
 Open **Sessions**, pick a session, and scan. A room counter shows how many people are in against the room's capacity, the seats left, and the session time and room. Use **Search participants** if a code won't scan.
 
-{% figure src="/images/pwa/crew-07-scan-session.png" alt="Session scanner with a room counter showing 12 of 200 in room and 188 seats left" caption="Session mode: the room counter fills as you scan." width=300 /%}
+{% figure src="/images/pwa/crew-07-scan-session.png" alt="Session scanner with a room counter showing 12 of 200 in room and 188 seats left" caption="Session mode: the room counter fills as you scan." width=380 /%}
 
 {% callout type="warning" title="The room counter doesn't stop scans" %}
 The counter is for information. Scanning still works when the room is full, so keep an eye on the seats left.
@@ -94,7 +94,7 @@ Open **Sessions**, switch to **Activities**, pick an activity, and scan. It work
 2. The guest's kit checklist opens. Tap **Give** on each item you hand over.
 3. Tap **Scan Next** for the next guest.
 
-{% figure src="/images/pwa/crew-11-scan-kit.png" alt="Kit collection scanner" caption="Kit mode: scan, then give items from the checklist." width=300 /%}
+{% figure src="/images/pwa/crew-11-scan-kit.png" alt="Kit collection scanner" caption="Kit mode: scan, then give items from the checklist." width=380 /%}
 
 To scan kit with no internet, choose the item first (**Choose item…**), then scan. See [Using the app without internet](/docs/pwa-offline).
 
@@ -113,7 +113,7 @@ The details panel shows:
 - each session and kit item with its status (for example Pending or Collected)
 - their points
 
-{% figure src="/images/pwa/crew-05-guests-person-sheet.png" alt="Guest details panel with Undo check-in, Give kit, ticket details, session and kit statuses" caption="The guest details panel: undo a check-in or give kit without scanning." width=300 /%}
+{% figure src="/images/pwa/crew-05-guests-person-sheet.png" alt="Guest details panel with Undo check-in, Give kit, ticket details, session and kit statuses" caption="The guest details panel: undo a check-in or give kit without scanning." width=380 /%}
 
 Use **Undo check-in** when someone was checked in by mistake. Searching for guests needs internet.
 
@@ -134,7 +134,7 @@ If you can issue certificates, **Guests** also has a **Certificates** page for t
 
 When sessions are running, it also shows **Sessions now**. The footer reminds you of your role at the event (for example Organizer).
 
-{% figure src="/images/pwa/crew-02-live-now.png" alt="Live Now view with in-venue count, check-in percentage, recent arrivals and engagement list" caption="Live → Now: headcount, check-in rate and what needs attention." width=300 /%}
+{% figure src="/images/pwa/crew-02-live-now.png" alt="Live Now view with in-venue count, check-in percentage, recent arrivals and engagement list" caption="Live → Now: headcount, check-in rate and what needs attention." width=380 /%}
 
 The strip at the top has the other live pages:
 
@@ -147,13 +147,13 @@ The strip at the top has the other live pages:
 
 Each session also has its own monitor screen, which shows how full the room is.
 
-{% figure src="/images/pwa/crew-13-live-qa.png" alt="Q&A list with pending, live, answered and rejected filters" caption="Q&A moderation: approve, pin, answer or reject." width=300 /%}
+{% figure src="/images/pwa/crew-13-live-qa.png" alt="Q&A list with pending, live, answered and rejected filters" caption="Q&A moderation: approve, pin, answer or reject." width=380 /%}
 
 ---
 
 ## The More panel
 
-{% figure src="/images/pwa/crew-90-more-sheet-open.png" alt="Crew More panel with Help desk and Device sections" caption="The crew More panel." width=300 /%}
+{% figure src="/images/pwa/crew-90-more-sheet-open.png" alt="Crew More panel with Help desk and Device sections" caption="The crew More panel." width=380 /%}
 
 ### Help desk
 

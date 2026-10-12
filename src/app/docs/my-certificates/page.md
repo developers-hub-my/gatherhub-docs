@@ -22,7 +22,7 @@ Certificates are listed per event:
 
 Each certificate has **Download** and **Verify** buttons.
 
-{% figure src="/images/pwa/attendee-14-certificates.png" alt="Certificates screen showing a valid certificate with Download and Verify buttons" caption="Certificates for an event in the attendee app." width=300 /%}
+{% figure src="/images/pwa/attendee-14-certificates.png" alt="Certificates screen showing a valid certificate with Download and Verify buttons" caption="Certificates for an event in the attendee app." width=380 /%}
 
 ---
 
