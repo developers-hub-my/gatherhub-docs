@@ -1,10 +1,15 @@
 'use client'
 
-import { useState } from 'react'
-import { Dialog, DialogBackdrop, DialogPanel } from '@headlessui/react'
+import { useEffect, useLayoutEffect, useRef, useState } from 'react'
+import { createPortal } from 'react-dom'
 
-// Docs screenshot: click to open it full screen; click again to zoom in where you
-// clicked (move the mouse to pan), click once more to zoom back out.
+type Phase = 'closed' | 'opening' | 'open' | 'closing'
+
+const DURATION = 300
+const EASE = 'cubic-bezier(.2, 0, 0, 1)'
+
+// Docs screenshot: click and it zooms from its place on the page to the centre of the
+// screen; click outside it, Close or Esc and it zooms back.
 export function Figure({
   src,
   alt = '',
@@ -16,21 +21,79 @@ export function Figure({
   caption?: string
   width?: number
 }) {
-  const [open, setOpen] = useState(false)
-  const [zoom, setZoom] = useState(1)
-  const [origin, setOrigin] = useState('50% 50%')
+  const thumb = useRef<HTMLImageElement>(null)
+  const zoomed = useRef<HTMLImageElement>(null)
+  const [phase, setPhase] = useState<Phase>('closed')
+  const [box, setBox] = useState({ left: 0, top: 0, width: 0, height: 0 })
+  const [from, setFrom] = useState('none')
+
+  // Transform that puts the centred image exactly over the thumbnail.
+  const thumbTransform = (target: typeof box) => {
+    const r = thumb.current!.getBoundingClientRect()
+    const dx = r.left + r.width / 2 - (target.left + target.width / 2)
+    const dy = r.top + r.height / 2 - (target.top + target.height / 2)
+    return `translate(${dx}px, ${dy}px) scale(${r.width / target.width})`
+  }
+
+  const reducedMotion = () =>
+    window.matchMedia('(prefers-reduced-motion: reduce)').matches
+
+  const open = () => {
+    const img = thumb.current!
+    if (!img.naturalWidth) return // not loaded yet
+    const pad = window.innerWidth < 640 ? 16 : 48
+    const scale = Math.min(
+      (window.innerWidth - pad * 2) / img.naturalWidth,
+      (window.innerHeight - pad * 2) / img.naturalHeight,
+      2.5,
+    )
+    const width = img.naturalWidth * scale
+    const height = img.naturalHeight * scale
+    const target = {
+      left: (window.innerWidth - width) / 2,
+      top: (window.innerHeight - height) / 2,
+      width,
+      height,
+    }
+    setBox(target)
+    setFrom(thumbTransform(target))
+    setPhase(reducedMotion() ? 'open' : 'opening')
+  }
 
   const close = () => {
-    setOpen(false)
-    setZoom(1)
+    if (reducedMotion()) return setPhase('closed')
+    setFrom(thumbTransform(box))
+    setPhase('closing')
   }
 
-  const pointAt = (e: React.MouseEvent<HTMLImageElement>) => {
-    const rect = e.currentTarget.getBoundingClientRect()
-    const x = ((e.clientX - rect.left) / rect.width) * 100
-    const y = ((e.clientY - rect.top) / rect.height) * 100
-    setOrigin(`${x}% ${y}%`)
-  }
+  // Lay the image out over the thumbnail first (forced reflow), then animate to the centre.
+  useLayoutEffect(() => {
+    if (phase !== 'opening') return
+    zoomed.current?.getBoundingClientRect()
+    setPhase('open')
+  }, [phase])
+
+  useEffect(() => {
+    if (phase === 'closing') {
+      const id = setTimeout(() => setPhase('closed'), DURATION)
+      return () => clearTimeout(id)
+    }
+  }, [phase])
+
+  // Esc closes; the page behind doesn't scroll while open.
+  useEffect(() => {
+    if (phase === 'closed') return
+    const onKey = (e: KeyboardEvent) => e.key === 'Escape' && close()
+    document.addEventListener('keydown', onKey)
+    document.body.style.overflow = 'hidden'
+    return () => {
+      document.removeEventListener('keydown', onKey)
+      document.body.style.overflow = ''
+    }
+  })
+
+  const shown = phase === 'open'
+  const transition = `${DURATION}ms ${EASE}`
 
   return (
     <figure
@@ -38,59 +101,64 @@ export function Figure({
     >
       <button
         type="button"
-        onClick={() => setOpen(true)}
+        onClick={open}
         className="block w-full cursor-zoom-in"
         aria-label={`Enlarge: ${alt}`}
       >
         {/* eslint-disable-next-line @next/next/no-img-element */}
         <img
+          ref={thumb}
           src={src}
           alt={alt}
           loading="lazy"
-          className="mx-auto my-0 rounded-lg ring-1 ring-slate-900/10 transition hover:opacity-90 dark:ring-white/10"
-          style={width ? { width: '100%', height: 'auto' } : undefined}
+          className="mx-auto my-0 rounded-lg ring-1 ring-slate-900/10 dark:ring-white/10"
+          style={{
+            ...(width ? { width: '100%', height: 'auto' } : {}),
+            visibility: phase === 'closed' ? 'visible' : 'hidden',
+          }}
         />
       </button>
       {caption && <figcaption className="text-center">{caption}</figcaption>}
 
-      <Dialog open={open} onClose={close} className="fixed inset-0 z-50">
-        <DialogBackdrop
-          transition
-          className="fixed inset-0 bg-slate-950/85 backdrop-blur-sm transition-opacity duration-200 ease-out data-closed:opacity-0"
-        />
-        <DialogPanel
-          transition
-          className="fixed inset-0 flex items-center justify-center overflow-hidden p-4 transition duration-200 ease-out data-closed:scale-95 data-closed:opacity-0 sm:p-8"
-          onClick={close}
-        >
-          {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img
-            src={src}
-            alt={alt}
-            onClick={(e) => {
-              e.stopPropagation()
-              pointAt(e)
-              // Zoom toward the image's real pixels: 1.6x–3x, so small images don't blur.
-              const img = e.currentTarget
-              const fit = Math.min(
-                img.getBoundingClientRect().width / img.naturalWidth,
-                img.getBoundingClientRect().height / img.naturalHeight,
-              )
-              setZoom(zoom > 1 ? 1 : Math.min(3, Math.max(1.6, 1 / fit)))
-            }}
-            onMouseMove={(e) => zoom > 1 && pointAt(e)}
-            className={`h-full w-full object-contain transition-transform duration-300 ease-out ${zoom > 1 ? 'cursor-zoom-out' : 'cursor-zoom-in'}`}
-            style={{ transform: `scale(${zoom})`, transformOrigin: origin }}
-          />
-          <button
-            type="button"
+      {phase !== 'closed' &&
+        createPortal(
+          <div
+            role="dialog"
+            aria-modal="true"
+            aria-label={alt}
+            className="fixed inset-0 z-50 cursor-zoom-out"
             onClick={close}
-            className="fixed top-3 right-3 rounded-full bg-slate-900/80 px-3 py-1.5 text-sm font-medium text-white hover:bg-slate-800"
           >
-            Close ✕
-          </button>
-        </DialogPanel>
-      </Dialog>
+            <div
+              className="absolute inset-0 bg-slate-950/85 backdrop-blur-sm"
+              style={{ opacity: shown ? 1 : 0, transition: `opacity ${transition}` }}
+            />
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              ref={zoomed}
+              src={src}
+              alt={alt}
+              onClick={(e) => e.stopPropagation()}
+              className="fixed m-0 max-w-none cursor-default rounded-lg shadow-2xl"
+              style={{
+                ...box,
+                transform: shown ? 'none' : from,
+                transformOrigin: 'center',
+                transition: `transform ${transition}`,
+              }}
+            />
+            <button
+              type="button"
+              autoFocus
+              onClick={close}
+              className="fixed top-3 right-3 cursor-pointer rounded-full bg-slate-900/80 px-3 py-1.5 text-sm font-medium text-white hover:bg-slate-800"
+              style={{ opacity: shown ? 1 : 0, transition: `opacity ${transition}` }}
+            >
+              Close ✕
+            </button>
+          </div>,
+          document.body,
+        )}
     </figure>
   )
 }
