@@ -12,160 +12,65 @@ GatherHub provides predefined crew roles to quickly assign appropriate access le
 
 ## Available Roles
 
-### Organizer
+GatherHub ships six system roles. You can also create your own in **Crew → Roles** (Create Custom Role). For page-by-page detail, see the [Crew Access Matrix](/docs/crew-permissions).
 
-Full access to event management.
-
-**Permissions:**
-- All event settings
-- All participant management
-- All check-in functions
-- All certificate functions
-- All communication features
-
-**Use for:** Co-organizers, event managers
-
-### Coordinator
-
-Manages participants and event operations.
-
-**Permissions:**
-- View and edit event details
-- Manage participants
-- Handle check-in
-- Send communications
-- View reports
-
-**Use for:** Team leads, department heads
-
-### Staff
-
-Handles operational tasks.
-
-**Permissions:**
-- View event details
-- Perform check-in
-- View participant info
-- Limited editing
-
-**Use for:** Operations team, registration desk
-
-### Volunteer
-
-Assists with basic tasks.
-
-**Permissions:**
-- View event schedule
-- Perform check-in
-- View own assigned tasks
-- Basic participant lookup
-
-**Use for:** Volunteer helpers, event assistants
-
-### Speaker
-
-Views own sessions and participant info.
-
-**Permissions:**
-- View event overview
-- View own sessions/activities
-- View session attendees
-- Update own profile
-
-**Use for:** Presenters, trainers, facilitators
+| Role | What they do | Use for |
+|---|---|---|
+| **Organizer** | Everything an event manager does: settings, tickets, orders, earnings, reports, participants, certificates, engagement tools, blasts, crew. Cannot delete the event or request payouts | Co-organisers, event managers |
+| **Coordinator** | Participants, check-in, reports, orders (view), edit event details, crew list | Registration desk leads, team leads |
+| **Floor Manager** | Check-in, sessions, activities, kit, polls, Q&A, surveys, social wall, reports, crew list | On-site run-of-show |
+| **Staff** | Check-in and issuing certificates | Registration and certificate desk |
+| **Volunteer** | Check-in only | Gate scanners, helpers |
+| **Speaker** | Crew list only; shown on the event page if you tick *Show on public event page* | Presenters, trainers |
 
 ---
 
 ## Role Comparison
 
-| Permission | Organizer | Coordinator | Staff | Volunteer | Speaker |
-|------------|-----------|-------------|-------|-----------|---------|
-| View event | ✓ | ✓ | ✓ | ✓ | ✓ |
-| Edit event | ✓ | ✓ | - | - | - |
-| View participants | ✓ | ✓ | ✓ | Limited | Own session |
-| Edit participants | ✓ | ✓ | - | - | - |
-| Check-in | ✓ | ✓ | ✓ | ✓ | - |
-| Issue certificates | ✓ | ✓ | - | - | - |
-| Send emails | ✓ | ✓ | - | - | - |
-| View reports | ✓ | ✓ | Limited | - | - |
-| Manage crew | ✓ | - | - | - | - |
+| Can… | Organizer | Coordinator | Floor Manager | Staff | Volunteer | Speaker |
+|---|:-:|:-:|:-:|:-:|:-:|:-:|
+| View event details | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| Edit event details form | ✅ | ✅ | — | — | — | — |
+| Change settings, tickets, discounts, refunds | ✅ | — | — | — | — | — |
+| View reports | ✅ | ✅ | ✅ | — | — | — |
+| View orders | ✅ | ✅ | — | — | — | — |
+| View earnings | ✅ | — | — | — | — | — |
+| Manage participants | ✅ | ✅ | — | — | — | — |
+| Check in attendees | ✅ | ✅ | ✅ | ✅ | ✅ | — |
+| Sessions, activities, kit | ✅ | — | ✅ | — | — | — |
+| Polls, Q&A, surveys, social wall | ✅ | — | ✅ | — | — | — |
+| Issue certificates | ✅ | — | — | ✅ | — | — |
+| Speakers, sponsors, exhibitors | ✅ | — | — | — | — | — |
+| Send blast email | ✅ | — | — | — | — | — |
+| View crew list | ✅ | ✅ | ✅ | — | — | ✅ |
+| Manage crew & roles | ✅ | — | — | — | — | — |
+| Delete event, payouts | — | — | — | — | — | — |
 
 ---
 
 ## Choosing the Right Role
 
-### Decision Guide
-
-```
-Does the person need full control?
-├── Yes → Organizer
-└── No → Does the person manage others?
-    ├── Yes → Coordinator
-    └── No → Is the person presenting?
-        ├── Yes → Speaker
-        └── No → Do they need to edit data?
-            ├── Yes → Staff
-            └── No → Volunteer
-```
-
-### Common Assignments
-
 | Person | Recommended Role |
 |--------|-----------------|
 | Co-organizer | Organizer |
 | Registration desk lead | Coordinator |
-| Registration desk helper | Staff |
-| Event day volunteer | Volunteer |
+| Stage / floor lead on the day | Floor Manager |
+| Registration or certificate desk helper | Staff |
+| Event day volunteer at the gate | Volunteer |
 | Workshop presenter | Speaker |
-| Technical support | Staff |
-| VIP liaison | Coordinator |
-
----
-
-## Role Limitations
-
-### What Each Role Cannot Do
-
-**Coordinator:**
-- Cannot manage other crew members
-- Cannot delete the event
-- Cannot change event ownership
-
-**Staff:**
-- Cannot edit event settings
-- Cannot manage participants
-- Cannot send mass communications
-
-**Volunteer:**
-- Cannot access detailed participant data
-- Cannot edit anything
-- Cannot view reports
-
-**Speaker:**
-- Cannot manage participants
-- Cannot perform check-in
-- Cannot access other sessions
 
 ---
 
 ## Custom Permissions
 
-### Beyond Default Roles
+Two ways to go beyond the system roles:
 
-For needs not covered by default roles:
+1. **Custom role:** in **Crew → Roles**, click **Create Custom Role**, name it and tick its permissions. You can reuse it for anyone on this event.
+2. **Custom permissions for one person:** in **Crew**, edit the member and tick **Use custom permissions (override role defaults)**.
 
-1. Assign the closest role
-2. Go to **Crew** > **Permissions**
-3. Customize specific permissions
-4. Save changes
-
-### Example Customizations
-
-| Default Role | Added Permission | Use Case |
-|--------------|-----------------|----------|
-| Staff | Issue certificates | Certificate desk |
-| Volunteer | View all participants | Info booth |
-| Speaker | Check-in for session | Self-managed check-in |
+{% callout type="warning" title="Custom permissions replace the role" %}
+When custom permissions are on, the person gets **only** the permissions you tick, not the role's list plus extras. To "add one permission", tick the role's existing permissions as well.
+{% /callout %}
 
 ---
 

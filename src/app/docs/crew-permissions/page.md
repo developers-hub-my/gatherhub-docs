@@ -1,342 +1,139 @@
 ---
-title: Managing Permissions
+title: Crew Access Matrix
 nextjs:
   metadata:
-    title: Managing Permissions
-    description: Configure fine-grained crew permissions for GatherHub event management.
+    title: Crew Access Matrix
+    description: Exactly what each crew role and permission can do across GatherHub event management.
 ---
 
-Control exactly what each crew member can do with granular permission settings beyond the default role permissions. {% .lead %}
-
----
-
-## Permission System
-
-### How Permissions Work
-
-```
-Role → Default Permissions → Custom Overrides → Final Access
-```
-
-Each crew member has:
-
-1. Base permissions from their role
-2. Optional custom permissions
-3. Combined effective permissions
+Every crew member gets their access from **one role** on the event. The role is a list of permissions, and each permission opens a set of pages in the event menu. This page lists all of them. {% .lead %}
 
 ---
 
-## Permission Categories
+## How access is decided
 
-### Participant Management
+```
+Crew role (system or custom) ─┐
+                              ├─► Effective permissions ─► Pages in the event menu
+Custom permissions (optional) ┘   (custom REPLACES the role's list)
+```
 
-| Permission | Description |
-|------------|-------------|
-| View participants | See participant list and details |
-| Edit participants | Modify participant information |
-| Add participants | Manually add participants |
-| Delete participants | Remove participants |
-| Export participants | Download participant data |
-
-### Check-In
-
-| Permission | Description |
-|------------|-------------|
-| Perform check-in | Check in attendees |
-| View check-in stats | See attendance dashboard |
-| Undo check-in | Reverse check-in actions |
-| Check-in any session | Check into all sessions |
-
-### Certificates
-
-| Permission | Description |
-|------------|-------------|
-| View certificates | See issued certificates |
-| Generate certificates | Create new certificates |
-| Issue certificates | Distribute to participants |
-| Revoke certificates | Invalidate certificates |
-
-### Communication
-
-| Permission | Description |
-|------------|-------------|
-| Send emails | Send individual emails |
-| Send blast emails | Send mass communications |
-| View email history | See sent communications |
-| Manage templates | Edit email templates |
-
-### Event Settings
-
-| Permission | Description |
-|------------|-------------|
-| View event settings | See configuration |
-| Edit event details | Modify event info |
-| Manage tickets | Edit ticket types |
-| Manage sessions | Edit sessions/activities |
+- **One role per person per event.** Pick it when you add the crew member.
+- **Custom permissions replace the role completely.** They don't add to it. Tick **Use custom permissions (override role defaults)** in **Crew → Edit Crew Member**, then tick every permission that person needs, including the ones the role already had.
+- **Only active crew count.** A pending invitation or removed member has no access.
+- **Your organisation doesn't matter.** A crew member from another organisation (or with none) gets exactly the access their role gives. Paid features follow the **event owner's plan**, not the crew member's plan.
+- **Event owner and organisation owner/admins** always have full access. They are not crew.
 
 ---
 
-## Viewing Permissions
+## Access matrix by system role
 
-### Check Crew Permissions
+✅ = allowed · — = not allowed
 
-1. Go to **Crew**
-2. Click on crew member
-3. View **Permissions** tab
-4. See current access
+| Area / page | Permission | Organizer | Coordinator | Floor Manager | Staff | Volunteer | Speaker |
+|---|---|:-:|:-:|:-:|:-:|:-:|:-:|
+| Event details (view) | any active crew | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| Edit event details form | Update Event Details | ✅ | ✅ | — | — | — | — |
+| Reports + PDF / email report | View Reports | ✅ | ✅ | ✅ | — | — | — |
+| Orders (view) | View Orders | ✅ | ✅ | — | — | — | — |
+| Ticket types | Manage Ticket Types | ✅ | — | — | — | — | — |
+| Earnings | View Earnings | ✅ | — | — | — | — | — |
+| Location, media, SEO, features, custom fields, payment settings | Full Event Management | ✅ | — | — | — | — | — |
+| Discounts, bundles, refunds, manual payment approval, order actions | Full Event Management | ✅ | — | — | — | — | — |
+| SMS / WhatsApp blast, marketing studio | Full Event Management | ✅ | — | — | — | — | — |
+| Lucky draw, booth voting, scavenger hunt, gamification, seating, tables, gates | Full Event Management | ✅ | — | — | — | — | — |
+| Certificate settings / templates / revoke | Full Event Management | ✅ | — | — | — | — | — |
+| Issue certificates | Issue Certificates | ✅ | — | — | ✅ | — | — |
+| Participants & registrations | Manage Participants | ✅ | ✅ | — | — | — | — |
+| Gate check-in & attendance ¹ | Check In Attendees | ✅ | ✅ | ✅ | ✅ | ✅ | — |
+| Sessions + session check-in | Manage Sessions | ✅ | — | ✅ | — | — | — |
+| Activities + activity check-in | Manage Activities | ✅ | — | ✅ | — | — | — |
+| Kit collection | Manage Kit Collection | ✅ | — | ✅ | — | — | — |
+| Polls | Manage Polls | ✅ | — | ✅ | — | — | — |
+| Q&A | Moderate Q&A | ✅ | — | ✅ | — | — | — |
+| Surveys | Manage Surveys | ✅ | — | ✅ | — | — | — |
+| Social wall | Moderate Social Wall | ✅ | — | ✅ | — | — | — |
+| Speakers | Manage Speakers | ✅ | — | — | — | — | — |
+| Sponsors | Manage Sponsors | ✅ | — | — | — | — | — |
+| Exhibitors | Manage Exhibitors | ✅ | — | — | — | — | — |
+| Blast email | Send Blast Email | ✅ | — | — | — | — | — |
+| Email history | View Email History | ✅ | — | — | — | — | — |
+| Crew list | View Crew List | ✅ | ✅ | ✅ | — | — | ✅ |
+| Add / edit / remove crew | Manage Crew Members | ✅ | — | — | — | — | — |
+| Custom crew roles | Manage Crew Roles | ✅ | — | — | — | — | — |
+| Delete event, payouts | owner / org admin only | — | — | — | — | — | — |
 
-### Permission Display
+¹ Crew can check in only on a **published** event, inside the crew window: from the check-in grace period before the event starts (default 60 minutes) until 1 day after it ends. The event owner can check in at any time, which helps with testing.
 
-| Permission | Status |
-|------------|--------|
-| View participants | ✓ Granted |
-| Edit participants | ✓ Granted |
-| Delete participants | ✗ Denied |
-| Perform check-in | ✓ Granted |
-
----
-
-## Customizing Permissions
-
-### Add Permission
-
-1. Go to crew member's profile
-2. Click **Permissions**
-3. Enable additional permission
-4. Save changes
-
-### Remove Permission
-
-1. Go to crew member's profile
-2. Click **Permissions**
-3. Disable specific permission
-4. Save changes
-
-### Reset to Default
-
-1. Go to crew member's profile
-2. Click **Reset Permissions**
-3. Returns to role defaults
-
----
-
-## Permission Matrix
-
-### By Role
-
-| Permission | Organizer | Coordinator | Staff | Volunteer | Speaker |
-|------------|-----------|-------------|-------|-----------|---------|
-| View participants | ✓ | ✓ | ✓ | Limited | Own |
-| Edit participants | ✓ | ✓ | - | - | - |
-| Perform check-in | ✓ | ✓ | ✓ | ✓ | - |
-| Generate certificates | ✓ | ✓ | - | - | - |
-| Send blast emails | ✓ | ✓ | - | - | - |
-| Edit event settings | ✓ | Limited | - | - | - |
-| Manage crew | ✓ | - | - | - | - |
+Some pages also need the feature switched on for the event (for example Sessions, Certificates, Polls), and paid features need the event owner's plan to include them. If a role allows a page but the menu item is missing, check **Features** first.
 
 ---
 
-## Common Permission Scenarios
+## All crew permissions
 
-### Registration Desk Staff
+These are the permissions you can tick on a custom role or as custom permissions.
 
-```
-Role: Staff
-Added permissions:
-+ Add participants (for walk-ins)
-+ Edit participants (corrections)
-```
+| Permission | What it opens |
+|---|---|
+| Check In Attendees | Gate scanner, manual check-in, attendance list (crew window only) |
+| Manage Participants | Participant registrations: add, approve, edit, import, walk-in |
+| Issue Certificates | Certificates menu; issue certificates to participants |
+| Manage Kit Collection | Kit items and the kit collection scanner |
+| Manage Sessions | Sessions and session check-in |
+| Manage Activities | Activities and activity check-in |
+| Manage Speakers | Speakers |
+| Manage Sponsors | Sponsors |
+| Manage Exhibitors | Exhibitors and booths |
+| Manage Polls | Live polls and poll results |
+| Moderate Q&A | Q&A moderation |
+| Manage Surveys | Surveys and survey results |
+| Moderate Social Wall | Social wall moderation |
+| Send Blast Email | Compose and send blast emails |
+| View Email History | Sent blast emails |
+| View Crew List | Crew list (read only) |
+| View Reports | All report pages, PDF download and emailed report |
+| Manage Ticket Types | Ticket types |
+| View Orders | Orders list |
+| View Earnings | Earnings |
+| Manage Crew Members | Add, edit and remove crew |
+| Manage Crew Roles | Create and edit custom crew roles |
+| Update Event Details | The event details form |
+| Full Event Management | Everything an event manager does: settings, location, media, SEO, features, custom fields, discounts, refunds, payment approval, order actions, SMS/WhatsApp, engagement tools, certificate setup |
 
-### Certificate Issuer
-
-```
-Role: Staff
-Added permissions:
-+ View certificates
-+ Generate certificates
-+ Issue certificates
-```
-
-### Session Coordinator
-
-```
-Role: Coordinator
-Scope limited to:
-- Specific sessions only
-- Participants in those sessions
-```
-
-### Volunteer Coordinator
-
-```
-Role: Coordinator
-Added permissions:
-+ Manage crew (volunteers only)
-- Financial access
-```
+{% callout type="warning" title="Full Event Management is powerful" %}
+It gives the same day-to-day control as the event owner, including refunds and discounts. Give it only to people you would trust to run the event. Deleting the event and requesting payouts stay with the owner and organisation admins.
+{% /callout %}
 
 ---
 
-## Permission Inheritance
+## Common setups
 
-### From Role
-
-Permissions start from role:
-
-```
-Staff Role → Base Permissions
-├── View participants ✓
-├── Perform check-in ✓
-├── Edit participants ✗
-└── Send emails ✗
-```
-
-### Custom Additions
-
-Add specific permissions:
-
-```
-Staff Role + Custom
-├── View participants ✓ (from role)
-├── Perform check-in ✓ (from role)
-├── Edit participants ✓ (added)
-└── Send emails ✗ (not added)
-```
-
----
-
-## Permission Audit
-
-### Tracking Changes
-
-All permission changes are logged:
-
-| Log Entry | Content |
-|-----------|---------|
-| Timestamp | When changed |
-| Who | Who made change |
-| Permission | Which permission |
-| Action | Granted/Revoked |
-| By | Who authorized |
-
-### Viewing Audit Log
-
-1. Go to **Crew**
-2. Click **Permission Log**
-3. Filter by member or date
-4. Export if needed
-
----
-
-## Security Considerations
-
-### Principle of Least Privilege
-
-- Start with minimal access
-- Add permissions as needed
-- Review periodically
-- Remove when not needed
-
-### Sensitive Permissions
-
-High-risk permissions to grant carefully:
-
-| Permission | Risk |
-|------------|------|
-| Delete participants | Data loss |
-| Export participants | Privacy |
-| Manage crew | Access escalation |
-| Edit event settings | Event integrity |
-
-### Regular Review
-
-- Review crew permissions before events
-- Remove unnecessary access
-- Update for role changes
-- Document decisions
-
----
-
-## Permission Groups
-
-### Create Permission Groups
-
-For common permission sets:
-
-```
-"Check-In Team"
-├── View participants
-├── Perform check-in
-├── View check-in stats
-└── Add participants (walk-ins)
-
-"Certificate Team"
-├── View participants
-├── View certificates
-├── Generate certificates
-└── Issue certificates
-```
-
-### Apply to Members
-
-1. Select crew members
-2. Apply permission group
-3. All receive same permissions
+| Need | Use |
+|---|---|
+| Co-organiser who runs everything | **Organizer** |
+| Registration desk lead (participants, orders, reports) | **Coordinator** |
+| On-site run-of-show (sessions, kit, polls, Q&A) | **Floor Manager** |
+| Check-in + certificate desk | **Staff** |
+| Gate scanner only | **Volunteer** |
+| Presenter listed on the crew page | **Speaker** |
+| Finance helper who should see money but not change settings | Custom role: View Orders + View Earnings + View Reports |
+| Coordinator who also sends blasts | Custom permissions: Coordinator's list **plus** Send Blast Email |
 
 ---
 
 ## Troubleshooting
 
-### Cannot access feature
-
-1. Check permission settings
-2. Verify role assignment
-3. Look for custom restrictions
-4. Contact organizer
-
-### Too much access
-
-1. Review current permissions
-2. Remove unnecessary ones
-3. Consider different role
-4. Document changes
-
-### Permission conflict
-
-1. Check custom vs role permissions
-2. Custom takes precedence
-3. Reset if unclear
-4. Re-apply needed permissions
+| Symptom | Check |
+|---|---|
+| Menu item missing | The role lacks the permission, the event feature is off, or the owner's plan doesn't include the feature |
+| "403 Forbidden" | Same as above. Also check the crew member is **active**, not still invited |
+| Scanner says check-in isn't open yet | Outside the crew window; see note ¹ |
+| Custom permissions removed access they had before | Custom permissions replace the role. Tick the role's permissions again as well |
 
 ---
 
-## Best Practices
+## Next steps
 
-### Before Event
-
-- Set up all crew permissions
-- Test access as each role
-- Document permission decisions
-- Brief crew on their access
-
-### During Event
-
-- Monitor for access issues
-- Quick escalation path
-- Temporary grants if needed
-- Log any changes
-
-### After Event
-
-- Review permission usage
-- Remove temporary grants
-- Document lessons learned
-- Update for next event
-
----
-
-## Next Steps
-
-- [Learn about roles](/docs/crew-roles)
+- [Crew roles](/docs/crew-roles)
 - [Invite crew members](/docs/inviting-crew)
-- [Set up check-in](/docs/checkin-overview) access
+- [Check-in overview](/docs/checkin-overview)

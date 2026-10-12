@@ -89,7 +89,7 @@ export const navigation = [
       { title: 'Crew Overview', href: '/docs/crew-overview' },
       { title: 'Crew Roles', href: '/docs/crew-roles' },
       { title: 'Inviting Crew Members', href: '/docs/inviting-crew' },
-      { title: 'Managing Permissions', href: '/docs/crew-permissions' },
+      { title: 'Crew Access Matrix', href: '/docs/crew-permissions' },
     ],
   },
   {
