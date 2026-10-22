@@ -38,7 +38,7 @@ Custom permissions (optional) ┘   (custom REPLACES the role's list)
 | Orders (view) | View Orders | ✅ | ✅ | — | — | — | — |
 | Ticket types | Manage Ticket Types | ✅ | — | — | — | — | — |
 | Earnings | View Earnings | ✅ | — | — | — | — | — |
-| Location, media, SEO, features, custom fields, payment settings | Full Event Management | ✅ | — | — | — | — | — |
+| Location, media, SEO, landing pages, features, custom fields, payment settings | Full Event Management | ✅ | — | — | — | — | — |
 | Discounts, bundles, refunds, manual payment approval, order actions | Full Event Management | ✅ | — | — | — | — | — |
 | SMS / WhatsApp blast, marketing studio | Full Event Management | ✅ | — | — | — | — | — |
 | Lucky draw, booth voting, scavenger hunt, gamification, seating, tables, gates | Full Event Management | ✅ | — | — | — | — | — |

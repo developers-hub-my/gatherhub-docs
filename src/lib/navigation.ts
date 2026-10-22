@@ -32,6 +32,7 @@ export const navigation = [
     links: [
       { title: 'Creating an Event', href: '/docs/creating-events' },
       { title: 'Event Settings', href: '/docs/event-settings' },
+      { title: 'Event Landing Pages', href: '/docs/landing-pages' },
       { title: 'Managing Your Events', href: '/docs/managing-events' },
       { title: 'Event Config Templates', href: '/docs/event-templates' },
       { title: 'Sessions and Activities', href: '/docs/sessions-activities' },
@@ -51,6 +52,7 @@ export const navigation = [
     title: 'Registration',
     links: [
       { title: 'Registration Forms', href: '/docs/registration-forms' },
+      { title: 'Quick Registration & Guest Checkout', href: '/docs/quick-registration' },
       { title: 'Managing Participants', href: '/docs/managing-participants' },
       { title: 'Bulk Import Participants', href: '/docs/bulk-import' },
       { title: 'Registration Status', href: '/docs/registration-status' },

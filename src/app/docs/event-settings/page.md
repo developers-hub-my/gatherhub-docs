@@ -72,7 +72,7 @@ Use ticket capacity to stop sales early. A ticket type that reaches its capacity
 | Enable Early Bird Pricing | Early Bird | Use each ticket's early bird price until the **Early Bird Deadline** |
 | Refund Policy | Refund Policy | Shown on the public event page |
 
-**Quick registration** (Details → Registration) lets guests register for free tickets with only name, email and phone, without an account. Turn it on for events with walk-ins. A **data & privacy notice** here adds a required consent checkbox to the form.
+**Quick registration** (Details → Registration) lets guests register for free tickets with only name, email and phone, without an account. Turn it on for events with walk-ins. Turn on **Allow guest checkout for paid tickets** as well to let guests buy paid tickets without an account. See [Quick Registration and Guest Checkout](/docs/quick-registration). A **data & privacy notice** here adds a required consent checkbox to the form.
 
 {% figure src="/images/guides/07-organiser-quick-registration.jpg" alt="Event Details, Registration tab, with the Quick registration switch and the data and privacy notice field" caption="Details → Registration." /%}
 
@@ -165,6 +165,8 @@ Optimize your event page for search engines under **SEO**:
 | Meta Description | Description shown in search results (up to 500 characters) |
 
 The page shows a **Search Engine Preview** as you type.
+
+A published [landing page](/docs/landing-pages) can set its own page title, meta description and social share image. Blank fields fall back to these event settings.
 
 ### Integration Settings
 

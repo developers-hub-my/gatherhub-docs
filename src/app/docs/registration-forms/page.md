@@ -61,7 +61,7 @@ There is no separate form builder. The form is shaped by:
 | Option | Where | Description |
 |--------|-------|-------------|
 | Custom fields | **Custom Fields** | Add questions, mark them required, set the scope |
-| Quick registration | **Details** > **Registration** | Guests register for free tickets without an account |
+| Quick registration | **Details** > **Registration** | Guests register for free tickets, and optionally buy paid tickets, without an account. See [Quick Registration and Guest Checkout](/docs/quick-registration) |
 | Data & privacy notice | **Details** > **Registration** | Shows your notice and adds a required consent checkbox |
 | Require organiser approval | **Ticket Types** | Registrations land as pending until you approve them |
 
