@@ -115,19 +115,19 @@ The **Overview** tab shows booths, votes cast, voters and booths without a PIC c
 
 The visitor points their phone camera at the booth poster. The booth page opens, with no login needed. They tap **Vote for this booth**.
 
-{% figure src="/images/features/vote-30-visitor-booth.jpg" alt="Booth vote page for Batik Generator AI, booth B-01, with the Vote for this booth button" caption="One tap to vote." /%}
+{% figure src="/images/features/vote-30-visitor-booth.jpg" alt="Booth vote page for Batik Generator AI, booth B-01, with the Vote for this booth button" caption="One tap to vote." width=380 /%}
 
 ### 2. Say who is voting (first booth only)
 
 A visitor who isn't signed in sees **Who's voting?** They can **Log in**, or type the **Email you registered with** and tap **Continue**.
 
-{% figure src="/images/features/vote-31-whos-voting.jpg" alt="Who's voting sheet with a Log in button and an email field for people without an account" caption="Guests vote with the email they registered with." /%}
+{% figure src="/images/features/vote-31-whos-voting.jpg" alt="Who's voting sheet with a Log in button and an email field for people without an account" caption="Guests vote with the email they registered with." width=380 /%}
 
 If the email isn't registered for the event and [Quick registration](/docs/quick-registration) is on, the visitor can register on the spot with their name and phone, then vote. The phone remembers the visitor for 30 days, so the next booth is one tap.
 
 ### 3. Vote counted
 
-{% figure src="/images/features/vote-32-vote-counted.jpg" alt="Vote counted screen saying Batik Generator AI has your vote for People's Choice" caption="Then on to the next booth." /%}
+{% figure src="/images/features/vote-32-vote-counted.jpg" alt="Vote counted screen saying Batik Generator AI has your vote for People's Choice" caption="Then on to the next booth." width=380 /%}
 
 ### Messages visitors may see
 
@@ -140,7 +140,7 @@ If the email isn't registered for the event and [Quick registration](/docs/quick
 | **This is your own booth** | **Block votes for own booth** is on |
 | **QR not recognised** | The booth QR was reset. Reprint the poster |
 
-{% figure src="/images/features/vote-33-check-in-first.jpg" alt="Check in first message: voting opens once you're checked in" caption="What a registered visitor sees before being checked in." /%}
+{% figure src="/images/features/vote-33-check-in-first.jpg" alt="Check in first message: voting opens once you're checked in" caption="What a registered visitor sees before being checked in." width=380 /%}
 
 Signed-in visitors also get **My votes**, a list of their votes with a **Scan booth QR** button, and a **Booth voting** card on the event home in the [attendee app](/docs/pwa-attendee).
 
