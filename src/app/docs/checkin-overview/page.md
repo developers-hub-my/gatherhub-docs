@@ -128,7 +128,18 @@ Event check-in is on for every published event. There is no single check-in sett
 | Activity Check-In | **Features** > **Event Activities** | Enable per-activity tracking |
 | Self Check-In | **Online QR Check-In**, or **More → Online QR** in the app | Show a QR participants scan to check themselves in |
 | Check-in photo | **On-site Check-In** | Off, Optional or Required |
+| Check-in email | **On-site Check-In** → **Email participant on check-in** | **Off by default**. Each check-in sends one email, which counts against your daily email limit |
 | Gates | **Gates** | Limit which ticket types can enter at each gate |
+
+{% figure src="/images/features/checkin-01-settings.jpg" alt="On-site Check-In page with the check-in photo setting and the Email participant on check-in switch" caption="Run → On-site Check-In." /%}
+
+{% callout title="Why the check-in email is off" %}
+A busy event can send hundreds of check-in emails in an hour and use up the daily email limit, which then blocks ticket emails. Participants can always see their ticket in the attendee app and on their order page. Password reset and one-time codes are always sent.
+{% /callout %}
+
+### Check-in photos afterwards
+
+Photos taken at check-in are in **Run → Check-in Photos**, for organisers and crew only. Search by name, email or ticket number, filter by date, or click **Download all (ZIP)**. The ZIP link is emailed to you and expires in 24 hours. When a ticket is scanned again, the crew app shows **Photo at first check-in** so crew can compare it with the person in front of them.
 
 ### Recommended Settings
 

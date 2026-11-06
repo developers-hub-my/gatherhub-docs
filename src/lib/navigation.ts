@@ -43,6 +43,7 @@ export const navigation = [
     title: 'Ticketing',
     links: [
       { title: 'Setting Up Ticket Types', href: '/docs/ticket-types' },
+      { title: 'Team Pass (Guest Seats)', href: '/docs/team-pass' },
       { title: 'Pricing Strategies', href: '/docs/pricing-strategies' },
       { title: 'Discount Codes', href: '/docs/discount-codes' },
       { title: 'Waitlist Management', href: '/docs/waitlist-management' },
@@ -74,6 +75,14 @@ export const navigation = [
       { title: 'QR Code Scanning', href: '/docs/qr-scanning' },
       { title: 'Attendance Tracking', href: '/docs/attendance-tracking' },
       { title: 'Real-Time Dashboard', href: '/docs/checkin-dashboard' },
+    ],
+  },
+  {
+    title: 'Vote & Booths',
+    links: [
+      { title: "Vote (People's Choice)", href: '/docs/booth-voting' },
+      { title: 'Booth QR Posters & Signage', href: '/docs/print-signage' },
+      { title: 'Vote Results & Presenting', href: '/docs/booth-voting-results' },
     ],
   },
   {

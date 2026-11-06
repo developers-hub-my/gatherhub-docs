@@ -3,126 +3,82 @@ title: Reports Overview
 nextjs:
   metadata:
     title: Reports Overview
-    description: Overview of reporting capabilities in GatherHub for event analytics.
+    description: One event report page that says how your event went in one sentence, with arrivals, People's Choice, feedback, PDF reports to share and Excel exports.
 ---
 
-GatherHub provides comprehensive reports to help you understand event performance, track attendance, and analyze revenue. {% .lead %}
-
----
-
-## Available Reports
-
-| Report | Description |
-|--------|-------------|
-| Attendance | Check-in and attendance data |
-| Revenue | Financial performance |
-| Registration | Registration trends |
-| Participant | Detailed participant data |
-| Certificate | Certificate issuance |
-| Email | Communication performance |
+The event report tells you how your event went at a glance: who registered, who came, when they arrived and who won People's Choice. Share it as a PDF or download the raw rows in Excel. {% .lead %}
 
 ---
 
-## Accessing Reports
+## Opening the Report
 
-### Event Reports
+Open your event and go to **Wrap → Reports Overview**.
 
-1. Go to event dashboard
-2. Click **Reports** in sidebar
-3. Select report type
+{% figure src="/images/features/reports-01-overview.jpg" alt="Event report page with a one-line summary, the metrics band, arrivals per hour and People's Choice winners" caption="Wrap → Reports Overview." /%}
 
-### Organization Reports
-
-1. Go to **Organization Settings**
-2. Click **Reports**
-3. View across all events
+{% callout title="Plan feature" %}
+Reports need the **Advanced reporting** feature on your organisation's plan. Without it, the Reports pages are not shown. In **Simple** sidebar mode, the other report pages (Registration, Attendance, Financial) are under **More tools**.
+{% /callout %}
 
 ---
 
-## Report Features
+## What's on the Page
 
-### Filtering
+| Section | Shows |
+|---|---|
+| **Report period** | **Whole event** (from registration opening to the end of the event), **Event day**, or **Custom…** dates |
+| Summary line | One sentence, for example "32 registered, RM 47.50 net. 84% turned up." |
+| Figures | **Registered**, **Attended**, **Did not attend**, **Approved** (only with an approval step), **Booth votes**, **Net revenue** (paid events only) |
+| **When people arrived** | Check-ins per hour in the event's time zone, with a tab per day for multi-day events. **Also on the day** adds kit collected and engagement counts when you used them |
+| **People's Choice** | Winners by category and the overall top 5, when Vote was used. See [Vote Results](/docs/booth-voting-results) |
+| **By ticket type** | Only when the event has more than one ticket type |
+| Participant journey | Applied → Approved → Attended → Feedback, with an approval step or a survey |
+| **Feedback** | NPS and responses, when you ran a survey |
+| Downloads | The PDF reports and the Excel exports |
 
-All reports support:
+The report counts **people**, not orders. Attended means unique people checked in, so a second scan of the same ticket doesn't count twice.
 
-- Date range selection
-- Status filters
-- Custom field filters
-- Search
-
-### Export Options
-
-| Format | Description |
-|--------|-------------|
-| CSV | Universal spreadsheet format |
-| Excel | Microsoft Excel format |
-| PDF | Printable document |
-
-### Visualization
-
-- Charts and graphs
-- Trend analysis
-- Comparisons
+{% callout title="Some orders need a look" %}
+If the event has duplicate or unpaid orders, or paid orders with no ticket, a notice links to **Review orders**. The report figures count people, so they are not affected. This notice never appears in the PDF.
+{% /callout %}
 
 ---
 
-## Quick Metrics
+## PDF Reports
 
-### Event Dashboard
+Click **PDF report** at the top of the page.
 
-Key metrics at a glance:
+{% figure src="/images/features/reports-02-pdf-modal.jpg" alt="PDF report dialog with the report type, orientation, include check-in photos option, preview, download and email" caption="Preview, download or email a PDF report." /%}
 
-| Metric | Description |
-|--------|-------------|
-| Total Registered | Confirmed registrations |
-| Checked In | Attendance count |
-| Revenue | Total payments received |
-| Certificates | Issued certificates |
+| Option | Choices |
+|---|---|
+| **Report** | **Event Summary**: a short report for management or sponsors (about 2 pages). **Full Report**: every table, for your records |
+| **Orientation** | Landscape or Portrait |
+| **Include check-in photos (up to 24)** | Off by default. The PDF will then contain attendee faces, so share it carefully |
 
----
+Click **Preview** or **Download**, or fill in **Recipients** (up to 10) and an optional message and click **Send report**.
 
-## Report Types
-
-### [Attendance Reports](/docs/attendance-reports)
-
-- Check-in rates
-- Session attendance
-- Activity participation
-- No-show tracking
-
-### [Revenue Reports](/docs/revenue-reports)
-
-- Total revenue
-- Revenue by ticket type
-- Payment methods
-- Refunds
-
-### [Exporting Data](/docs/exporting-data)
-
-- Participant exports
-- Transaction data
-- Custom exports
+The **Full Report** only includes sections the event used: registration, attendance, orders and payments, People's Choice, sessions and activities, feedback, certificates, and kit, engagement and operations. Its contents page lists what was left out and why.
 
 ---
 
-## Best Practices
+## Excel Exports
 
-### Regular Review
+Click **Excel exports**, or use the Downloads section, for raw rows including custom fields:
 
-- Check reports during registration period
-- Monitor day-of attendance
-- Review post-event performance
+| Export | Contains |
+|---|---|
+| Participants | Everyone registered, with custom fields |
+| Attendance | Every check-in with time and method |
+| Tickets | Every issued ticket |
+| Revenue summary | Gross, fees and net by ticket type. Hidden on free events |
 
-### Data-Driven Decisions
-
-- Use trends for future planning
-- Identify popular sessions
-- Optimize pricing strategies
+People added by the organiser or registered at the door are labelled **Walk-in / added by organiser** in reports when they are not on one of your ticket types. See [Walk-in guide](/docs/guide-walk-in).
 
 ---
 
 ## Next Steps
 
-- [View attendance reports](/docs/attendance-reports)
-- [Analyze revenue](/docs/revenue-reports)
-- [Export data](/docs/exporting-data)
+- [Attendance reports](/docs/attendance-reports)
+- [Revenue reports](/docs/revenue-reports)
+- [Exporting data](/docs/exporting-data)

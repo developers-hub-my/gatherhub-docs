@@ -39,6 +39,32 @@ The **Data & privacy notice** on the same tab applies to guests as well. When it
 
 ---
 
+## Instant Access for Guests
+
+By default a quick-registration guest gets in straight away: no verification email, no password email, and they land on their ticket. You can change this under the **Quick registration** switch.
+
+{% figure src="/images/features/quickreg-02-after-registering.jpg" alt="Registration tab with Require email verification, Require guest to set a password, Default password and After registering options" caption="Details → Registration, below Quick registration." /%}
+
+| Setting | What it does | Default |
+|---|---|---|
+| **Require email verification** | Off: a new guest account is verified straight away and no email is sent | Off |
+| **Require guest to set a password** | Off: the guest is signed in right after registering. On: we email a set-password link and don't sign them in | Off |
+| **Default password** | A password every new guest account gets, so guests can sign in again later. Leave it empty for a random one | Not set |
+| **After registering, take the guest to** | **Attendee app** (the event home with the ticket) or **Order details** | Attendee app |
+
+{% callout title="Default password" type="warning" %}
+Anyone who knows a guest's email and the default password can sign in as that guest. Share it only with attendees. It is stored securely and never shown again. To remove it, tick **Clear the default password on save**.
+{% /callout %}
+
+When a default password is set, **Apply default password to {n} guests** gives it to guests who registered earlier and never set their own password. Accounts with their own password, crew and organisation staff are never changed.
+
+### What the guest gets
+
+- Only a **brand-new** account is signed in automatically. If the email already has an account, the ticket is added to it, but the guest is not signed in
+- The form has an **Email me a copy of my registration** checkbox. It is **unticked** by default, and a ticket email is sent only when the guest ticks it. The ticket is always in the attendee app
+
+---
+
 ## What Guests See
 
 ### On the event page
@@ -84,7 +110,7 @@ The panel also has a **Have an account? Sign in** link. A guest who signs in com
 
 ### Free tickets
 
-The ticket is issued straight away. The panel shows a success message and the ticket is emailed to the guest.
+The ticket is issued straight away and the guest is taken to their ticket (see [Instant Access](#instant-access-for-guests)). The ticket is emailed only if the guest ticked **Email me a copy of my registration**.
 
 ### Paid tickets
 

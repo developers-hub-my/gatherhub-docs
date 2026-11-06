@@ -19,6 +19,8 @@ Each event needs at least one ticket type. Ticket types can represent:
 - **Access levels** - Full Access, Single Day, Workshop Only
 - **Registration types** - Individual, Group, Corporate
 
+To sell one ticket that admits several people, see [Team Pass](/docs/team-pass).
+
 ---
 
 ## Creating a Ticket Type

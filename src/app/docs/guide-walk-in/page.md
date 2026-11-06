@@ -9,7 +9,11 @@ nextjs:
 Didn't register beforehand? Scan the poster, fill in a short form and show your ticket QR. No app to install and no password. {% .lead %}
 
 {% callout title="For organisers" %}
-Walk-ins need three things: **quick registration** switched on, a **free** ticket type, and the **Event QR** poster at the entrance. See the [organiser guide](/docs/guide-organiser).
+Walk-ins need three things: **quick registration** switched on, a **free** ticket type, and the **Event QR** poster at the entrance. See the [organiser guide](/docs/guide-organiser). The [Check-in poster](/docs/print-signage) carries the Event QR.
+{% /callout %}
+
+{% callout title="Which ticket walk-ins get" %}
+When your event has **exactly one** ticket type and it is plain free (no approval, no verification, not a team pass, not full), walk-ins and people you add yourself get that ticket and count against its capacity. Otherwise they go on an internal ticket that reports label **Walk-in / added by organiser**. In **Participants**, filter by source **Added / QR / walk-in (any)** to list them.
 {% /callout %}
 
 ---
